@@ -1,0 +1,42 @@
+{
+  "generated_at_utc": "2026-03-31T07:47:42Z",
+  "args": {
+    "input_root": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42",
+    "output_root": "/workspace/video_bench/latent_codec/results_qint8_1sample_gpu",
+    "value_codec": "qint8",
+    "samples": 1,
+    "mode": "manual_fallback_from_existing_artifacts"
+  },
+  "num_reports": 1,
+  "mean_native_mp4_mb": 8.1929,
+  "mean_latent_pt_mb": 20.9534,
+  "mean_intra_archive_mb": 4.8421,
+  "mean_inter_archive_mb": 4.5862,
+  "mean_intra_vs_native_mp4_ratio": 0.591,
+  "mean_inter_vs_native_mp4_ratio": 0.5598,
+  "mean_intra_decoded_frame_psnr_db": 44.2344,
+  "mean_inter_decoded_frame_psnr_db": 44.2778,
+  "mean_intra_mp4_psnr_db": 49.3491,
+  "mean_inter_mp4_psnr_db": 49.3943,
+  "mean_intra_mp4_ssim": 0.992596,
+  "mean_inter_mp4_ssim": 0.992653,
+  "recommended_family": "inter",
+  "notes": [
+    "This summary was synthesized from existing codec archives and reconstructed MP4 files.",
+    "Decoded-frame metrics here compare MP4-decoded RGB frames, not direct pre-MP4 VAE tensors.",
+    "The main bench script remains the canonical implementation; this report is a fallback deliverable for the first sample."
+  ],
+  "rows": [
+    {
+      "stem": "000_subject_consistency_r00_p003_a_person_eating_a_burger",
+      "native_mp4_mb": 8.1929,
+      "latent_pt_mb": 20.9534,
+      "intra_archive_mb": 4.8421,
+      "inter_archive_mb": 4.5862,
+      "intra_mp4_psnr_db": 49.3491,
+      "inter_mp4_psnr_db": 49.3943,
+      "intra_mp4_ssim": 0.992596,
+      "inter_mp4_ssim": 0.992653
+    }
+  ]
+}

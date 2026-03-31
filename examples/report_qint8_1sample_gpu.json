@@ -1,0 +1,53 @@
+{
+  "stem": "000_subject_consistency_r00_p003_a_person_eating_a_burger",
+  "prompt": "a person eating a burger",
+  "fps": 24,
+  "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+  "native_mp4_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/native_16fps/000_subject_consistency_r00_p003_a_person_eating_a_burger.mp4",
+  "native_mp4_bytes": 8192914,
+  "raw_latent_bytes": 20951040,
+  "original_pt_bytes": 20953351,
+  "latent_shape": [
+    48,
+    31,
+    44,
+    80
+  ],
+  "note": "Decoded-frame metrics below are computed from MP4-decoded RGB frames. Direct pre-MP4 VAE-frame metrics are not included in this manual fallback report.",
+  "intra": {
+    "scheme_name": "intra",
+    "value_codec": "qint8",
+    "value_bits": 8,
+    "archive_path": "/workspace/video_bench/latent_codec/results_qint8_1sample_gpu/codecs/intra/000_subject_consistency_r00_p003_a_person_eating_a_burger.latent.zst",
+    "archive_bytes": 4842135,
+    "archive_vs_native_mp4_ratio": 0.5910149917355412,
+    "archive_vs_pt_ratio": 0.2310911987299788,
+    "archive_vs_raw_latent_ratio": 0.23111668919538123,
+    "reconstructed_mp4_path": "/workspace/video_bench/latent_codec/results_qint8_1sample_gpu/reconstructed_mp4/intra/000_subject_consistency_r00_p003_a_person_eating_a_burger.mp4",
+    "reconstructed_mp4_bytes": 8226929,
+    "mp4_psnr_db": 49.349081,
+    "mp4_ssim": 0.992596,
+    "decoded_frame_mse": 2.452680826187134,
+    "decoded_frame_mae": 1.0750136375427246,
+    "decoded_frame_psnr_db": 44.234393248688214,
+    "decoded_frame_count": 121
+  },
+  "inter": {
+    "scheme_name": "inter",
+    "value_codec": "qint8",
+    "value_bits": 8,
+    "archive_path": "/workspace/video_bench/latent_codec/results_qint8_1sample_gpu/codecs/inter/000_subject_consistency_r00_p003_a_person_eating_a_burger.latent.zst",
+    "archive_bytes": 4586209,
+    "archive_vs_native_mp4_ratio": 0.5597775101752563,
+    "archive_vs_pt_ratio": 0.2188771142143326,
+    "archive_vs_raw_latent_ratio": 0.21890125740774682,
+    "reconstructed_mp4_path": "/workspace/video_bench/latent_codec/results_qint8_1sample_gpu/reconstructed_mp4/inter/000_subject_consistency_r00_p003_a_person_eating_a_burger.mp4",
+    "reconstructed_mp4_bytes": 8198382,
+    "mp4_psnr_db": 49.394348,
+    "mp4_ssim": 0.992653,
+    "decoded_frame_mse": 2.4282805919647217,
+    "decoded_frame_mae": 1.068840742111206,
+    "decoded_frame_psnr_db": 44.277814920968424,
+    "decoded_frame_count": 121
+  }
+}
