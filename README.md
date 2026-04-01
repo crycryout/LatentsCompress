@@ -77,3 +77,14 @@ The complete 64-sample Wan2.2-TI2V-5B VBench latent codec benchmark is included 
 - `examples/vbench_codec/wan64_summary.json`
 
 Large binary artifacts such as all generated MP4s, reconstructed MP4s, and compressed latent containers are intentionally not committed to GitHub to keep the repository manageable; the repo contains the scripts and reports needed to reproduce and inspect the experiments.
+
+## Codex Chat Logs
+
+Local Codex conversation artifacts for this project have also been archived under `examples/codex_chat/`:
+
+- `history.jsonl`
+- `session_index.jsonl`
+- `codex-tui.log`
+- full session rollouts under `examples/codex_chat/sessions/2026/03/31/`
+
+Sensitive local authentication files such as Codex auth tokens or SSH credentials are intentionally excluded.
