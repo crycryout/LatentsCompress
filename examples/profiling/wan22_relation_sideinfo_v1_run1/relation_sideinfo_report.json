@@ -1,0 +1,208 @@
+{
+  "latent_paths": [
+    "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+    "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree.pt"
+  ],
+  "schemes": [
+    {
+      "name": "tae_only",
+      "kind": "none",
+      "lowres_factor": 0,
+      "quantization": "none",
+      "tile_rows": 0,
+      "tile_cols": 0
+    },
+    {
+      "name": "tile_affine_f8_4x4_fp16",
+      "kind": "tile_affine",
+      "lowres_factor": 8,
+      "quantization": "fp16",
+      "tile_rows": 4,
+      "tile_cols": 4
+    },
+    {
+      "name": "lowres_residual_f8_q8",
+      "kind": "lowres_residual",
+      "lowres_factor": 8,
+      "quantization": "q8",
+      "tile_rows": 0,
+      "tile_cols": 0
+    },
+    {
+      "name": "lowres_residual_f4_q8",
+      "kind": "lowres_residual",
+      "lowres_factor": 4,
+      "quantization": "q8",
+      "tile_rows": 0,
+      "tile_cols": 0
+    }
+  ],
+  "samples": [
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a person eating a burger",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "baseline_mp4": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/000_subject_consistency_r00_p003_a_person_eating_a_burger/baseline_vae.mp4",
+      "tae_only_mp4": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/000_subject_consistency_r00_p003_a_person_eating_a_burger/tae_only.mp4",
+      "variants": [
+        {
+          "variant": "tae_only",
+          "kind": "none",
+          "lowres_factor": 0,
+          "quantization": "none",
+          "raw_frame_mse": 40.880916595458984,
+          "raw_frame_psnr_db": 32.015597362684716,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/000_subject_consistency_r00_p003_a_person_eating_a_burger/tae_only.mp4",
+          "sideinfo_bytes": 0,
+          "latent_file_bytes": 20953351,
+          "sideinfo_vs_latent_ratio": 0.0,
+          "server_vae_decode_sec": 0.0,
+          "client_tae_decode_sec": 3.2808389458805323,
+          "mp4_psnr_db": 36.330335,
+          "mp4_ssim": 0.956674,
+          "mp4_bytes": 11091348
+        },
+        {
+          "variant": "tile_affine_f8_4x4_fp16",
+          "kind": "tile_affine",
+          "lowres_factor": 8,
+          "quantization": "fp16",
+          "raw_frame_mse": 37.82236862182617,
+          "raw_frame_psnr_db": 32.3533163786133,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/000_subject_consistency_r00_p003_a_person_eating_a_burger/tile_affine_f8_4x4_fp16.mp4",
+          "sideinfo_bytes": 19206,
+          "latent_file_bytes": 20953351,
+          "sideinfo_vs_latent_ratio": 0.000916607563153025,
+          "server_vae_decode_sec": 28.574936397373676,
+          "client_tae_decode_sec": 3.2808389458805323,
+          "mp4_psnr_db": 36.662511,
+          "mp4_ssim": 0.956613,
+          "mp4_bytes": 11360499
+        },
+        {
+          "variant": "lowres_residual_f8_q8",
+          "kind": "lowres_residual",
+          "lowres_factor": 8,
+          "quantization": "q8",
+          "raw_frame_mse": 17.255640029907227,
+          "raw_frame_psnr_db": 35.761492885007954,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/000_subject_consistency_r00_p003_a_person_eating_a_burger/lowres_residual_f8_q8.mp4",
+          "sideinfo_bytes": 3682931,
+          "latent_file_bytes": 20953351,
+          "sideinfo_vs_latent_ratio": 0.1757681146084939,
+          "server_vae_decode_sec": 28.574936397373676,
+          "client_tae_decode_sec": 3.2808389458805323,
+          "mp4_psnr_db": 39.640461,
+          "mp4_ssim": 0.967142,
+          "mp4_bytes": 10652946
+        },
+        {
+          "variant": "lowres_residual_f4_q8",
+          "kind": "lowres_residual",
+          "lowres_factor": 4,
+          "quantization": "q8",
+          "raw_frame_mse": 9.450465202331543,
+          "raw_frame_psnr_db": 38.37627173540355,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/000_subject_consistency_r00_p003_a_person_eating_a_burger/lowres_residual_f4_q8.mp4",
+          "sideinfo_bytes": 12472417,
+          "latent_file_bytes": 20953351,
+          "sideinfo_vs_latent_ratio": 0.5952468891491389,
+          "server_vae_decode_sec": 28.574936397373676,
+          "client_tae_decode_sec": 3.2808389458805323,
+          "mp4_psnr_db": 42.100278,
+          "mp4_ssim": 0.977629,
+          "mp4_bytes": 9822455
+        }
+      ]
+    },
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a bear climbing a tree",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "baseline_mp4": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree/baseline_vae.mp4",
+      "tae_only_mp4": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree/tae_only.mp4",
+      "variants": [
+        {
+          "variant": "tae_only",
+          "kind": "none",
+          "lowres_factor": 0,
+          "quantization": "none",
+          "raw_frame_mse": 306.91827392578125,
+          "raw_frame_psnr_db": 23.260576137561852,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree/tae_only.mp4",
+          "sideinfo_bytes": 0,
+          "latent_file_bytes": 20953195,
+          "sideinfo_vs_latent_ratio": 0.0,
+          "server_vae_decode_sec": 0.0,
+          "client_tae_decode_sec": 1.394361972808838,
+          "mp4_psnr_db": 26.830264,
+          "mp4_ssim": 0.889776,
+          "mp4_bytes": 27308742
+        },
+        {
+          "variant": "tile_affine_f8_4x4_fp16",
+          "kind": "tile_affine",
+          "lowres_factor": 8,
+          "quantization": "fp16",
+          "raw_frame_mse": 302.64013671875,
+          "raw_frame_psnr_db": 23.321538363891133,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree/tile_affine_f8_4x4_fp16.mp4",
+          "sideinfo_bytes": 18110,
+          "latent_file_bytes": 20953195,
+          "sideinfo_vs_latent_ratio": 0.0008643073287868509,
+          "server_vae_decode_sec": 26.358243295922875,
+          "client_tae_decode_sec": 1.394361972808838,
+          "mp4_psnr_db": 26.89362,
+          "mp4_ssim": 0.890177,
+          "mp4_bytes": 27333489
+        },
+        {
+          "variant": "lowres_residual_f8_q8",
+          "kind": "lowres_residual",
+          "lowres_factor": 8,
+          "quantization": "q8",
+          "raw_frame_mse": 255.56398010253906,
+          "raw_frame_psnr_db": 24.05580717739354,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree/lowres_residual_f8_q8.mp4",
+          "sideinfo_bytes": 4013643,
+          "latent_file_bytes": 20953195,
+          "sideinfo_vs_latent_ratio": 0.19155279182959925,
+          "server_vae_decode_sec": 26.358243295922875,
+          "client_tae_decode_sec": 1.394361972808838,
+          "mp4_psnr_db": 27.521794,
+          "mp4_ssim": 0.901753,
+          "mp4_bytes": 27029409
+        },
+        {
+          "variant": "lowres_residual_f4_q8",
+          "kind": "lowres_residual",
+          "lowres_factor": 4,
+          "quantization": "q8",
+          "raw_frame_mse": 175.02000427246094,
+          "raw_frame_psnr_db": 25.69992670760853,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_relation_sideinfo_v1_run1/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree/lowres_residual_f4_q8.mp4",
+          "sideinfo_bytes": 14314288,
+          "latent_file_bytes": 20953195,
+          "sideinfo_vs_latent_ratio": 0.6831553851333889,
+          "server_vae_decode_sec": 26.358243295922875,
+          "client_tae_decode_sec": 1.394361972808838,
+          "mp4_psnr_db": 29.057114,
+          "mp4_ssim": 0.930189,
+          "mp4_bytes": 26049363
+        }
+      ]
+    }
+  ]
+}

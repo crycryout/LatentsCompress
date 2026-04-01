@@ -1,0 +1,102 @@
+{
+  "config": {
+    "name": "replace_only_k8_w2_t32",
+    "keyframe_interval": 8,
+    "anchor_window": 2,
+    "mode": "replace_only",
+    "tile_size": 32,
+    "residual_decay": 8.0
+  },
+  "summary": {
+    "sample_count": 1,
+    "mean_raw_frame_psnr_db": 30.8002274051995,
+    "mean_mp4_psnr_db": 34.79094,
+    "mean_mp4_ssim": 0.957708,
+    "mean_hybrid_seq_decode_sec_estimate": 2.5494384597986937,
+    "realtime_seq_possible_all": true,
+    "realtime_seq_possible_any": true,
+    "mean_anchor_vs_tae_psnr_db": 27.787338815774113
+  },
+  "samples": [
+    {
+      "stem": "000_subject_consistency_r00_p003_a_person_eating_a_burger",
+      "fps": 24,
+      "frame_num": 121,
+      "config_name": "replace_only_k8_w2_t32",
+      "config_mode": "replace_only",
+      "keyframe_interval": 8,
+      "anchor_window": 2,
+      "official_decode_sec": 17.43889190815389,
+      "lighttae_decode_sec": 0.2085406705737114,
+      "hybrid_seq_decode_sec_estimate": 2.5494384597986937,
+      "video_duration_sec": 5.041666666666667,
+      "realtime_seq_possible": true,
+      "raw_frame_mse": 54.08260726928711,
+      "raw_frame_psnr_db": 30.8002274051995,
+      "mp4_psnr_db": 34.79094,
+      "mp4_ssim": 0.957708,
+      "baseline_mp4_path": "/root/LatentsCompress/examples/vbench_codec/video_samples/baseline_mp4/000_subject_consistency_r00_p003_a_person_eating_a_burger.mp4",
+      "hybrid_mp4_path": "/root/LatentsCompress/examples/hybrid_decode_smoke/video_samples/replace_only_k8_w2_t32/000_subject_consistency_r00_p003_a_person_eating_a_burger.mp4",
+      "hybrid_mp4_bytes": 11022373,
+      "hybrid_meta": {
+        "config_name": "replace_only_k8_w2_t32",
+        "keyframe_steps": [
+          0,
+          8,
+          16,
+          24
+        ],
+        "num_keyframe_steps": 4,
+        "anchor_decode_sec_total": 2.3408977892249823,
+        "anchor_decode_sec_mean": 0.5852244473062456,
+        "anchor_vs_tae_psnr_db_mean": 27.787338815774113,
+        "keyframes": [
+          {
+            "step": 0,
+            "frame_range": [
+              0,
+              1
+            ],
+            "window_start": 0,
+            "window_len": 1,
+            "anchor_decode_sec": 0.1760707087814808,
+            "anchor_vs_tae_psnr_db": 34.13733145580566
+          },
+          {
+            "step": 8,
+            "frame_range": [
+              29,
+              33
+            ],
+            "window_start": 7,
+            "window_len": 2,
+            "anchor_decode_sec": 0.7211435716599226,
+            "anchor_vs_tae_psnr_db": 24.649953078957225
+          },
+          {
+            "step": 16,
+            "frame_range": [
+              61,
+              65
+            ],
+            "window_start": 15,
+            "window_len": 2,
+            "anchor_decode_sec": 0.7221491727977991,
+            "anchor_vs_tae_psnr_db": 26.30187344034659
+          },
+          {
+            "step": 24,
+            "frame_range": [
+              93,
+              97
+            ],
+            "window_start": 23,
+            "window_len": 2,
+            "anchor_decode_sec": 0.7215343359857798,
+            "anchor_vs_tae_psnr_db": 26.060197287986988
+          }
+        ]
+      }
+    }
+  ]
+}

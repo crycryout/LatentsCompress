@@ -1,0 +1,101 @@
+[
+  {
+    "Time (%)": 73.8,
+    "Total Time (ns)": 955741960,
+    "Num Calls": 2,
+    "Avg (ns)": 477870980.0,
+    "Med (ns)": 477870980.0,
+    "Min (ns)": 7331,
+    "Max (ns)": 955734629,
+    "StdDev (ns)": 675801253.4,
+    "Name": "cudaDeviceSynchronize"
+  },
+  {
+    "Time (%)": 21.9,
+    "Total Time (ns)": 283751398,
+    "Num Calls": 1902,
+    "Avg (ns)": 149185.8,
+    "Med (ns)": 2594.0,
+    "Min (ns)": 2003,
+    "Max (ns)": 30575487,
+    "StdDev (ns)": 962437.0,
+    "Name": "cudaLaunchKernel"
+  },
+  {
+    "Time (%)": 1.9,
+    "Total Time (ns)": 25143126,
+    "Num Calls": 103,
+    "Avg (ns)": 244108.0,
+    "Med (ns)": 2664.0,
+    "Min (ns)": 2233,
+    "Max (ns)": 20225860,
+    "StdDev (ns)": 1993937.9,
+    "Name": "cudaLaunchKernelExC_v11060"
+  },
+  {
+    "Time (%)": 1.2,
+    "Total Time (ns)": 15867495,
+    "Num Calls": 90,
+    "Avg (ns)": 176305.5,
+    "Med (ns)": 4707.0,
+    "Min (ns)": 2945,
+    "Max (ns)": 8468716,
+    "StdDev (ns)": 996349.7,
+    "Name": "cudaMemcpyAsync"
+  },
+  {
+    "Time (%)": 0.7,
+    "Total Time (ns)": 9192343,
+    "Num Calls": 33,
+    "Avg (ns)": 278555.8,
+    "Med (ns)": 137776.0,
+    "Min (ns)": 86248,
+    "Max (ns)": 1322069,
+    "StdDev (ns)": 314343.6,
+    "Name": "cudaMalloc"
+  },
+  {
+    "Time (%)": 0.4,
+    "Total Time (ns)": 5481105,
+    "Num Calls": 66,
+    "Avg (ns)": 83047.0,
+    "Med (ns)": 3170.0,
+    "Min (ns)": 1733,
+    "Max (ns)": 1306166,
+    "StdDev (ns)": 219757.9,
+    "Name": "cudaMemsetAsync"
+  },
+  {
+    "Time (%)": 0.0,
+    "Total Time (ns)": 140979,
+    "Num Calls": 13,
+    "Avg (ns)": 10844.5,
+    "Med (ns)": 3475.0,
+    "Min (ns)": 2544,
+    "Max (ns)": 89994,
+    "StdDev (ns)": 23859.5,
+    "Name": "cuLaunchKernel"
+  },
+  {
+    "Time (%)": 0.0,
+    "Total Time (ns)": 17387,
+    "Num Calls": 13,
+    "Avg (ns)": 1337.5,
+    "Med (ns)": 1252.0,
+    "Min (ns)": 621,
+    "Max (ns)": 3205,
+    "StdDev (ns)": 837.8,
+    "Name": "cuKernelGetFunction"
+  },
+  {
+    "Time (%)": 0.0,
+    "Total Time (ns)": 16791,
+    "Num Calls": 36,
+    "Avg (ns)": 466.4,
+    "Med (ns)": 411.0,
+    "Min (ns)": 260,
+    "Max (ns)": 1642,
+    "StdDev (ns)": 245.4,
+    "Name": "cudaStreamIsCapturing_v10000"
+  }
+]

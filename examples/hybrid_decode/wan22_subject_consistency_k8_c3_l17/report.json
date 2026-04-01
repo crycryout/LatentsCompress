@@ -1,0 +1,127 @@
+{
+  "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+  "meta": {
+    "task": "ti2v-5B",
+    "prompt": "a person eating a burger",
+    "size": "1280*704",
+    "frame_num": 121,
+    "fps": 24,
+    "seed": 42
+  },
+  "latent_shape": [
+    48,
+    31,
+    44,
+    80
+  ],
+  "anchor_interval_steps": 8,
+  "anchor_context_steps": 3,
+  "lowpass_kernel": 17,
+  "anchor_steps": [
+    0,
+    1,
+    9,
+    17,
+    25,
+    30
+  ],
+  "baseline_vae_decode_sec": 49.30843686312437,
+  "tae_decode_sec": 0.5364903043955564,
+  "total_anchor_decode_sec": 7.889880558475852,
+  "effective_total_decode_sec": 8.426370862871408,
+  "effective_total_fps": 14.359681287368295,
+  "amortized_group_sec_estimate": 0.18225552178143214,
+  "amortized_group_budget_sec": 0.16666666666666666,
+  "amortized_group_realtime_feasible": false,
+  "anchors": [
+    {
+      "latent_step": 0,
+      "frame_start": 0,
+      "frame_end": 1,
+      "frame_count": 1,
+      "window_steps": 1,
+      "decode_sec": 0.37519487366080284,
+      "anchor_psnr_db_vs_full_vae": Infinity,
+      "tae_psnr_db_vs_full_vae": 34.13733145580566
+    },
+    {
+      "latent_step": 1,
+      "frame_start": 1,
+      "frame_end": 5,
+      "frame_count": 4,
+      "window_steps": 2,
+      "decode_sec": 1.5562779530882835,
+      "anchor_psnr_db_vs_full_vae": Infinity,
+      "tae_psnr_db_vs_full_vae": 30.39999412504465
+    },
+    {
+      "latent_step": 9,
+      "frame_start": 33,
+      "frame_end": 37,
+      "frame_count": 4,
+      "window_steps": 3,
+      "decode_sec": 1.4926829561591148,
+      "anchor_psnr_db_vs_full_vae": 37.356753096164326,
+      "tae_psnr_db_vs_full_vae": 31.06432712485936
+    },
+    {
+      "latent_step": 17,
+      "frame_start": 65,
+      "frame_end": 69,
+      "frame_count": 4,
+      "window_steps": 3,
+      "decode_sec": 1.2847949098795652,
+      "anchor_psnr_db_vs_full_vae": 39.23252493370947,
+      "tae_psnr_db_vs_full_vae": 33.22027858872509
+    },
+    {
+      "latent_step": 25,
+      "frame_start": 97,
+      "frame_end": 101,
+      "frame_count": 4,
+      "window_steps": 3,
+      "decode_sec": 1.2843090444803238,
+      "anchor_psnr_db_vs_full_vae": 39.01418888774899,
+      "tae_psnr_db_vs_full_vae": 35.968373003876955
+    },
+    {
+      "latent_step": 30,
+      "frame_start": 117,
+      "frame_end": 121,
+      "frame_count": 4,
+      "window_steps": 3,
+      "decode_sec": 1.8966208212077618,
+      "anchor_psnr_db_vs_full_vae": 37.26171490573012,
+      "tae_psnr_db_vs_full_vae": 32.88565477644251
+    }
+  ],
+  "metrics": [
+    {
+      "name": "tae_only",
+      "mp4_path": "/root/LatentsCompress/examples/hybrid_decode/wan22_subject_consistency_k8_c3_l17/videos/tae_only.mp4",
+      "raw_frame_mse": 40.881412506103516,
+      "raw_frame_psnr_db": 32.01554468041434,
+      "mp4_psnr_db": 36.330222,
+      "mp4_ssim": 0.95667,
+      "mp4_bytes": 11093573
+    },
+    {
+      "name": "hybrid_key_replace",
+      "mp4_path": "/root/LatentsCompress/examples/hybrid_decode/wan22_subject_consistency_k8_c3_l17/videos/hybrid_key_replace.mp4",
+      "raw_frame_mse": 35.60875701904297,
+      "raw_frame_psnr_db": 32.61523546676731,
+      "mp4_psnr_db": 36.89882,
+      "mp4_ssim": 0.962363,
+      "mp4_bytes": 10708906
+    },
+    {
+      "name": "hybrid_prev_lpf",
+      "mp4_path": "/root/LatentsCompress/examples/hybrid_decode/wan22_subject_consistency_k8_c3_l17/videos/hybrid_prev_lpf.mp4",
+      "raw_frame_mse": 47.6800422668457,
+      "raw_frame_psnr_db": 31.347437291472712,
+      "mp4_psnr_db": 35.516689,
+      "mp4_ssim": 0.958425,
+      "mp4_bytes": 11774803
+    }
+  ]
+}

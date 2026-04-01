@@ -1,0 +1,176 @@
+{
+  "latent_paths": [
+    "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt"
+  ],
+  "variants": [
+    {
+      "name": "tae_only",
+      "scheduler": "none",
+      "key_window_latent": 1,
+      "fixed_interval": 9999,
+      "min_interval": 9999,
+      "max_interval": 9999,
+      "decay_steps": 1.0,
+      "lowpass_kernel": 1,
+      "tile_rows": 1,
+      "tile_cols": 1,
+      "correction_divisor": 1,
+      "scene_threshold": 999.0
+    },
+    {
+      "name": "fixed_k8_w3_lfcolor_tile",
+      "scheduler": "fixed",
+      "key_window_latent": 3,
+      "fixed_interval": 8,
+      "min_interval": 4,
+      "max_interval": 8,
+      "decay_steps": 6.0,
+      "lowpass_kernel": 15,
+      "tile_rows": 4,
+      "tile_cols": 4,
+      "correction_divisor": 8,
+      "scene_threshold": 0.1
+    },
+    {
+      "name": "adaptive_w3_lfcolor_tile",
+      "scheduler": "adaptive",
+      "key_window_latent": 3,
+      "fixed_interval": 8,
+      "min_interval": 4,
+      "max_interval": 10,
+      "decay_steps": 6.0,
+      "lowpass_kernel": 15,
+      "tile_rows": 4,
+      "tile_cols": 4,
+      "correction_divisor": 8,
+      "scene_threshold": 0.085
+    }
+  ],
+  "samples": [
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a person eating a burger",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "baseline_vae_decode_sec": 18.0866544470191,
+      "baseline_mp4": "/root/LatentsCompress/examples/profiling/wan22_hybrid_decode_v2_run1b/000_subject_consistency_r00_p003_a_person_eating_a_burger/baseline_vae.mp4",
+      "variants": [
+        {
+          "variant": "tae_only",
+          "scheduler": "none",
+          "key_steps": [],
+          "raw_frame_mse": 40.880916595458984,
+          "raw_frame_psnr_db": 32.015597362684716,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_hybrid_decode_v2_run1b/000_subject_consistency_r00_p003_a_person_eating_a_burger/tae_only.mp4",
+          "key_decode_sec_total": 0.0,
+          "key_decode_sec_mean": 0.0,
+          "correction_sec_total": 0.0,
+          "correction_sec_mean": 0.0,
+          "mp4_psnr_db": 36.330335,
+          "mp4_ssim": 0.956674,
+          "stream_startup_first_frame_sec": 0.28293116576969624,
+          "stream_required_initial_buffer_sec": 0.24126449910302958,
+          "stream_required_initial_buffer_frames": 6,
+          "stream_total_stall_sec_zero_prefetch": 0.24126449910302958,
+          "stream_stall_event_count_zero_prefetch": 1,
+          "stream_deadline_miss_step_count": 1,
+          "stream_peak_step_service_sec": 0.28293116576969624,
+          "stream_peak_step_budget_sec": 0.16666666666666666,
+          "stream_realtime_without_prefetch": false
+        },
+        {
+          "variant": "fixed_k8_w3_lfcolor_tile",
+          "scheduler": "fixed",
+          "key_steps": [
+            0,
+            1,
+            9,
+            17,
+            25,
+            30
+          ],
+          "key_count": 6,
+          "raw_frame_mse": 37.848690032958984,
+          "raw_frame_psnr_db": 32.350295079777226,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_hybrid_decode_v2_run1b/000_subject_consistency_r00_p003_a_person_eating_a_burger/fixed_k8_w3_lfcolor_tile.mp4",
+          "key_decode_sec_total": 6.5946559105068445,
+          "key_decode_sec_mean": 1.0991093184178073,
+          "correction_sec_total": 35.81776722706854,
+          "correction_sec_mean": 1.1554118460344691,
+          "anchor_vs_tae_raw_frame_psnr_db_mean": 32.557530312983346,
+          "anchor_vs_tae_raw_frame_psnr_db_min": 30.40002261980688,
+          "adaptive_motion_score_max": 0.0,
+          "adaptive_trigger_counts": {
+            "warmup": 6
+          },
+          "mp4_psnr_db": 36.615877,
+          "mp4_ssim": 0.95946,
+          "stream_startup_first_frame_sec": 0.743906807154417,
+          "stream_required_initial_buffer_sec": 38.44514845994612,
+          "stream_required_initial_buffer_frames": 923,
+          "stream_total_stall_sec_zero_prefetch": 38.44514845994612,
+          "stream_stall_event_count_zero_prefetch": 31,
+          "stream_deadline_miss_step_count": 31,
+          "stream_peak_step_service_sec": 2.7729838099330664,
+          "stream_peak_step_budget_sec": 0.16666666666666666,
+          "stream_realtime_without_prefetch": false
+        },
+        {
+          "variant": "adaptive_w3_lfcolor_tile",
+          "scheduler": "adaptive",
+          "key_steps": [
+            0,
+            1,
+            5,
+            9,
+            13,
+            17,
+            22,
+            27,
+            30
+          ],
+          "key_count": 9,
+          "raw_frame_mse": 34.342716217041016,
+          "raw_frame_psnr_db": 32.772457196812866,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_hybrid_decode_v2_run1b/000_subject_consistency_r00_p003_a_person_eating_a_burger/adaptive_w3_lfcolor_tile.mp4",
+          "key_decode_sec_total": 13.496346926316619,
+          "key_decode_sec_mean": 1.4995941029240687,
+          "correction_sec_total": 9.707019640132785,
+          "correction_sec_mean": 0.313129665810735,
+          "anchor_vs_tae_raw_frame_psnr_db_mean": 32.119349091011365,
+          "anchor_vs_tae_raw_frame_psnr_db_min": 29.100481966239514,
+          "adaptive_motion_score_max": 0.271484375,
+          "adaptive_trigger_counts": {
+            "warmup": 2,
+            "scene": 6,
+            "interval": 1
+          },
+          "mp4_psnr_db": 37.065845,
+          "mp4_ssim": 0.963002,
+          "stream_startup_first_frame_sec": 0.6370468903332949,
+          "stream_required_initial_buffer_sec": 19.236091888820134,
+          "stream_required_initial_buffer_frames": 462,
+          "stream_total_stall_sec_zero_prefetch": 19.236091888820134,
+          "stream_stall_event_count_zero_prefetch": 31,
+          "stream_deadline_miss_step_count": 31,
+          "stream_peak_step_service_sec": 3.143665127456188,
+          "stream_peak_step_budget_sec": 0.16666666666666666,
+          "stream_realtime_without_prefetch": false
+        }
+      ],
+      "summary": {
+        "best_raw_psnr_variant": "adaptive_w3_lfcolor_tile",
+        "best_raw_psnr_db": 32.772457196812866,
+        "best_mp4_psnr_variant": "adaptive_w3_lfcolor_tile",
+        "best_mp4_psnr_db": 37.065845,
+        "lowest_buffer_variant": "tae_only",
+        "lowest_buffer_sec": 0.24126449910302958
+      }
+    }
+  ]
+}

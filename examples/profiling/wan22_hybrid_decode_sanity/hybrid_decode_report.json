@@ -1,0 +1,108 @@
+{
+  "latent_paths": [
+    "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt"
+  ],
+  "variants": [
+    {
+      "name": "k8_w3_keyreplace",
+      "key_interval_latent": 8,
+      "vae_window_latent": 3,
+      "repair_mode": "keyreplace",
+      "residual_decay": 1.0
+    }
+  ],
+  "samples": [
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a person eating a burger",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "baseline_vae_decode_sec": 17.434976816177368,
+      "baseline_mp4": "/root/LatentsCompress/examples/profiling/wan22_hybrid_decode_sanity/000_subject_consistency_r00_p003_a_person_eating_a_burger/baseline_vae.mp4",
+      "variants": [
+        {
+          "variant": "tae_only",
+          "key_interval_latent": null,
+          "vae_window_latent": null,
+          "repair_mode": "none",
+          "residual_decay": null,
+          "raw_frame_mse": 40.880916595458984,
+          "raw_frame_psnr_db": 32.015597362684716,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_hybrid_decode_sanity/000_subject_consistency_r00_p003_a_person_eating_a_burger/tae_only.mp4",
+          "key_steps": [],
+          "key_decode_sec_total": 0.0,
+          "key_decode_sec_mean": 0.0,
+          "steady_tae_group_sec_mean": 0.01074536560724179,
+          "steady_tae_sec_per_frame": 0.0026863414018104474,
+          "avg_key_decode_sec_per_latent_step": 0.0,
+          "avg_key_decode_sec_per_output_frame": 0.0,
+          "estimated_total_sec_per_output_frame": 0.0026863414018104474,
+          "target_frame_budget_sec": 0.041666666666666664,
+          "estimated_realtime_possible": true,
+          "mp4_psnr_db": 36.330335,
+          "mp4_ssim": 0.956674,
+          "mp4_bytes": 11091348
+        },
+        {
+          "variant": "k8_w3_keyreplace",
+          "key_interval_latent": 8,
+          "vae_window_latent": 3,
+          "repair_mode": "keyreplace",
+          "residual_decay": 1.0,
+          "raw_frame_mse": 38.55599594116211,
+          "raw_frame_psnr_db": 32.26988434987488,
+          "mp4_path": "/root/LatentsCompress/examples/profiling/wan22_hybrid_decode_sanity/000_subject_consistency_r00_p003_a_person_eating_a_burger/k8_w3_keyreplace.mp4",
+          "key_steps": [
+            0,
+            8,
+            16,
+            24
+          ],
+          "key_decode_sec_total": 4.054539488628507,
+          "key_decode_sec_mean": 1.0136348721571267,
+          "anchor_raw_frame_psnr_db_mean": Infinity,
+          "anchor_raw_frame_psnr_db_min": 37.1444184280262,
+          "anchor_vs_tae_raw_frame_psnr_db_mean": 34.50155469898617,
+          "anchor_vs_tae_raw_frame_psnr_db_min": 30.23828757806933,
+          "steady_tae_group_sec_mean": 0.01074536560724179,
+          "steady_tae_sec_per_frame": 0.0026863414018104474,
+          "avg_key_decode_sec_per_latent_step": 0.13079159640737117,
+          "avg_key_decode_sec_per_output_frame": 0.032697899101842794,
+          "estimated_total_sec_per_output_frame": 0.03538424050365324,
+          "target_frame_budget_sec": 0.041666666666666664,
+          "estimated_realtime_possible": true,
+          "serial_required_initial_buffer_sec": 0.3720045263568563,
+          "serial_required_initial_buffer_frames": 9,
+          "serial_peak_step_decode_sec": 1.3098080269992352,
+          "serial_peak_step_budget_sec": 0.16666666666666666,
+          "serial_deadline_miss_step_count": 4,
+          "serial_deadline_miss_steps": [
+            0,
+            8,
+            16,
+            24
+          ],
+          "serial_realtime_without_prefetch": false,
+          "mp4_psnr_db": 36.546318,
+          "mp4_ssim": 0.95928,
+          "mp4_bytes": 10849117
+        }
+      ],
+      "summary": {
+        "best_raw_psnr_variant": "k8_w3_keyreplace",
+        "best_raw_psnr_db": 32.26988434987488,
+        "best_mp4_psnr_variant": "k8_w3_keyreplace",
+        "best_mp4_psnr_db": 36.546318,
+        "estimated_realtime_possible_variants": [
+          "tae_only",
+          "k8_w3_keyreplace"
+        ]
+      }
+    }
+  ]
+}

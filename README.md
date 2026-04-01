@@ -59,6 +59,20 @@ This repository now also includes Wan/Open-Sora VAE streaming decode benchmarks 
 - Scripts are in `scripts/benchmark_wan_streaming_decode.py`, `scripts/check_streaming_vae_decode.py`, `scripts/compare_wan_full_vs_stream_decode.py`, `scripts/compare_opensora_temporal_overlap.py`, and `scripts/wan_streaming_decode.py`.
 - Benchmark outputs are under `examples/streaming/`.
 
+## Wan2.2 VAE/TAE Decode Studies
+
+This repository now also tracks a dedicated set of Wan2.2 `VAE` versus `TAE` decode experiments, including:
+
+- streaming timing and Nsight-based decode characterization
+- sparse `VAE` anchor plus `TAE` hybrid decode pilots
+- oracle upper-bound studies for sparse repair
+- stronger GPU-native causal repair prototypes
+- server-side `TAE -> VAE` relation side-info experiments
+
+Start with:
+
+- `examples/profiling/wan22_vae_tae_experiments.md`
+
 ## VBench Prompt Generation Assets
 
 This repository also includes the fixed-prompt VBench manifests and generation helpers used for Wan and follow-up model runs:

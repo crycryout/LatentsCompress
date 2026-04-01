@@ -1,0 +1,14 @@
+[
+  {
+    "Time (%)": 100.0,
+    "Total Time (ns)": 332685422,
+    "Instances": 1,
+    "Avg (ns)": 332685422.0,
+    "Med (ns)": 332685422.0,
+    "Min (ns)": 332685422,
+    "Max (ns)": 332685422,
+    "StdDev (ns)": 0.0,
+    "Style": "PushPop",
+    "Range": ":decode"
+  }
+]
