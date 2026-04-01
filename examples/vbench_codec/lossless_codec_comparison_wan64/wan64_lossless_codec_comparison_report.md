@@ -1,0 +1,89 @@
+# Wan2.2 64 Latents Lossless Codec Comparison
+
+This report compares three lossless latent compression routes:
+
+- `zstd` on the serialized `.pt` bytes
+- `openzl` on the original latent `.pt` bytes
+- `pcodec` on the numeric latent tensor payload
+
+## Summary
+
+- sample_count: `64`
+- zstd_total_mb: `1224.206334`
+- openzl_total_mb: `1224.839651`
+- pcodec_total_mb: `1085.278405`
+- pcodec_minus_zstd_mb: `-138.927929`
+- pcodec_minus_openzl_mb: `-139.561246`
+- best_codec_counts: `{'zstd': 0, 'openzl': 0, 'pcodec': 64}`
+- all_pcodec_lossless: `True`
+- all_zstd_lossless: `True`
+- all_openzl_lossless: `True`
+
+## Per-sample quick table
+
+| name | zstd_mb | openzl_mb | pcodec_mb | best_codec |
+|---|---:|---:|---:|---|
+| `000_subject_consistency_r00_p003_a_person_eating_a_burger` | `19.196455` | `19.192452` | `17.037039` | `pcodec` |
+| `001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed` | `19.248919` | `19.252123` | `16.942656` | `pcodec` |
+| `002_subject_consistency_r02_p031_a_truck_anchored_in_a_tranquil_bay` | `18.946847` | `18.984823` | `16.348334` | `pcodec` |
+| `003_subject_consistency_r03_p035_a_boat_sailing_smoothly_on_a_calm_lake` | `19.056187` | `19.080351` | `16.538767` | `pcodec` |
+| `004_background_consistency_r00_p013_bridge` | `19.015279` | `19.046269` | `16.560867` | `pcodec` |
+| `005_background_consistency_r01_p017_campus` | `19.133089` | `19.156024` | `16.83274` | `pcodec` |
+| `006_background_consistency_r02_p028_downtown` | `19.140739` | `19.151372` | `17.056508` | `pcodec` |
+| `007_background_consistency_r03_p069_ski_slope` | `19.06913` | `19.097315` | `16.652053` | `pcodec` |
+| `008_temporal_flickering_r00_p003_a_tranquil_tableau_of_alley` | `19.09579` | `19.106864` | `17.00013` | `pcodec` |
+| `009_temporal_flickering_r01_p004_a_tranquil_tableau_of_bar` | `19.13838` | `19.144557` | `17.035004` | `pcodec` |
+| `010_temporal_flickering_r02_p011_a_tranquil_tableau_of_house` | `19.074892` | `19.095883` | `16.808801` | `pcodec` |
+| `011_temporal_flickering_r03_p054_a_tranquil_tableau_of_in_the_heart_of_plaka_the_neoclassical_architecture_of_the` | `19.074794` | `19.090601` | `16.866316` | `pcodec` |
+| `012_motion_smoothness_r00_p011_a_car_stuck_in_traffic_during_rush_hour` | `19.205602` | `19.207137` | `16.912936` | `pcodec` |
+| `013_motion_smoothness_r01_p027_a_train_speeding_down_the_tracks` | `19.229296` | `19.239311` | `16.963467` | `pcodec` |
+| `014_motion_smoothness_r02_p029_a_train_accelerating_to_gain_speed` | `19.272225` | `19.270374` | `16.849134` | `pcodec` |
+| `015_motion_smoothness_r03_p064_a_bear_climbing_a_tree` | `19.249323` | `19.245059` | `17.402995` | `pcodec` |
+| `016_dynamic_degree_r00_p003_a_person_eating_a_burger` | `19.195698` | `19.192351` | `17.037039` | `pcodec` |
+| `017_dynamic_degree_r01_p025_a_bus_stuck_in_traffic_during_rush_hour` | `19.219874` | `19.223248` | `17.042109` | `pcodec` |
+| `018_dynamic_degree_r02_p069_a_giraffe_bending_down_to_drink_water_from_a_river` | `19.163242` | `19.182935` | `17.196082` | `pcodec` |
+| `019_dynamic_degree_r03_p071_a_giraffe_running_to_join_a_herd_of_its_kind` | `19.037801` | `19.074254` | `16.727583` | `pcodec` |
+| `020_aesthetic_quality_r00_p028_origami_dancers_in_white_paper_3d_render_on_white_background_studio_shot_dancing` | `19.002682` | `19.00382` | `16.976261` | `pcodec` |
+| `021_aesthetic_quality_r01_p053_a_jellyfish_floating_through_the_ocean_with_bioluminescent_tentacles` | `18.648128` | `18.675305` | `16.544369` | `pcodec` |
+| `022_aesthetic_quality_r02_p057_a_steam_train_moving_on_a_mountainside` | `19.220958` | `19.231604` | `16.913273` | `pcodec` |
+| `023_aesthetic_quality_r03_p075_a_happy_fuzzy_panda_playing_guitar_nearby_a_campfire_snow_mountain_in_the_backgr` | `19.270686` | `19.268386` | `17.159358` | `pcodec` |
+| `024_imaging_quality_r00_p000_close_up_of_grapes_on_a_rotating_table` | `19.273631` | `19.271063` | `17.116759` | `pcodec` |
+| `025_imaging_quality_r01_p020_a_shark_is_swimming_in_the_ocean` | `18.629673` | `18.634337` | `16.211276` | `pcodec` |
+| `026_imaging_quality_r02_p035_busy_freeway_at_night` | `18.933355` | `18.959889` | `16.32756` | `pcodec` |
+| `027_imaging_quality_r03_p089_hyper_realistic_spaceship_landing_on_mars` | `19.149625` | `19.14842` | `17.041338` | `pcodec` |
+| `028_object_class_r00_p019_a_cow` | `19.167705` | `19.179334` | `16.967301` | `pcodec` |
+| `029_object_class_r01_p035_a_baseball_glove` | `19.239508` | `19.23984` | `17.035784` | `pcodec` |
+| `030_object_class_r02_p043_a_knife` | `19.229142` | `19.227965` | `17.398196` | `pcodec` |
+| `031_object_class_r03_p054_a_donut` | `19.186297` | `19.192086` | `17.168694` | `pcodec` |
+| `032_multiple_objects_r00_p011_a_couch_and_a_potted_plant` | `19.229808` | `19.229126` | `17.307884` | `pcodec` |
+| `033_multiple_objects_r01_p013_a_tv_and_a_laptop` | `19.221691` | `19.219888` | `17.135436` | `pcodec` |
+| `034_multiple_objects_r02_p027_a_teddy_bear_and_a_frisbee` | `19.207647` | `19.212046` | `17.085601` | `pcodec` |
+| `035_multiple_objects_r03_p043_a_car_and_a_motorcycle` | `19.241339` | `19.243629` | `17.063776` | `pcodec` |
+| `036_human_action_r00_p012_a_person_is_skateboarding` | `19.237382` | `19.242333` | `17.03343` | `pcodec` |
+| `037_human_action_r01_p044_a_person_is_planting_trees` | `19.236221` | `19.23452` | `17.269273` | `pcodec` |
+| `038_human_action_r02_p045_a_person_is_sharpening_knives` | `19.314131` | `19.3084` | `17.266179` | `pcodec` |
+| `039_human_action_r03_p048_a_person_is_hula_hooping` | `19.223637` | `19.231328` | `17.127138` | `pcodec` |
+| `040_color_r00_p005_a_purple_bicycle` | `19.240626` | `19.242142` | `17.172337` | `pcodec` |
+| `041_color_r01_p033_a_blue_umbrella` | `19.139307` | `19.15759` | `17.056087` | `pcodec` |
+| `042_color_r02_p058_a_red_chair` | `19.248359` | `19.246897` | `17.194735` | `pcodec` |
+| `043_color_r03_p077_a_green_vase` | `19.143487` | `19.147303` | `17.270546` | `pcodec` |
+| `044_spatial_relationship_r00_p010_a_bird_on_the_left_of_a_cat_front_view` | `19.229812` | `19.231261` | `17.349844` | `pcodec` |
+| `045_spatial_relationship_r01_p015_a_cow_on_the_right_of_an_elephant_front_view` | `19.207504` | `19.206861` | `17.205875` | `pcodec` |
+| `046_spatial_relationship_r02_p048_a_train_on_the_right_of_a_boat_front_view` | `19.203575` | `19.214237` | `16.91779` | `pcodec` |
+| `047_spatial_relationship_r03_p068_a_pizza_on_the_top_of_a_donut_front_view` | `19.157555` | `19.154281` | `17.183839` | `pcodec` |
+| `048_scene_r00_p037_golf_course` | `19.049102` | `19.080097` | `16.568119` | `pcodec` |
+| `049_scene_r01_p070_sky` | `18.947163` | `18.983457` | `16.377131` | `pcodec` |
+| `050_scene_r02_p079_train_railway` | `19.17579` | `19.190907` | `16.913895` | `pcodec` |
+| `051_scene_r03_p080_train_station_platform` | `19.156069` | `19.167587` | `16.94811` | `pcodec` |
+| `052_temporal_style_r00_p024_a_shark_is_swimming_in_the_ocean_pan_right` | `18.67452` | `18.717815` | `16.435321` | `pcodec` |
+| `053_temporal_style_r01_p046_a_cute_happy_corgi_playing_in_park_sunset_tilt_down` | `19.165886` | `19.185851` | `16.990895` | `pcodec` |
+| `054_temporal_style_r02_p073_a_couple_in_formal_evening_wear_going_home_get_caught_in_a_heavy_downpour_with_u` | `19.139664` | `19.143834` | `17.280264` | `pcodec` |
+| `055_temporal_style_r03_p090_snow_rocky_mountains_peaks_canyon_snow_blanketed_rocky_mountains_surround_and_sh` | `19.086813` | `19.097279` | `16.977897` | `pcodec` |
+| `056_appearance_style_r00_p005_a_beautiful_coastal_beach_in_spring_waves_lapping_on_sand_in_cyberpunk_style` | `19.075789` | `19.089971` | `16.818661` | `pcodec` |
+| `057_appearance_style_r01_p008_a_beautiful_coastal_beach_in_spring_waves_lapping_on_sand_surrealism_style` | `18.965461` | `18.985347` | `16.615434` | `pcodec` |
+| `058_appearance_style_r02_p029_a_panda_drinking_coffee_in_a_cafe_in_paris_by_hokusai_in_the_style_of_ukiyo` | `19.208306` | `19.211916` | `17.093049` | `pcodec` |
+| `059_appearance_style_r03_p084_snow_rocky_mountains_peaks_canyon_snow_blanketed_rocky_mountains_surround_and_sh` | `19.091608` | `19.091858` | `17.01584` | `pcodec` |
+| `060_overall_consistency_r00_p010_fireworks` | `19.052537` | `19.063622` | `17.135031` | `pcodec` |
+| `061_overall_consistency_r01_p012_flying_through_fantasy_landscapes` | `19.179482` | `19.195843` | `16.872999` | `pcodec` |
+| `062_overall_consistency_r02_p029_campfire_at_night_in_a_snowy_forest_with_starry_sky_in_the_background` | `19.066068` | `19.06524` | `16.969327` | `pcodec` |
+| `063_overall_consistency_r03_p037_an_astronaut_is_riding_a_horse_in_the_space_in_a_photorealistic_style` | `18.975043` | `18.981833` | `16.955933` | `pcodec` |
