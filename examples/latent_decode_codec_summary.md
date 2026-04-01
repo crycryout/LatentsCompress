@@ -14,6 +14,77 @@ Primary source files:
 - `examples/streaming/hunyuan/coastline_720p121f50_accel_flash_temporal_chunked_remux.mp4`
 - `examples/vbench_generation/ltxvideo_smoketest/ltx_car_704x512_81f16fps_30s_stats.json`
 
+## 0. Wan64 quick table
+
+This table puts the 64 Wan2.2 TI2V-5B videos into one compact view. Precision-loss columns use raw-frame PSNR against the baseline latent decode, so **higher is better**.
+
+| sample | latent_pt_mb | intra_latent_mb | inter_latent_mb | mp4_mb | intra_raw_psnr_db | inter_raw_psnr_db |
+|---|---:|---:|---:|---:|---:|---:|
+| `000_subject_consistency_r00_p003_a_person_eating_a_burger` | `20.9534` | `4.586` | `4.2159` | `8.1929` | `54.745446` | `46.498933` |
+| `001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed` | `20.9535` | `4.4768` | `4.0381` | `11.2583` | `51.792594` | `40.952894` |
+| `002_subject_consistency_r02_p031_a_truck_anchored_in_a_tranquil_bay` | `20.9536` | `4.1801` | `3.5553` | `14.5095` | `44.622505` | `41.031064` |
+| `003_subject_consistency_r03_p035_a_boat_sailing_smoothly_on_a_calm_lake` | `20.9537` | `4.3693` | `4.065` | `12.6946` | `49.253695` | `40.557102` |
+| `004_background_consistency_r00_p013_bridge` | `20.9531` | `4.3502` | `3.8204` | `21.1767` | `45.231172` | `38.817723` |
+| `005_background_consistency_r01_p017_campus` | `20.9531` | `4.4095` | `3.9097` | `18.3521` | `46.392182` | `37.859855` |
+| `006_background_consistency_r02_p028_downtown` | `20.9531` | `4.6186` | `4.0505` | `21.6564` | `46.39134` | `38.493377` |
+| `007_background_consistency_r03_p069_ski_slope` | `20.9531` | `4.4378` | `4.1571` | `20.2891` | `45.770144` | `35.087575` |
+| `008_temporal_flickering_r00_p003_a_tranquil_tableau_of_alley` | `20.9534` | `4.609` | `3.6296` | `15.6651` | `43.575338` | `39.314796` |
+| `009_temporal_flickering_r01_p004_a_tranquil_tableau_of_bar` | `20.9534` | `4.5067` | `3.7717` | `18.4166` | `45.367137` | `38.21461` |
+| `010_temporal_flickering_r02_p011_a_tranquil_tableau_of_house` | `20.9534` | `4.4731` | `3.4468` | `19.817` | `41.502363` | `37.82547` |
+| `011_temporal_flickering_r03_p054_a_tranquil_tableau_of_in_the_heart_of_plaka_the_neoclassical_architecture_of_the` | `20.9542` | `4.6539` | `3.6958` | `16.2356` | `39.691545` | `40.592788` |
+| `012_motion_smoothness_r00_p011_a_car_stuck_in_traffic_during_rush_hour` | `20.9536` | `4.5158` | `4.2009` | `14.3742` | `50.146063` | `40.116792` |
+| `013_motion_smoothness_r01_p027_a_train_speeding_down_the_tracks` | `20.9535` | `4.5625` | `4.205` | `14.4808` | `48.8182` | `38.585702` |
+| `014_motion_smoothness_r02_p029_a_train_accelerating_to_gain_speed` | `20.9535` | `4.4158` | `4.2045` | `13.264` | `48.189849` | `37.413926` |
+| `015_motion_smoothness_r03_p064_a_bear_climbing_a_tree` | `20.9532` | `4.6932` | `4.353` | `20.3969` | `48.530903` | `37.686396` |
+| `016_dynamic_degree_r00_p003_a_person_eating_a_burger` | `20.9532` | `4.586` | `4.2159` | `8.1929` | `54.745446` | `46.498933` |
+| `017_dynamic_degree_r01_p025_a_bus_stuck_in_traffic_during_rush_hour` | `20.9536` | `4.5076` | `4.1714` | `15.7961` | `48.708808` | `38.507059` |
+| `018_dynamic_degree_r02_p069_a_giraffe_bending_down_to_drink_water_from_a_river` | `20.9538` | `4.6678` | `4.2712` | `20.5115` | `46.917985` | `39.177318` |
+| `019_dynamic_degree_r03_p071_a_giraffe_running_to_join_a_herd_of_its_kind` | `20.9537` | `4.4475` | `3.9263` | `15.2065` | `50.327071` | `41.117357` |
+| `020_aesthetic_quality_r00_p028_origami_dancers_in_white_paper_3d_render_on_white_background_studio_shot_dancing` | `20.9542` | `4.3461` | `3.9128` | `7.4505` | `52.317718` | `43.626884` |
+| `021_aesthetic_quality_r01_p053_a_jellyfish_floating_through_the_ocean_with_bioluminescent_tentacles` | `20.954` | `4.5808` | `4.1563` | `9.6369` | `57.882447` | `50.151216` |
+| `022_aesthetic_quality_r02_p057_a_steam_train_moving_on_a_mountainside` | `20.9536` | `4.4389` | `4.0723` | `19.3017` | `44.590023` | `36.087879` |
+| `023_aesthetic_quality_r03_p075_a_happy_fuzzy_panda_playing_guitar_nearby_a_campfire_snow_mountain_in_the_backgr` | `20.9541` | `4.566` | `3.6958` | `10.1852` | `47.018615` | `40.655689` |
+| `024_imaging_quality_r00_p000_close_up_of_grapes_on_a_rotating_table` | `20.9536` | `4.6221` | `4.1324` | `8.2745` | `54.159306` | `44.83245` |
+| `025_imaging_quality_r01_p020_a_shark_is_swimming_in_the_ocean` | `20.9534` | `4.2955` | `3.8452` | `8.3106` | `57.034181` | `48.939675` |
+| `026_imaging_quality_r02_p035_busy_freeway_at_night` | `20.9532` | `4.3804` | `3.95` | `5.2977` | `55.294019` | `48.619834` |
+| `027_imaging_quality_r03_p089_hyper_realistic_spaceship_landing_on_mars` | `20.9536` | `4.637` | `4.084` | `14.6645` | `51.009765` | `44.040252` |
+| `028_object_class_r00_p019_a_cow` | `20.953` | `4.5025` | `3.9404` | `17.1499` | `46.043908` | `37.67202` |
+| `029_object_class_r01_p035_a_baseball_glove` | `20.9531` | `4.6189` | `3.8916` | `8.7811` | `50.36334` | `41.521656` |
+| `030_object_class_r02_p043_a_knife` | `20.9531` | `4.6768` | `3.9163` | `11.5613` | `50.981421` | `42.538291` |
+| `031_object_class_r03_p054_a_donut` | `20.9531` | `4.666` | `4.0864` | `15.9801` | `49.282057` | `40.247947` |
+| `032_multiple_objects_r00_p011_a_couch_and_a_potted_plant` | `20.9533` | `4.7462` | `3.6431` | `7.4389` | `49.634319` | `46.25754` |
+| `033_multiple_objects_r01_p013_a_tv_and_a_laptop` | `20.9532` | `4.5795` | `3.4893` | `9.4589` | `44.756019` | `40.851593` |
+| `034_multiple_objects_r02_p027_a_teddy_bear_and_a_frisbee` | `20.9533` | `4.4948` | `3.7014` | `13.285` | `45.543203` | `37.855794` |
+| `035_multiple_objects_r03_p043_a_car_and_a_motorcycle` | `20.9532` | `4.5436` | `4.0147` | `15.0377` | `48.884868` | `41.414493` |
+| `036_human_action_r00_p012_a_person_is_skateboarding` | `20.9532` | `4.5393` | `4.1571` | `11.0403` | `53.437785` | `43.578868` |
+| `037_human_action_r01_p044_a_person_is_planting_trees` | `20.9532` | `4.7` | `4.1076` | `20.5667` | `46.169286` | `37.336303` |
+| `038_human_action_r02_p045_a_person_is_sharpening_knives` | `20.9533` | `4.5895` | `4.0676` | `7.4881` | `54.797969` | `45.20836` |
+| `039_human_action_r03_p048_a_person_is_hula_hooping` | `20.9532` | `4.616` | `4.1683` | `15.9243` | `51.035007` | `40.742666` |
+| `040_color_r00_p005_a_purple_bicycle` | `20.9531` | `4.661` | `4.0514` | `15.8151` | `48.237636` | `39.309906` |
+| `041_color_r01_p033_a_blue_umbrella` | `20.9531` | `4.6206` | `3.8592` | `14.2675` | `45.29574` | `37.307713` |
+| `042_color_r02_p058_a_red_chair` | `20.953` | `4.7602` | `3.5351` | `6.7318` | `50.675337` | `44.468963` |
+| `043_color_r03_p077_a_green_vase` | `20.953` | `4.8245` | `3.6808` | `4.7503` | `54.390409` | `50.707787` |
+| `044_spatial_relationship_r00_p010_a_bird_on_the_left_of_a_cat_front_view` | `20.9537` | `4.6709` | `3.4765` | `8.5266` | `48.271618` | `39.745333` |
+| `045_spatial_relationship_r01_p015_a_cow_on_the_right_of_an_elephant_front_view` | `20.9538` | `4.6415` | `3.898` | `12.0164` | `48.870708` | `40.661296` |
+| `046_spatial_relationship_r02_p048_a_train_on_the_right_of_a_boat_front_view` | `20.9537` | `4.4824` | `4.1409` | `12.7993` | `47.701582` | `40.737295` |
+| `047_spatial_relationship_r03_p068_a_pizza_on_the_top_of_a_donut_front_view` | `20.9537` | `4.7353` | `3.5087` | `5.0242` | `53.845232` | `47.529948` |
+| `048_scene_r00_p037_golf_course` | `20.953` | `4.2147` | `3.6682` | `13.3739` | `47.182873` | `42.00202` |
+| `049_scene_r01_p070_sky` | `20.953` | `4.1681` | `3.8494` | `25.0092` | `44.777076` | `37.148761` |
+| `050_scene_r02_p079_train_railway` | `20.953` | `4.4974` | `4.0592` | `20.0937` | `46.895766` | `36.962137` |
+| `051_scene_r03_p080_train_station_platform` | `20.9531` | `4.4523` | `3.8262` | `15.6896` | `44.697709` | `39.153095` |
+| `052_temporal_style_r00_p024_a_shark_is_swimming_in_the_ocean_pan_right` | `20.9536` | `4.352` | `4.1018` | `7.8704` | `56.708861` | `48.291774` |
+| `053_temporal_style_r01_p046_a_cute_happy_corgi_playing_in_park_sunset_tilt_down` | `20.9538` | `4.6281` | `4.0571` | `12.8135` | `50.911159` | `40.946233` |
+| `054_temporal_style_r02_p073_a_couple_in_formal_evening_wear_going_home_get_caught_in_a_heavy_downpour_with_u` | `20.9541` | `4.6294` | `4.198` | `9.2594` | `54.13599` | `45.453791` |
+| `055_temporal_style_r03_p090_snow_rocky_mountains_peaks_canyon_snow_blanketed_rocky_mountains_surround_and_sh` | `20.9542` | `4.6696` | `3.4444` | `14.214` | `39.35475` | `40.786059` |
+| `056_appearance_style_r00_p005_a_beautiful_coastal_beach_in_spring_waves_lapping_on_sand_in_cyberpunk_style` | `20.9541` | `4.5858` | `4.0618` | `14.5865` | `50.448831` | `42.576134` |
+| `057_appearance_style_r01_p008_a_beautiful_coastal_beach_in_spring_waves_lapping_on_sand_surrealism_style` | `20.9541` | `4.5342` | `4.1277` | `8.8957` | `53.952535` | `47.783368` |
+| `058_appearance_style_r02_p029_a_panda_drinking_coffee_in_a_cafe_in_paris_by_hokusai_in_the_style_of_ukiyo` | `20.9541` | `4.6482` | `3.1942` | `8.5062` | `45.564344` | `38.263486` |
+| `059_appearance_style_r03_p084_snow_rocky_mountains_peaks_canyon_snow_blanketed_rocky_mountains_surround_and_sh` | `20.9542` | `4.7004` | `3.547` | `15.676` | `38.871831` | `39.826946` |
+| `060_overall_consistency_r00_p010_fireworks` | `20.9531` | `4.7515` | `4.4287` | `21.2748` | `45.17589` | `34.383125` |
+| `061_overall_consistency_r01_p012_flying_through_fantasy_landscapes` | `20.9535` | `4.4817` | `4.174` | `23.8543` | `46.908143` | `36.408605` |
+| `062_overall_consistency_r02_p029_campfire_at_night_in_a_snowy_forest_with_starry_sky_in_the_background` | `20.954` | `4.6155` | `3.4197` | `6.8089` | `52.877689` | `43.406198` |
+| `063_overall_consistency_r03_p037_an_astronaut_is_riding_a_horse_in_the_space_in_a_photorealistic_style` | `20.954` | `4.7427` | `4.2807` | `10.2134` | `48.429202` | `39.67515` |
+
 ## 1. Wan2.2 TI2V-5B: 64-video latent codec benchmark
 
 Dataset:
