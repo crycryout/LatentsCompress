@@ -102,3 +102,13 @@ Local Codex conversation artifacts for this project have also been archived unde
 - full session rollouts under `examples/codex_chat/sessions/2026/03/31/`
 
 Sensitive local authentication files such as Codex auth tokens or SSH credentials are intentionally excluded.
+
+## Skills
+
+This repository now also includes reusable Codex skills for the three main experiment tracks:
+
+- `skills/video-model-inference/`: model inference workflows and feasibility notes for Wan, Hunyuan, LTX, and LTX-2
+- `skills/video-vae-decode/`: streaming, tiled, and unofficial chunked VAE decode workflows and conclusions
+- `skills/latent-codec-bench/`: latent compression workflows and quantitative codec conclusions
+
+The skills are designed to point back to the scripts and lightweight reports already tracked in this repo.
