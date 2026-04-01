@@ -76,7 +76,13 @@ The complete 64-sample Wan2.2-TI2V-5B VBench latent codec benchmark is included 
 - `examples/vbench_codec/wan64_codec_report.md`
 - `examples/vbench_codec/wan64_summary.json`
 
-Large binary artifacts such as all generated MP4s, reconstructed MP4s, and compressed latent containers are intentionally not committed to GitHub to keep the repository manageable; the repo contains the scripts and reports needed to reproduce and inspect the experiments.
+To make the results easier to inspect, the repository now includes 10 curated playable MP4 triplets under `examples/vbench_codec/video_samples/`:
+
+- `baseline_mp4/`: uncompressed baseline videos
+- `intra_q8_zstd/`: videos reconstructed from intra latent compression
+- `inter_delta_q8_zstd/`: videos reconstructed from inter latent compression
+
+The full 64-sample binary artifact set is still intentionally excluded to keep the repository manageable; the repo contains the scripts, lightweight reports, and a small playable sample pack for inspection.
 
 ## Codex Chat Logs
 

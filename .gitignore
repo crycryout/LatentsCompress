@@ -8,6 +8,7 @@ __pycache__/
 *.safetensors
 *.bin
 *.mp4
+!examples/vbench_codec/video_samples/**/*.mp4
 *.mov
 *.avi
 *.mkv
