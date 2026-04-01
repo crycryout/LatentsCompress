@@ -5,15 +5,8 @@ from pathlib import Path
 
 import numpy as np
 import torch
+import diffusers
 from huggingface_hub import hf_hub_download
-from diffusers import (
-    AutoencoderKLHunyuanVideo15,
-    CogVideoXPipeline,
-    HunyuanVideo15Pipeline,
-    HunyuanVideo15Transformer3DModel,
-    LTX2Pipeline,
-    LTXPipeline,
-)
 from diffusers.utils import export_to_video
 
 
@@ -22,6 +15,16 @@ PROMPT = (
     "sharp turns, splashing through puddles, dramatic motion blur, dynamic camera movement, flying sparks, "
     "wind-blown jacket, cinematic lighting, highly detailed, realistic."
 )
+
+
+def require_diffusers_attr(name):
+    value = getattr(diffusers, name, None)
+    if value is None:
+        raise ImportError(
+            f"Current diffusers build ({diffusers.__version__}) does not provide {name}. "
+            "Upgrade diffusers to a build that includes this pipeline/model before running."
+        )
+    return value
 
 
 def to_frame_list(video):
@@ -59,8 +62,11 @@ def load_pipeline(args):
     dtype = torch.bfloat16
 
     if args.family == "cog":
+        CogVideoXPipeline = require_diffusers_attr("CogVideoXPipeline")
         pipe = CogVideoXPipeline.from_pretrained(args.model_id, torch_dtype=dtype)
     elif args.family == "hunyuan":
+        HunyuanVideo15Pipeline = require_diffusers_attr("HunyuanVideo15Pipeline")
+        HunyuanVideo15Transformer3DModel = require_diffusers_attr("HunyuanVideo15Transformer3DModel")
         if args.transformer_subfolder:
             cfg_path = hf_hub_download(args.model_id, f"{args.transformer_subfolder}/config.json")
             raw_cfg = json.loads(Path(cfg_path).read_text())
@@ -102,15 +108,34 @@ def load_pipeline(args):
             )
         else:
             pipe = HunyuanVideo15Pipeline.from_pretrained(args.model_id, torch_dtype=dtype)
+    elif args.family == "mochi":
+        MochiPipeline = require_diffusers_attr("MochiPipeline")
+        pipe = MochiPipeline.from_pretrained(args.model_id, torch_dtype=dtype)
     elif args.family == "ltx":
+        LTX2Pipeline = require_diffusers_attr("LTX2Pipeline")
+        LTXPipeline = require_diffusers_attr("LTXPipeline")
+        LTXConditionPipeline = require_diffusers_attr("LTXConditionPipeline")
+
+        model_index = None
+        model_id_path = Path(args.model_id)
+        if model_id_path.is_dir():
+            model_index_path = model_id_path / "model_index.json"
+            if model_index_path.exists():
+                model_index = json.loads(model_index_path.read_text())
+
         if "LTX-2" in args.model_id or "LTX-2." in args.model_id:
             pipe = LTX2Pipeline.from_pretrained(args.model_id, torch_dtype=dtype)
+        elif model_index and model_index.get("_class_name") == "LTXConditionPipeline":
+            pipe = LTXConditionPipeline.from_pretrained(args.model_id, torch_dtype=dtype)
         else:
             pipe = LTXPipeline.from_pretrained(args.model_id, torch_dtype=dtype)
     else:
         raise ValueError(f"Unsupported family: {args.family}")
 
-    pipe.enable_model_cpu_offload()
+    if args.cpu_offload:
+        pipe.enable_model_cpu_offload()
+    else:
+        pipe.to("cuda")
     if hasattr(pipe, "vae") and hasattr(pipe.vae, "enable_tiling"):
         pipe.vae.enable_tiling()
     if hasattr(pipe, "vae") and hasattr(pipe.vae, "enable_slicing"):
@@ -120,7 +145,7 @@ def load_pipeline(args):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--family", choices=["cog", "hunyuan", "ltx"], required=True)
+    parser.add_argument("--family", choices=["cog", "hunyuan", "mochi", "ltx"], required=True)
     parser.add_argument("--model-id", required=True)
     parser.add_argument("--transformer-subfolder")
     parser.add_argument("--width", type=int, required=True)
@@ -132,6 +157,9 @@ def main():
     parser.add_argument("--seed", type=int, default=20260331)
     parser.add_argument("--out-prefix", required=True)
     parser.add_argument("--prompt", default=PROMPT)
+    parser.add_argument("--negative-prompt", default="low quality, blurry, static shot, deformed anatomy, duplicated subject, artifacts")
+    parser.add_argument("--max-sequence-length", type=int, default=None)
+    parser.add_argument("--cpu-offload", action=argparse.BooleanOptionalAction, default=True)
     args = parser.parse_args()
 
     out_prefix = Path(args.out_prefix)
@@ -143,9 +171,10 @@ def main():
     pipe = load_pipeline(args)
     generator = torch.Generator(device="cpu").manual_seed(args.seed)
     if args.family == "hunyuan":
+        AutoencoderKLHunyuanVideo15 = require_diffusers_attr("AutoencoderKLHunyuanVideo15")
         latent_output = pipe(
             prompt=args.prompt,
-            negative_prompt="low quality, blurry, static shot, deformed anatomy, duplicated subject, artifacts",
+            negative_prompt=args.negative_prompt,
             width=args.width,
             height=args.height,
             num_frames=args.num_frames,
@@ -158,6 +187,8 @@ def main():
             {
                 "family": args.family,
                 "model_id": args.model_id,
+                "latents_stage": "pre_vae_decode_final",
+                "latents_description": "Final denoised latents captured before VAE decode.",
                 "seed": args.seed,
                 "prompt": args.prompt,
                 "width": args.width,
@@ -206,10 +237,10 @@ def main():
 
         if args.family == "ltx":
             kwargs["frame_rate"] = args.fps
-        else:
-            kwargs["negative_prompt"] = (
-                "low quality, blurry, static shot, deformed anatomy, duplicated subject, artifacts"
-            )
+        if args.family in {"cog", "mochi"}:
+            kwargs["negative_prompt"] = args.negative_prompt
+        if args.family == "mochi" and args.max_sequence_length is not None:
+            kwargs["max_sequence_length"] = args.max_sequence_length
 
         output = pipe(**kwargs)
         frames = to_frame_list(output.frames)
@@ -226,6 +257,8 @@ def main():
             {
                 "family": args.family,
                 "model_id": args.model_id,
+                "latents_stage": "pre_vae_decode_final",
+                "latents_description": "Final denoised latents captured before VAE decode.",
                 "seed": args.seed,
                 "prompt": args.prompt,
                 "width": args.width,
@@ -258,6 +291,8 @@ def main():
         "mp4_mib": mp4_path.stat().st_size / 1024 / 1024,
         "latents_shape": list(latents.shape),
         "latents_dtype": str(latents.dtype),
+        "latents_stage": "pre_vae_decode_final",
+        "latents_description": "Final denoised latents captured before VAE decode.",
         "latents_raw_bytes": latents.numel() * latents.element_size(),
         "latents_raw_mib": (latents.numel() * latents.element_size()) / 1024 / 1024,
         "latents_pt_bytes": latent_path.stat().st_size,

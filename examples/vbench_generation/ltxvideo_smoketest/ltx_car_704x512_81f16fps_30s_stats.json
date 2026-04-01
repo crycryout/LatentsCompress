@@ -1,0 +1,35 @@
+{
+  "family": "ltx",
+  "model_id": "/workspace/models/LTX-Video-0.9.8-13B-distilled",
+  "prompt": "A dynamic tracking shot of a sports car accelerating through a rain-soaked city street at night, cinematic lighting, realistic motion.",
+  "seed": 42,
+  "width": 704,
+  "height": 512,
+  "num_frames": 81,
+  "fps": 16,
+  "frame_shape": [
+    512,
+    704,
+    3
+  ],
+  "frame_dtype": "float32",
+  "raw_video_bytes": 350355456,
+  "raw_video_mib": 334.125,
+  "mp4_bytes": 776923,
+  "mp4_mib": 0.740931510925293,
+  "latents_shape": [
+    1,
+    3872,
+    128
+  ],
+  "latents_dtype": "torch.float32",
+  "latents_stage": "pre_vae_decode_final",
+  "latents_description": "Final denoised latents captured before VAE decode.",
+  "latents_raw_bytes": 1982464,
+  "latents_raw_mib": 1.890625,
+  "latents_pt_bytes": 1984884,
+  "latents_pt_mib": 1.8929328918457031,
+  "cog_additional_frames_trimmed": 0,
+  "mp4_path": "/workspace/video_bench/ltxvideo_smoketest/ltx_car_704x512_81f16fps_30s.mp4",
+  "latents_path": "/workspace/video_bench/ltxvideo_smoketest/ltx_car_704x512_81f16fps_30s_latents.pt"
+}
