@@ -14,6 +14,17 @@ Primary source files:
 - `examples/streaming/hunyuan/coastline_720p121f50_accel_flash_temporal_chunked_remux.mp4`
 - `examples/vbench_generation/ltxvideo_smoketest/ltx_car_704x512_81f16fps_30s_stats.json`
 
+## -1. LTX and Hunyuan single-run size table
+
+This table records the currently available single-run examples for `LTX-Video` and `HunyuanVideo 1.5`.
+
+`raw_frame_mib` here means the decoded raw frame tensor size in `float32`, so it is directly comparable to an in-memory frame tensor footprint, not to an encoded MP4 container.
+
+| model | sample | resolution | frames | fps | raw_frame_mib | latent_pt_mib | mp4_mib |
+|---|---|---:|---:|---:|---:|---:|---:|
+| `LTX-Video-0.9.8-13B-distilled` | `ltx_car_704x512_81f16fps_30s` | `704x512` | `81` | `16` | `334.1250` | `1.8929` | `0.7409` |
+| `HunyuanVideo 1.5` | `coastline_720p121f50_accel_flash_temporal_chunked_remux` | `1280x720` | `121` | `24` | `1276.1719` | `13.6250` | `2.3869` |
+
 ## 0. Wan64 quick table
 
 This table puts the 64 Wan2.2 TI2V-5B videos into one compact view. Precision-loss columns use raw-frame PSNR against the baseline latent decode, so **higher is better**.
