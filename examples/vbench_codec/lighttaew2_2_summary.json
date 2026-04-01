@@ -1,0 +1,9 @@
+{
+  "sample_count": 10,
+  "mean_official_decode_sec": 16.866741979680956,
+  "mean_lighttae_decode_sec": 0.15421827509999275,
+  "mean_speedup_vs_official": 110.59522120845565,
+  "mean_raw_frame_psnr_db": 30.72266386135621,
+  "mean_mp4_psnr_db": 34.7777064,
+  "mean_mp4_ssim": 0.9597473000000001
+}

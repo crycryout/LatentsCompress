@@ -7,6 +7,11 @@ Each sample is included in three playable MP4 variants:
 - `intra_q8_zstd/`: reconstructed MP4 from `intra_q8_zstd` latent compression
 - `inter_delta_q8_zstd/`: reconstructed MP4 from `inter_delta_q8_zstd` latent compression
 
+An additional reference decode set is also included:
+- `lighttaew2_2/`: reconstructed MP4 from the same saved uncompressed Wan2.2 latents decoded with `lighttaew2_2`
+
+These 10 `lighttaew2_2` videos correspond to the same 10 prompt groups behind the 20 compressed sample videos (`10` intra + `10` inter), so they can be compared directly against both compressed variants.
+
 The selected set keeps the repository size manageable while still covering multiple VBench task families.
 
 | Sample | Task family | Baseline | Intra q8 + zstd | Inter delta q8 + zstd |
@@ -26,5 +31,20 @@ Approximate committed payload:
 - `baseline_mp4`: `65.64 MB`
 - `intra_q8_zstd`: `65.86 MB`
 - `inter_delta_q8_zstd`: `66.20 MB`
+- `lighttaew2_2`: `86.73 MB`
 
-Total sample video payload is about `197.69 MB`.
+TAE quality report files are stored one level above this folder:
+- `../lighttaew2_2_report.json`
+- `../lighttaew2_2_report.csv`
+- `../lighttaew2_2_report.md`
+- `../lighttaew2_2_summary.json`
+
+The `lighttaew2_2` summary over the 10 samples is:
+- mean official `Wan2.2_VAE` decode time: `16.8667 s`
+- mean `lighttaew2_2` decode time: `0.1542 s`
+- mean speedup: `110.5952x`
+- mean raw frame PSNR vs official decode: `30.7227 dB`
+- mean MP4 PSNR vs official decode baseline MP4: `34.7777 dB`
+- mean MP4 SSIM vs official decode baseline MP4: `0.959747`
+
+Total sample video payload is about `284.42 MB`.

@@ -84,6 +84,14 @@ To make the results easier to inspect, the repository now includes 10 curated pl
 
 The full 64-sample binary artifact set is still intentionally excluded to keep the repository manageable; the repo contains the scripts, lightweight reports, and a small playable sample pack for inspection.
 
+The repository now also includes `lighttaew2_2` reference decodes for the same 10 curated sample prompts:
+
+- MP4 outputs: `examples/vbench_codec/video_samples/lighttaew2_2/`
+- Quality reports: `examples/vbench_codec/lighttaew2_2_report.json`, `examples/vbench_codec/lighttaew2_2_report.csv`, `examples/vbench_codec/lighttaew2_2_report.md`
+- Evaluation script: `scripts/eval_wan22_lighttae_samples.py`
+
+These results compare `lighttaew2_2` against the official `Wan2.2_VAE` baseline MP4s generated from the same saved uncompressed latents.
+
 ## Codex Chat Logs
 
 Local Codex conversation artifacts for this project have also been archived under `examples/codex_chat/`:
