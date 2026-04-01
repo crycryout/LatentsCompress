@@ -1,0 +1,70 @@
+{
+  "family": "wan_ti2v_5b",
+  "latent_group_size": 1,
+  "use_torch_compile": true,
+  "compile_mode": "reduce-overhead",
+  "compile_backend": "inductor",
+  "stream_conv2_cache": false,
+  "warmup_runs": 1,
+  "cases": [
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a person eating a burger",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "full_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 15.741263711825013,
+        "fps_equivalent": 7.686803436823401
+      },
+      "stream_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 18.45188016630709,
+        "fps_equivalent": 6.557597323927158
+      },
+      "time_compare": {
+        "stream_minus_full_sec": 2.7106164544820786,
+        "stream_over_full_ratio": 1.1721981477539083,
+        "stream_slower_percent": 17.21981477539083
+      },
+      "quality_compare": {
+        "same_shape": true,
+        "float_exact_equal": false,
+        "float_mse": 1.9406385035836138e-05,
+        "float_mae": 0.001836740761063993,
+        "float_max_abs": 0.30219006538391113,
+        "uint8_exact_equal": false,
+        "uint8_mse": 0.15997900068759918,
+        "uint8_psnr": 56.0901738123714
+      }
+    }
+  ],
+  "summary": {
+    "case_count": 1,
+    "mean_full_decode_sec": 15.741263711825013,
+    "mean_stream_decode_sec": 18.45188016630709,
+    "mean_stream_over_full_ratio": 1.1721981477539083,
+    "mean_stream_slower_percent": 17.21981477539083,
+    "mean_uint8_psnr": 56.0901738123714,
+    "mean_uint8_mse": 0.15997900068759918,
+    "all_same_shape": true,
+    "all_float_exact_equal": false,
+    "all_uint8_exact_equal": false,
+    "max_float_max_abs": 0.30219006538391113
+  }
+}

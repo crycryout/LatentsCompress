@@ -1,0 +1,561 @@
+{
+  "family": "wan_ti2v_5b",
+  "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+  "latent_shape": [
+    48,
+    31,
+    44,
+    80
+  ],
+  "latent_group_size": 1,
+  "emit_mode": "as_fast_as_possible",
+  "target_fps": 24.0,
+  "full_decode": {
+    "frames": 121,
+    "time_sec": 30.3680000603199,
+    "output_fps_equivalent": 3.984457315584099
+  },
+  "stream_decode": {
+    "success": true,
+    "group_count": 31,
+    "total_frames_emitted": 121,
+    "matches_full_frame_count": true,
+    "groups": [
+      {
+        "group_index": 0,
+        "latent_start": 0,
+        "latent_len": 1,
+        "decoded_frames": 1,
+        "decode_sec": 0.21510057896375656,
+        "decode_fps": 4.648987951671182,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555485.770046076,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 1,
+        "latent_start": 1,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5837583914399147,
+        "decode_fps": 6.852149893954396,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555486.503322951,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 2,
+        "latent_start": 2,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5959779676049948,
+        "decode_fps": 6.711657506525711,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555487.26906904,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 3,
+        "latent_start": 3,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5989077910780907,
+        "decode_fps": 6.678824452758615,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555488.034999711,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 4,
+        "latent_start": 4,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5979985445737839,
+        "decode_fps": 6.688979490495167,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555488.81560584,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 5,
+        "latent_start": 5,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5972847808152437,
+        "decode_fps": 6.696972915566901,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555489.591441622,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 6,
+        "latent_start": 6,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5967754200100899,
+        "decode_fps": 6.702688927657863,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555490.367801318,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 7,
+        "latent_start": 7,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5993831604719162,
+        "decode_fps": 6.6735274925819645,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555491.137345888,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 8,
+        "latent_start": 8,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.596909848973155,
+        "decode_fps": 6.701179427481508,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555491.90543228,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 9,
+        "latent_start": 9,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5978711042553186,
+        "decode_fps": 6.690405292261482,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555492.684625566,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 10,
+        "latent_start": 10,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.597869822755456,
+        "decode_fps": 6.690419632763606,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555493.4829781,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 11,
+        "latent_start": 11,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5959559343755245,
+        "decode_fps": 6.711905644821576,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555494.264271485,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 12,
+        "latent_start": 12,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5958500653505325,
+        "decode_fps": 6.713098198028796,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555495.047888536,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 13,
+        "latent_start": 13,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5965296104550362,
+        "decode_fps": 6.7054508777004,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555495.822756464,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 14,
+        "latent_start": 14,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5966831129044294,
+        "decode_fps": 6.70372583619721,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555496.583999988,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 15,
+        "latent_start": 15,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5963691733777523,
+        "decode_fps": 6.707254798809527,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555497.345540756,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 16,
+        "latent_start": 16,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5963950604200363,
+        "decode_fps": 6.7069636646266515,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555498.104938475,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 17,
+        "latent_start": 17,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5993329472839832,
+        "decode_fps": 6.674086612669854,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555498.87774734,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 18,
+        "latent_start": 18,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5991521291434765,
+        "decode_fps": 6.676100785485378,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555499.639482228,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 19,
+        "latent_start": 19,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5990458689630032,
+        "decode_fps": 6.677285008115194,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555500.396088328,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 20,
+        "latent_start": 20,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5997030586004257,
+        "decode_fps": 6.669967649214788,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555501.15877598,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 21,
+        "latent_start": 21,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5984078757464886,
+        "decode_fps": 6.684404002888781,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555501.929862602,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 22,
+        "latent_start": 22,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5976183488965034,
+        "decode_fps": 6.693234917210895,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555502.731746348,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 23,
+        "latent_start": 23,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5982704609632492,
+        "decode_fps": 6.6859393217572105,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555503.50560472,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 24,
+        "latent_start": 24,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5975244659930468,
+        "decode_fps": 6.694286556705691,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555504.2771527,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 25,
+        "latent_start": 25,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.597075616940856,
+        "decode_fps": 6.699318958114856,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555505.045401376,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 26,
+        "latent_start": 26,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5960804782807827,
+        "decode_fps": 6.710503272203803,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555505.810661297,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 27,
+        "latent_start": 27,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5969988815486431,
+        "decode_fps": 6.700180056659089,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555506.573179565,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 28,
+        "latent_start": 28,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.5978077296167612,
+        "decode_fps": 6.691114553778511,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555507.333481977,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 29,
+        "latent_start": 29,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.601735295727849,
+        "decode_fps": 6.647441206123145,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555508.119507223,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 30,
+        "latent_start": 30,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.6000265814363956,
+        "decode_fps": 6.6663713304574825,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555508.978242528,
+        "output_shape": [
+          3,
+          4,
+          704,
+          1280
+        ],
+        "saved_group_path": null
+      }
+    ]
+  },
+  "meta": {
+    "task": "ti2v-5B",
+    "prompt": "a person eating a burger",
+    "size": "1280*704",
+    "frame_num": 121,
+    "fps": 24,
+    "seed": 42
+  }
+}

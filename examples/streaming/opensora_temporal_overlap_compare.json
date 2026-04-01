@@ -1,0 +1,106 @@
+{
+  "latent_path": "/workspace/video_bench/opensora_run_t2v/video_256px/sample_0_latents.pt",
+  "opensora_config": "/root/Open-Sora/configs/diffusion/inference/t2i2v_256px.py",
+  "cases": [
+    {
+      "label": "original_latent",
+      "latent_shape": [
+        1,
+        16,
+        5,
+        24,
+        42
+      ],
+      "full_decode": {
+        "time_sec": 0.38443780690431595,
+        "shape": [
+          1,
+          3,
+          17,
+          192,
+          336
+        ]
+      },
+      "overlap_0.0": {
+        "time_sec": 0.21206255070865154,
+        "compare_to_full": {
+          "same_shape": true,
+          "float_exact_equal": true,
+          "uint8_exact_equal": true,
+          "float_mse": 0.0,
+          "float_mae": 0.0,
+          "float_max_abs": 0.0,
+          "uint8_mse": 0.0,
+          "uint8_psnr": 100.0
+        }
+      },
+      "overlap_0.25": {
+        "time_sec": 0.20953246392309666,
+        "compare_to_full": {
+          "same_shape": true,
+          "float_exact_equal": true,
+          "uint8_exact_equal": true,
+          "float_mse": 0.0,
+          "float_mae": 0.0,
+          "float_max_abs": 0.0,
+          "uint8_mse": 0.0,
+          "uint8_psnr": 100.0
+        }
+      }
+    },
+    {
+      "label": "synthetic_extended_latent",
+      "latent_shape": [
+        1,
+        16,
+        13,
+        24,
+        42
+      ],
+      "full_decode": {
+        "time_sec": 0.5975035652518272,
+        "shape": [
+          1,
+          3,
+          49,
+          192,
+          336
+        ]
+      },
+      "overlap_0.0": {
+        "time_sec": 0.5917631927877665,
+        "compare_to_full": {
+          "same_shape": true,
+          "float_exact_equal": true,
+          "uint8_exact_equal": true,
+          "float_mse": 0.0,
+          "float_mae": 0.0,
+          "float_max_abs": 0.0,
+          "uint8_mse": 0.0,
+          "uint8_psnr": 100.0
+        }
+      },
+      "overlap_0.25": {
+        "time_sec": 0.5938850324600935,
+        "compare_to_full": {
+          "same_shape": true,
+          "float_exact_equal": true,
+          "uint8_exact_equal": true,
+          "float_mse": 0.0,
+          "float_mae": 0.0,
+          "float_max_abs": 0.0,
+          "uint8_mse": 0.0,
+          "uint8_psnr": 100.0
+        }
+      }
+    }
+  ],
+  "summary": {
+    "config_ae_type": "hunyuan_vae",
+    "spatial_tiling_disabled_for_test": true,
+    "overlap_0_equals_full_all_cases": true,
+    "overlap_0.25_equals_full_all_cases": true,
+    "mean_psnr_overlap_0.0": 100.0,
+    "mean_psnr_overlap_0.25": 100.0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "family": "wan_ti2v_5b",
+  "latent_group_size": 1,
+  "stream_conv2_cache": false,
+  "cases": [
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a person eating a burger",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "full_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 26.751747665926814,
+        "fps_equivalent": 4.523068978933117
+      },
+      "stream_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 18.36568681523204,
+        "fps_equivalent": 6.5883732646276885
+      },
+      "time_compare": {
+        "stream_minus_full_sec": -8.386060850694776,
+        "stream_over_full_ratio": 0.6865228786014628,
+        "stream_slower_percent": -31.347712139853723
+      },
+      "quality_compare": {
+        "same_shape": true,
+        "float_exact_equal": false,
+        "float_mse": 1.9393153706914745e-05,
+        "float_mae": 0.0018293090397492051,
+        "float_max_abs": 0.30227553844451904,
+        "uint8_exact_equal": false,
+        "uint8_mse": 0.1603221595287323,
+        "uint8_psnr": 56.080868067238264
+      }
+    }
+  ],
+  "summary": {
+    "case_count": 1,
+    "mean_full_decode_sec": 26.751747665926814,
+    "mean_stream_decode_sec": 18.36568681523204,
+    "mean_stream_over_full_ratio": 0.6865228786014628,
+    "mean_stream_slower_percent": -31.347712139853723,
+    "mean_uint8_psnr": 56.080868067238264,
+    "mean_uint8_mse": 0.1603221595287323,
+    "all_same_shape": true,
+    "all_float_exact_equal": false,
+    "all_uint8_exact_equal": false,
+    "max_float_max_abs": 0.30227553844451904
+  }
+}

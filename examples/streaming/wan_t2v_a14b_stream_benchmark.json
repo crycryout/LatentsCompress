@@ -1,0 +1,152 @@
+{
+  "family": "wan_t2v_a14b",
+  "latent_group_size": 1,
+  "warmup_runs": 1,
+  "measure_runs": 2,
+  "cases": [
+    {
+      "latent_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f_latents.pt",
+      "meta": {
+        "task": "t2v-A14B",
+        "prompt": "A cinematic drone shot gliding around a cliffside lighthouse at blue hour, powerful ocean waves crashing below, a warm rotating beacon sweeping through sea mist, ultra-detailed realistic lighting, atmospheric volumetric fog, natural camera motion, high detail.",
+        "size": "1280*720",
+        "frame_num": 49,
+        "fps": 16,
+        "seed": 20260331
+      },
+      "benchmark": {
+        "full_decode": {
+          "frames": 49,
+          "time_sec": 5.725570870563388,
+          "fps_equivalent": 8.558098590993158
+        },
+        "stream_decode": {
+          "group_count": 13,
+          "total_frames": 49,
+          "total_time_sec": 8.561358025297523,
+          "fps_equivalent": 5.723391061933444,
+          "first_group_latency_sec": 0.15637044049799442,
+          "first_group_frames": 1,
+          "first_frame_latency_lower_bound_sec": 0.15637044049799442,
+          "steady_group_decode_sec_mean": 0.5203817615595957,
+          "steady_group_decode_sec_median": 0.5215743482112885,
+          "steady_group_decode_sec_cv": 0.008890291953714645,
+          "steady_group_frames_mean": 4.0,
+          "steady_fps": 7.686664474965286,
+          "groups": [
+            {
+              "latent_start": 0,
+              "latent_len": 1,
+              "decoded_frames": 1,
+              "decode_sec": 0.15637044049799442,
+              "decode_fps": 6.395070556911463
+            },
+            {
+              "latent_start": 1,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5051531475037336,
+              "decode_fps": 7.918390729160874
+            },
+            {
+              "latent_start": 2,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5207109991461039,
+              "decode_fps": 7.681804314791627
+            },
+            {
+              "latent_start": 3,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5228461064398289,
+              "decode_fps": 7.6504347086695486
+            },
+            {
+              "latent_start": 4,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5213133599609137,
+              "decode_fps": 7.672928237058622
+            },
+            {
+              "latent_start": 5,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.521335780620575,
+              "decode_fps": 7.672598253736925
+            },
+            {
+              "latent_start": 6,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5221498273313046,
+              "decode_fps": 7.6606364507365745
+            },
+            {
+              "latent_start": 7,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5216880477964878,
+              "decode_fps": 7.667417371157433
+            },
+            {
+              "latent_start": 8,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5218880753964186,
+              "decode_fps": 7.664478627839232
+            },
+            {
+              "latent_start": 9,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5213278215378523,
+              "decode_fps": 7.672715390865765
+            },
+            {
+              "latent_start": 10,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5224752444773912,
+              "decode_fps": 7.655865119506326
+            },
+            {
+              "latent_start": 11,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5222320798784494,
+              "decode_fps": 7.659429885906297
+            },
+            {
+              "latent_start": 12,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5214606486260891,
+              "decode_fps": 7.670760987504891
+            }
+          ]
+        },
+        "playback_feasibility": {
+          "target_fps": 16.0,
+          "realtime_possible_after_first_group": false,
+          "realtime_possible_full_decode": false,
+          "steady_rate_over_target": 0.4804165296853304,
+          "first_group_playback_coverage_sec": 0.0625,
+          "producer_consumer_gap_sec": 0.06759544038989893
+        }
+      }
+    }
+  ],
+  "summary": {
+    "case_count": 1,
+    "full_decode_fps_equivalent_mean": 8.558098590993158,
+    "stream_decode_fps_equivalent_mean": 5.723391061933444,
+    "first_group_latency_sec_mean": 0.15637044049799442,
+    "steady_fps_mean": 7.686664474965286,
+    "steady_group_decode_sec_mean": 0.5203817615595957,
+    "steady_group_decode_sec_cv_mean": 0.008890291953714645,
+    "realtime_possible_after_first_group_all": false,
+    "realtime_possible_after_first_group_any": false
+  }
+}

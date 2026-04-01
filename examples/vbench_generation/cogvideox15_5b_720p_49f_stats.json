@@ -1,0 +1,35 @@
+{
+  "family": "cog",
+  "model_id": "zai-org/CogVideoX1.5-5B",
+  "prompt": "A fast handheld tracking shot following a cyclist racing downhill through a neon-lit city at night, sharp turns, splashing through puddles, dramatic motion blur, dynamic camera movement, flying sparks, wind-blown jacket, cinematic lighting, highly detailed, realistic.",
+  "seed": 20260331,
+  "width": 1280,
+  "height": 720,
+  "num_frames": 49,
+  "fps": 16,
+  "frame_shape": [
+    720,
+    1280,
+    3
+  ],
+  "frame_dtype": "float32",
+  "raw_video_bytes": 541900800,
+  "raw_video_mib": 516.796875,
+  "mp4_bytes": 1770520,
+  "mp4_mib": 1.6884994506835938,
+  "latents_shape": [
+    1,
+    13,
+    16,
+    90,
+    160
+  ],
+  "latents_dtype": "torch.bfloat16",
+  "latents_raw_bytes": 5990400,
+  "latents_raw_mib": 5.712890625,
+  "latents_pt_bytes": 6453521,
+  "latents_pt_mib": 6.154557228088379,
+  "cog_additional_frames_trimmed": 1,
+  "mp4_path": "/workspace/video_bench/results/cogvideox15_5b_720p_49f.mp4",
+  "latents_path": "/workspace/video_bench/results/cogvideox15_5b_720p_49f_latents.pt"
+}

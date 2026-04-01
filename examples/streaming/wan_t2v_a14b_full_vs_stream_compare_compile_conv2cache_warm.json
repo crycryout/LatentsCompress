@@ -1,0 +1,70 @@
+{
+  "family": "wan_t2v_a14b",
+  "latent_group_size": 1,
+  "use_torch_compile": true,
+  "compile_mode": "reduce-overhead",
+  "compile_backend": "inductor",
+  "stream_conv2_cache": true,
+  "warmup_runs": 1,
+  "cases": [
+    {
+      "latent_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f_latents.pt",
+      "meta": {
+        "task": "t2v-A14B",
+        "prompt": "A cinematic drone shot gliding around a cliffside lighthouse at blue hour, powerful ocean waves crashing below, a warm rotating beacon sweeping through sea mist, ultra-detailed realistic lighting, atmospheric volumetric fog, natural camera motion, high detail.",
+        "size": "1280*720",
+        "frame_num": 49,
+        "fps": 16,
+        "seed": 20260331
+      },
+      "full_decode": {
+        "shape": [
+          3,
+          49,
+          720,
+          1280
+        ],
+        "time_sec": 4.948784988373518,
+        "fps_equivalent": 9.901420270858138
+      },
+      "stream_decode": {
+        "shape": [
+          3,
+          49,
+          720,
+          1280
+        ],
+        "time_sec": 6.474277190864086,
+        "fps_equivalent": 7.568412435158686
+      },
+      "time_compare": {
+        "stream_minus_full_sec": 1.5254922024905682,
+        "stream_over_full_ratio": 1.3082559064648192,
+        "stream_slower_percent": 30.825590646481913
+      },
+      "quality_compare": {
+        "same_shape": true,
+        "float_exact_equal": false,
+        "float_mse": 5.2270142987254076e-06,
+        "float_mae": 0.0016909647965803742,
+        "float_max_abs": 0.20928263664245605,
+        "uint8_exact_equal": false,
+        "uint8_mse": 0.20746582746505737,
+        "uint8_psnr": 54.96133788328459
+      }
+    }
+  ],
+  "summary": {
+    "case_count": 1,
+    "mean_full_decode_sec": 4.948784988373518,
+    "mean_stream_decode_sec": 6.474277190864086,
+    "mean_stream_over_full_ratio": 1.3082559064648192,
+    "mean_stream_slower_percent": 30.825590646481913,
+    "mean_uint8_psnr": 54.96133788328459,
+    "mean_uint8_mse": 0.20746582746505737,
+    "all_same_shape": true,
+    "all_float_exact_equal": false,
+    "all_uint8_exact_equal": false,
+    "max_float_max_abs": 0.20928263664245605
+  }
+}

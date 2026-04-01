@@ -1,0 +1,33 @@
+{
+  "family": "ltx",
+  "model_id": "Lightricks/LTX-2",
+  "prompt": "A fast handheld tracking shot following a cyclist racing downhill through a neon-lit city at night, sharp turns, splashing through puddles, dramatic motion blur, dynamic camera movement, flying sparks, wind-blown jacket, cinematic lighting, highly detailed, realistic.",
+  "seed": 20260331,
+  "width": 768,
+  "height": 512,
+  "num_frames": 17,
+  "fps": 16,
+  "frame_shape": [
+    512,
+    768,
+    3
+  ],
+  "frame_dtype": "float32",
+  "raw_video_bytes": 80216064,
+  "raw_video_mib": 76.5,
+  "mp4_bytes": 402265,
+  "mp4_mib": 0.38362979888916016,
+  "latents_shape": [
+    1,
+    1152,
+    128
+  ],
+  "latents_dtype": "torch.float32",
+  "latents_raw_bytes": 589824,
+  "latents_raw_mib": 0.5625,
+  "latents_pt_bytes": 592124,
+  "latents_pt_mib": 0.5646934509277344,
+  "cog_additional_frames_trimmed": 0,
+  "mp4_path": "/workspace/video_bench/results/ltx2_19b_768x512_17f.mp4",
+  "latents_path": "/workspace/video_bench/results/ltx2_19b_768x512_17f_latents.pt"
+}

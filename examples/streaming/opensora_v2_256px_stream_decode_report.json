@@ -1,0 +1,143 @@
+{
+  "family": "opensora_v2_256px",
+  "latent_path": "/workspace/video_bench/opensora_run_t2v/video_256px/sample_0_latents.pt",
+  "latent_shape": [
+    1,
+    16,
+    5,
+    24,
+    42
+  ],
+  "latent_dtype": "torch.bfloat16",
+  "native_temporal_tiling": true,
+  "meta": {
+    "latent_path": "/workspace/video_bench/opensora_run_t2v/video_256px/sample_0_latents.pt",
+    "cond_type": "t2v",
+    "seed": 42,
+    "height": 192,
+    "width": 336,
+    "num_frames": 17
+  },
+  "full_decode": {
+    "success": true,
+    "time_sec": 0.41465563885867596,
+    "frames": 17,
+    "output_shape": [
+      1,
+      3,
+      17,
+      192,
+      336
+    ]
+  },
+  "stream_decode": {
+    "stream_chunk_latent_frames": 1,
+    "success": true,
+    "chunk_count": 5,
+    "total_stream_frames": 5,
+    "matches_full_frame_count": false,
+    "first_error": null,
+    "chunks": [
+      {
+        "chunk_index": 0,
+        "latent_shape": [
+          1,
+          16,
+          1,
+          24,
+          42
+        ],
+        "success": true,
+        "time_sec": 0.040691375732421875,
+        "frames": 1,
+        "output_shape": [
+          1,
+          3,
+          1,
+          192,
+          336
+        ]
+      },
+      {
+        "chunk_index": 1,
+        "latent_shape": [
+          1,
+          16,
+          1,
+          24,
+          42
+        ],
+        "success": true,
+        "time_sec": 0.0321184117347002,
+        "frames": 1,
+        "output_shape": [
+          1,
+          3,
+          1,
+          192,
+          336
+        ]
+      },
+      {
+        "chunk_index": 2,
+        "latent_shape": [
+          1,
+          16,
+          1,
+          24,
+          42
+        ],
+        "success": true,
+        "time_sec": 0.030646193772554398,
+        "frames": 1,
+        "output_shape": [
+          1,
+          3,
+          1,
+          192,
+          336
+        ]
+      },
+      {
+        "chunk_index": 3,
+        "latent_shape": [
+          1,
+          16,
+          1,
+          24,
+          42
+        ],
+        "success": true,
+        "time_sec": 0.03070652484893799,
+        "frames": 1,
+        "output_shape": [
+          1,
+          3,
+          1,
+          192,
+          336
+        ]
+      },
+      {
+        "chunk_index": 4,
+        "latent_shape": [
+          1,
+          16,
+          1,
+          24,
+          42
+        ],
+        "success": true,
+        "time_sec": 0.03235737793147564,
+        "frames": 1,
+        "output_shape": [
+          1,
+          3,
+          1,
+          192,
+          336
+        ]
+      }
+    ]
+  }
+}

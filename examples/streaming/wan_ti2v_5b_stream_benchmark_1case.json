@@ -1,0 +1,278 @@
+{
+  "family": "wan_ti2v_5b",
+  "latent_group_size": 1,
+  "warmup_runs": 0,
+  "measure_runs": 1,
+  "cases": [
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a person eating a burger",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "benchmark": {
+        "full_decode": {
+          "frames": 121,
+          "time_sec": 17.587632071226835,
+          "fps_equivalent": 6.8798346195764815
+        },
+        "stream_decode": {
+          "group_count": 31,
+          "total_frames": 121,
+          "total_time_sec": 23.718527084216475,
+          "fps_equivalent": 5.101497220732547,
+          "first_group_latency_sec": 0.22004614025354385,
+          "first_group_frames": 1,
+          "first_frame_latency_lower_bound_sec": 0.22004614025354385,
+          "steady_group_decode_sec_mean": 0.5987993479395907,
+          "steady_group_decode_sec_median": 0.5992586184293032,
+          "steady_group_decode_sec_cv": 0.00452393816598579,
+          "steady_group_frames_mean": 4.0,
+          "steady_fps": 6.680033994298098,
+          "groups": [
+            {
+              "latent_start": 0,
+              "latent_len": 1,
+              "decoded_frames": 1,
+              "decode_sec": 0.22004614025354385,
+              "decode_fps": 4.544501434325408
+            },
+            {
+              "latent_start": 1,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5858999323099852,
+              "decode_fps": 6.82710439004403
+            },
+            {
+              "latent_start": 2,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5980328768491745,
+              "decode_fps": 6.688595485041888
+            },
+            {
+              "latent_start": 3,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5960999745875597,
+              "decode_fps": 6.710283795545523
+            },
+            {
+              "latent_start": 4,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5983165502548218,
+              "decode_fps": 6.685424293037538
+            },
+            {
+              "latent_start": 5,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5988706573843956,
+              "decode_fps": 6.6792385812827195
+            },
+            {
+              "latent_start": 6,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5972095299512148,
+              "decode_fps": 6.697816761776648
+            },
+            {
+              "latent_start": 7,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5983140878379345,
+              "decode_fps": 6.685451807518664
+            },
+            {
+              "latent_start": 8,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.59712940081954,
+              "decode_fps": 6.698715545592186
+            },
+            {
+              "latent_start": 9,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.599331695586443,
+              "decode_fps": 6.674100551425068
+            },
+            {
+              "latent_start": 10,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5993615686893463,
+              "decode_fps": 6.673767903983231
+            },
+            {
+              "latent_start": 11,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5998373217880726,
+              "decode_fps": 6.668474692565449
+            },
+            {
+              "latent_start": 12,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5992936808615923,
+              "decode_fps": 6.674523906625015
+            },
+            {
+              "latent_start": 13,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.599223555997014,
+              "decode_fps": 6.67530500089341
+            },
+            {
+              "latent_start": 14,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5998850930482149,
+              "decode_fps": 6.6679436551334765
+            },
+            {
+              "latent_start": 15,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.6001753564924002,
+              "decode_fps": 6.664718830471759
+            },
+            {
+              "latent_start": 16,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.6000023558735847,
+              "decode_fps": 6.666640490396283
+            },
+            {
+              "latent_start": 17,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.6015873644500971,
+              "decode_fps": 6.649075822355987
+            },
+            {
+              "latent_start": 18,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5991216022521257,
+              "decode_fps": 6.676440951158856
+            },
+            {
+              "latent_start": 19,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5996781531721354,
+              "decode_fps": 6.67024466180914
+            },
+            {
+              "latent_start": 20,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5999129917472601,
+              "decode_fps": 6.667633565244037
+            },
+            {
+              "latent_start": 21,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5989374164491892,
+              "decode_fps": 6.678494096618757
+            },
+            {
+              "latent_start": 22,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5984280779957771,
+              "decode_fps": 6.684178345034517
+            },
+            {
+              "latent_start": 23,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5996541194617748,
+              "decode_fps": 6.670512000468266
+            },
+            {
+              "latent_start": 24,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.600426571443677,
+              "decode_fps": 6.661930351253984
+            },
+            {
+              "latent_start": 25,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.598714355379343,
+              "decode_fps": 6.6809822815516355
+            },
+            {
+              "latent_start": 26,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.6013873741030693,
+              "decode_fps": 6.651286961196589
+            },
+            {
+              "latent_start": 27,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5984092485159636,
+              "decode_fps": 6.684388668657572
+            },
+            {
+              "latent_start": 28,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5988112594932318,
+              "decode_fps": 6.679901115061132
+            },
+            {
+              "latent_start": 29,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.5995830316096544,
+              "decode_fps": 6.671302870699172
+            },
+            {
+              "latent_start": 30,
+              "latent_len": 1,
+              "decoded_frames": 4,
+              "decode_sec": 0.6023452337831259,
+              "decode_fps": 6.640709971053242
+            }
+          ]
+        },
+        "playback_feasibility": {
+          "target_fps": 24.0,
+          "realtime_possible_after_first_group": false,
+          "realtime_possible_full_decode": false,
+          "steady_rate_over_target": 0.27833474976242073,
+          "first_group_playback_coverage_sec": 0.041666666666666664,
+          "producer_consumer_gap_sec": 0.10803317031823101
+        }
+      }
+    }
+  ],
+  "summary": {
+    "case_count": 1,
+    "full_decode_fps_equivalent_mean": 6.8798346195764815,
+    "stream_decode_fps_equivalent_mean": 5.101497220732547,
+    "first_group_latency_sec_mean": 0.22004614025354385,
+    "steady_fps_mean": 6.680033994298098,
+    "steady_group_decode_sec_mean": 0.5987993479395907,
+    "steady_group_decode_sec_cv_mean": 0.00452393816598579,
+    "realtime_possible_after_first_group_all": false,
+    "realtime_possible_after_first_group_any": false
+  }
+}

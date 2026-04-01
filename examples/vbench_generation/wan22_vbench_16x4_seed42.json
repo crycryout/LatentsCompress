@@ -1,0 +1,514 @@
+[
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 3,
+    "prompt": "a person eating a burger",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 14,
+    "prompt": "a car accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 31,
+    "prompt": "a truck anchored in a tranquil bay",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 35,
+    "prompt": "a boat sailing smoothly on a calm lake",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 13,
+    "prompt": "bridge",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 17,
+    "prompt": "campus",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 28,
+    "prompt": "downtown",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 69,
+    "prompt": "ski slope",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 3,
+    "prompt": "A tranquil tableau of alley",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 4,
+    "prompt": "A tranquil tableau of bar",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 11,
+    "prompt": "A tranquil tableau of house",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 54,
+    "prompt": "A tranquil tableau of in the heart of Plaka, the neoclassical architecture of the old city harmonizes with the ancient ruins",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 11,
+    "prompt": "a car stuck in traffic during rush hour",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 27,
+    "prompt": "a train speeding down the tracks",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 29,
+    "prompt": "a train accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 64,
+    "prompt": "a bear climbing a tree",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 3,
+    "prompt": "a person eating a burger",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 25,
+    "prompt": "a bus stuck in traffic during rush hour",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 69,
+    "prompt": "a giraffe bending down to drink water from a river",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 71,
+    "prompt": "a giraffe running to join a herd of its kind",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 28,
+    "prompt": "Origami dancers in white paper, 3D render, on white background, studio shot, dancing modern dance.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 53,
+    "prompt": "A jellyfish floating through the ocean, with bioluminescent tentacles",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 57,
+    "prompt": "A steam train moving on a mountainside",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 75,
+    "prompt": "A happy fuzzy panda playing guitar nearby a campfire, snow mountain in the background",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 0,
+    "prompt": "Close up of grapes on a rotating table.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 20,
+    "prompt": "a shark is swimming in the ocean.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 35,
+    "prompt": "Busy freeway at night.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 89,
+    "prompt": "Hyper-realistic spaceship landing on Mars",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 19,
+    "prompt": "a cow",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 35,
+    "prompt": "a baseball glove",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 43,
+    "prompt": "a knife",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 54,
+    "prompt": "a donut",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 11,
+    "prompt": "a couch and a potted plant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 13,
+    "prompt": "a tv and a laptop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 27,
+    "prompt": "a teddy bear and a frisbee",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 43,
+    "prompt": "a car and a motorcycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 12,
+    "prompt": "A person is skateboarding",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 44,
+    "prompt": "A person is planting trees",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 45,
+    "prompt": "A person is sharpening knives",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 48,
+    "prompt": "A person is hula hooping",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 5,
+    "prompt": "a purple bicycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 33,
+    "prompt": "a blue umbrella",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 58,
+    "prompt": "a red chair",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 77,
+    "prompt": "a green vase",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 10,
+    "prompt": "a bird on the left of a cat, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 15,
+    "prompt": "a cow on the right of an elephant, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 48,
+    "prompt": "a train on the right of a boat, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 68,
+    "prompt": "a pizza on the top of a donut, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 37,
+    "prompt": "golf course",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 70,
+    "prompt": "sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 79,
+    "prompt": "train railway",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 80,
+    "prompt": "train station platform",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 24,
+    "prompt": "a shark is swimming in the ocean, pan right",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 46,
+    "prompt": "A cute happy Corgi playing in park, sunset, tilt down",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 73,
+    "prompt": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, pan left",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 90,
+    "prompt": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, in super slow motion",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 5,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in cyberpunk style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 8,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, surrealism style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 29,
+    "prompt": "A panda drinking coffee in a cafe in Paris by Hokusai, in the style of Ukiyo",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 84,
+    "prompt": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, black and white",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 10,
+    "prompt": "Fireworks.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 12,
+    "prompt": "Flying through fantasy landscapes.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 29,
+    "prompt": "Campfire at night in a snowy forest with starry sky in the background.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 37,
+    "prompt": "An astronaut is riding a horse in the space in a photorealistic style.",
+    "generation_seed": 42
+  }
+]

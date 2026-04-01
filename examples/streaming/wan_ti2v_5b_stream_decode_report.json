@@ -1,0 +1,600 @@
+{
+  "family": "wan_ti2v_5b",
+  "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+  "latent_shape": [
+    48,
+    31,
+    44,
+    80
+  ],
+  "latent_dtype": "torch.float32",
+  "native_temporal_tiling": false,
+  "meta": {
+    "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+    "task": "ti2v-5B",
+    "prompt": "a person eating a burger",
+    "size": "1280*704",
+    "frame_num": 121,
+    "fps": 24,
+    "seed": 42
+  },
+  "full_decode": {
+    "success": true,
+    "time_sec": 17.743384836241603,
+    "frames": 121,
+    "output_shape": [
+      3,
+      121,
+      704,
+      1280
+    ]
+  },
+  "stream_decode": {
+    "stream_chunk_latent_frames": 1,
+    "success": true,
+    "chunk_count": 31,
+    "total_stream_frames": 31,
+    "matches_full_frame_count": false,
+    "first_error": null,
+    "chunks": [
+      {
+        "chunk_index": 0,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17868298664689064,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 1,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17315325886011124,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 2,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17122440785169601,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 3,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1709746364504099,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 4,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17108037322759628,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 5,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17086604051291943,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 6,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17090823501348495,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 7,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17106202617287636,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 8,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1709806453436613,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 9,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17093056999146938,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 10,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17094387859106064,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 11,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17271566577255726,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 12,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1712697185575962,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 13,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17132309637963772,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 14,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17103071697056293,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 15,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17098432034254074,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 16,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17104035057127476,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 17,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1713321004062891,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 18,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17117963172495365,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 19,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17124266736209393,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 20,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17128062434494495,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 21,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1711397711187601,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 22,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17124273627996445,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 23,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1712213046848774,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 24,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1712070144712925,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 25,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1709828693419695,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 26,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17103865183889866,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 27,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.1712125912308693,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 28,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17106741480529308,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 29,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17125794105231762,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 30,
+        "latent_shape": [
+          48,
+          1,
+          44,
+          80
+        ],
+        "success": true,
+        "time_sec": 0.17124873399734497,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          704,
+          1280
+        ]
+      }
+    ]
+  }
+}

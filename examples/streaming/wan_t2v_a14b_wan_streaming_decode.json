@@ -1,0 +1,255 @@
+{
+  "family": "wan_t2v_a14b",
+  "latent_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f_latents.pt",
+  "latent_shape": [
+    16,
+    13,
+    90,
+    160
+  ],
+  "latent_group_size": 1,
+  "emit_mode": "as_fast_as_possible",
+  "target_fps": 16.0,
+  "full_decode": {
+    "frames": 49,
+    "time_sec": 11.404795425012708,
+    "output_fps_equivalent": 4.296438311601315
+  },
+  "stream_decode": {
+    "success": true,
+    "group_count": 13,
+    "total_frames_emitted": 49,
+    "matches_full_frame_count": true,
+    "groups": [
+      {
+        "group_index": 0,
+        "latent_start": 0,
+        "latent_len": 1,
+        "decoded_frames": 1,
+        "decode_sec": 0.39954198710620403,
+        "decode_fps": 2.5028658620906983,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555465.648710158,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 1,
+        "latent_start": 1,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.0908048395067453,
+        "decode_fps": 3.667017100702242,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555466.90260367,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 2,
+        "latent_start": 2,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.121522342786193,
+        "decode_fps": 3.566580751358745,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555468.1996202,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 3,
+        "latent_start": 3,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1210055034607649,
+        "decode_fps": 3.568225122580765,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555469.492363485,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 4,
+        "latent_start": 4,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1219248548150063,
+        "decode_fps": 3.565301172206902,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555470.78016968,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 5,
+        "latent_start": 5,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1178896315395832,
+        "decode_fps": 3.5781707667250733,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555472.065564206,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 6,
+        "latent_start": 6,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1173295974731445,
+        "decode_fps": 3.57996423709356,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555473.365313556,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 7,
+        "latent_start": 7,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1181254051625729,
+        "decode_fps": 3.577416255396155,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555474.659270693,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 8,
+        "latent_start": 8,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1181436702609062,
+        "decode_fps": 3.5773578175930156,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555475.950343963,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 9,
+        "latent_start": 9,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1179290898144245,
+        "decode_fps": 3.578044472090799,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555477.238645907,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 10,
+        "latent_start": 10,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.121750082820654,
+        "decode_fps": 3.5658566567180032,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555478.528415201,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 11,
+        "latent_start": 11,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1178109534084797,
+        "decode_fps": 3.5784226194984217,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555479.826098397,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 12,
+        "latent_start": 12,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 1.1194720026105642,
+        "decode_fps": 3.5731130306717445,
+        "sleep_sec": 0.0,
+        "emit_timestamp_sec": 11555481.105456764,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      }
+    ]
+  },
+  "meta": {
+    "task": "t2v-A14B",
+    "prompt": "A cinematic drone shot gliding around a cliffside lighthouse at blue hour, powerful ocean waves crashing below, a warm rotating beacon sweeping through sea mist, ultra-detailed realistic lighting, atmospheric volumetric fog, natural camera motion, high detail.",
+    "size": "1280*720",
+    "frame_num": 49,
+    "fps": 16,
+    "seed": 20260331
+  }
+}

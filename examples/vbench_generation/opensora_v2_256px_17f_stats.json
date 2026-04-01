@@ -1,0 +1,23 @@
+{
+  "family": "opensora",
+  "model_id": "hpcai-tech/Open-Sora-v2",
+  "prompt": "A stormy lighthouse on a rocky coast at dusk, waves crashing hard, sea spray flying through the air, camera drifting forward with cinematic motion, dramatic clouds racing overhead, highly dynamic scene. 16 FPS. 4 motion score.",
+  "width": 336,
+  "height": 192,
+  "num_frames": 17,
+  "fps": 16,
+  "raw_video_bytes": 3290112,
+  "mp4_bytes": 16443,
+  "latents_shape": [
+    1,
+    16,
+    5,
+    24,
+    42
+  ],
+  "latents_dtype": "torch.bfloat16",
+  "latents_raw_bytes": 161280,
+  "latents_pt_bytes": 163048,
+  "mp4_path": "/workspace/video_bench/opensora_run_t2v/video_256px/prompt_0000.mp4",
+  "latents_path": "/workspace/video_bench/opensora_run_t2v/video_256px/sample_0_latents.pt"
+}

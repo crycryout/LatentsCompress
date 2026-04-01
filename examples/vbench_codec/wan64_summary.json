@@ -1,0 +1,58 @@
+{
+  "input_root": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42",
+  "output_root": "/workspace/video_bench/latent_codec/runs/wan22_ti2v5b_vbench_16x4_seed42_q8_64",
+  "samples": 64,
+  "schemes": [
+    {
+      "family": "intra",
+      "scheme": "intra_q8_zstd",
+      "samples": 64,
+      "mean_container_mb": 4.5511734375,
+      "mean_recon_mp4_mb": 13.5733703125,
+      "mean_raw_psnr_db": 48.83024927353138,
+      "mean_mp4_psnr_db": 46.480539078125,
+      "mean_mp4_ssim": 0.993295984375,
+      "mean_mp4_vs_latent_size_gap_mb": 8.970565625
+    },
+    {
+      "family": "inter",
+      "scheme": "inter_delta_q8_zstd",
+      "samples": 64,
+      "mean_container_mb": 3.930084375,
+      "mean_recon_mp4_mb": 13.6161703125,
+      "mean_raw_psnr_db": 41.251003147552105,
+      "mean_mp4_psnr_db": 42.8768473125,
+      "mean_mp4_ssim": 0.989603296875,
+      "mean_mp4_vs_latent_size_gap_mb": 9.5916546875
+    }
+  ],
+  "recommended": {
+    "intra": {
+      "family": "intra",
+      "scheme": "intra_q8_zstd",
+      "samples": 64,
+      "mean_container_mb": 4.5511734375,
+      "mean_recon_mp4_mb": 13.5733703125,
+      "mean_raw_psnr_db": 48.83024927353138,
+      "mean_mp4_psnr_db": 46.480539078125,
+      "mean_mp4_ssim": 0.993295984375,
+      "mean_mp4_vs_latent_size_gap_mb": 8.970565625
+    },
+    "inter": {
+      "family": "inter",
+      "scheme": "inter_delta_q8_zstd",
+      "samples": 64,
+      "mean_container_mb": 3.930084375,
+      "mean_recon_mp4_mb": 13.6161703125,
+      "mean_raw_psnr_db": 41.251003147552105,
+      "mean_mp4_psnr_db": 42.8768473125,
+      "mean_mp4_ssim": 0.989603296875,
+      "mean_mp4_vs_latent_size_gap_mb": 9.5916546875
+    }
+  },
+  "notes": [
+    "Quality metrics on raw decoded frames use uint8 RGB PSNR against baseline latent decode.",
+    "MP4 quality metrics compare MP4 files re-encoded from baseline latent decode vs reconstructed latent decode using the same Wan save_video path.",
+    "Container sizes should be compared directly against the original MP4 file sizes already produced by Wan generation."
+  ]
+}

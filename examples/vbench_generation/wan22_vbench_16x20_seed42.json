@@ -1,0 +1,2562 @@
+[
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 1,
+    "prompt": "a person giving a presentation to a room full of colleagues",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 2,
+    "prompt": "a person washing the dishes",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 3,
+    "prompt": "a person eating a burger",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 5,
+    "prompt": "a person drinking coffee in a cafe",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 11,
+    "prompt": "a car stuck in traffic during rush hour",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 12,
+    "prompt": "a car turning a corner",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 13,
+    "prompt": "a car slowing down to stop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 14,
+    "prompt": "a car accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 17,
+    "prompt": "a motorcycle slowing down to stop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 28,
+    "prompt": "a train crossing over a tall bridge",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 31,
+    "prompt": "a truck anchored in a tranquil bay",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 32,
+    "prompt": "a truck stuck in traffic during rush hour",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 35,
+    "prompt": "a boat sailing smoothly on a calm lake",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 38,
+    "prompt": "a bird soaring gracefully in the sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 45,
+    "prompt": "a dog enjoying a peaceful walk",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 54,
+    "prompt": "a sheep taking a peaceful walk",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 61,
+    "prompt": "an elephant running to join a herd of its kind",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 65,
+    "prompt": "a bear hunting for prey",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 69,
+    "prompt": "a giraffe bending down to drink water from a river",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 71,
+    "prompt": "a giraffe running to join a herd of its kind",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 0,
+    "prompt": "alley",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 11,
+    "prompt": "beach",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 12,
+    "prompt": "bedroom",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 13,
+    "prompt": "bridge",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 19,
+    "prompt": "castle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 20,
+    "prompt": "cemetery",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 27,
+    "prompt": "desert",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 28,
+    "prompt": "downtown",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 35,
+    "prompt": "gas station",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 43,
+    "prompt": "iceberg",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 44,
+    "prompt": "industrial area",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 45,
+    "prompt": "jail cell",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 48,
+    "prompt": "indoor library",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 53,
+    "prompt": "mountain",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 54,
+    "prompt": "indoor movie theater",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 57,
+    "prompt": "nursery",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 69,
+    "prompt": "ski slope",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 75,
+    "prompt": "supermarket",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 77,
+    "prompt": "tower",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 83,
+    "prompt": "volcano",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 5,
+    "prompt": "A tranquil tableau of barn",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 8,
+    "prompt": "A tranquil tableau of cliff",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 10,
+    "prompt": "In a still frame, gas station",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 14,
+    "prompt": "A tranquil tableau of kitchen",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 15,
+    "prompt": "A tranquil tableau of palace",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 18,
+    "prompt": "A tranquil tableau of restaurant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 24,
+    "prompt": "A tranquil tableau of a chair",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 33,
+    "prompt": "A tranquil tableau of a wooden bench in the park",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 37,
+    "prompt": "A tranquil tableau of the jail cell was small and dimly lit, with cold, steel bars",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 42,
+    "prompt": "In a still frame, within the desolate desert, an oasis unfolded, characterized by the stoic presence of palm trees and a motionless, glassy pool of water",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 46,
+    "prompt": "A tranquil tableau of the Stonehenge presented itself as an enigmatic puzzle, each colossal stone meticulously placed against the backdrop of tranquility",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 48,
+    "prompt": "static view on a desert scene with an oasis, palm trees, and a clear, calm pool of water",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 49,
+    "prompt": "A tranquil tableau of an ornate Victorian streetlamp standing on a cobblestone street corner, illuminating the empty night",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 54,
+    "prompt": "A tranquil tableau of in the heart of Plaka, the neoclassical architecture of the old city harmonizes with the ancient ruins",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 55,
+    "prompt": "A tranquil tableau of in the desolate beauty of the American Southwest, Chaco Canyon's ancient ruins whispered tales of an enigmatic civilization that once thrived amidst the arid landscapes",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 58,
+    "prompt": "A tranquil tableau of in the quaint village square, a traditional wrought-iron streetlamp featured delicate filigree patterns and amber-hued glass panels",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 61,
+    "prompt": "In a still frame, in the heart of the old city, a row of ornate lantern-style streetlamps bathed the narrow alleyway in a warm, welcoming light",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 63,
+    "prompt": "A tranquil tableau of in the Arizona desert, a massive stone bridge arched across a rugged canyon",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 68,
+    "prompt": "A tranquil tableau of beneath the shade of a solitary oak tree, an old wooden park bench sat patiently",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 73,
+    "prompt": "A tranquil tableau of a peaceful orchid garden showcased a variety of delicate blooms",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 4,
+    "prompt": "a person walking in the snowstorm",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 10,
+    "prompt": "a bicycle accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 12,
+    "prompt": "a car turning a corner",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 17,
+    "prompt": "a motorcycle slowing down to stop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 20,
+    "prompt": "an airplane soaring through a clear blue sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 26,
+    "prompt": "a bus accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 34,
+    "prompt": "a truck accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 35,
+    "prompt": "a boat sailing smoothly on a calm lake",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 38,
+    "prompt": "a bird soaring gracefully in the sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 40,
+    "prompt": "a bird flying over a snowy forest",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 41,
+    "prompt": "a cat grooming itself meticulously with its tongue",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 42,
+    "prompt": "a cat playing in park",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 43,
+    "prompt": "a cat drinking water",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 44,
+    "prompt": "a cat running happily",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 45,
+    "prompt": "a dog enjoying a peaceful walk",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 46,
+    "prompt": "a dog playing in park",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 47,
+    "prompt": "a dog drinking water",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 48,
+    "prompt": "a dog running happily",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 58,
+    "prompt": "a cow running to join a herd of its kind",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 59,
+    "prompt": "an elephant spraying itself with water using its trunk to cool down",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 2,
+    "prompt": "a person washing the dishes",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 4,
+    "prompt": "a person walking in the snowstorm",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 7,
+    "prompt": "a bicycle leaning against a tree",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 13,
+    "prompt": "a car slowing down to stop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 17,
+    "prompt": "a motorcycle slowing down to stop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 20,
+    "prompt": "an airplane soaring through a clear blue sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 25,
+    "prompt": "a bus stuck in traffic during rush hour",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 28,
+    "prompt": "a train crossing over a tall bridge",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 29,
+    "prompt": "a train accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 31,
+    "prompt": "a truck anchored in a tranquil bay",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 34,
+    "prompt": "a truck accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 36,
+    "prompt": "a boat slowing down to stop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 41,
+    "prompt": "a cat grooming itself meticulously with its tongue",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 45,
+    "prompt": "a dog enjoying a peaceful walk",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 48,
+    "prompt": "a dog running happily",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 51,
+    "prompt": "a horse taking a peaceful walk",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 52,
+    "prompt": "a horse running to join a herd of its kind",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 59,
+    "prompt": "an elephant spraying itself with water using its trunk to cool down",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 69,
+    "prompt": "a giraffe bending down to drink water from a river",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 70,
+    "prompt": "a giraffe taking a peaceful walk",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 6,
+    "prompt": "Sunset time lapse at the beach with moving clouds and colors in the sky.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 11,
+    "prompt": "An animated painting of fluffy white clouds moving in sky.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 17,
+    "prompt": "Splash of turquoise water in extreme slow motion, alpha channel included.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 18,
+    "prompt": "an ice cream is melting on the table.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 27,
+    "prompt": "happy dog wearing a yellow turtleneck, studio, portrait, facing camera, dark background",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 28,
+    "prompt": "Origami dancers in white paper, 3D render, on white background, studio shot, dancing modern dance.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 31,
+    "prompt": "A 3D model of a 1800s victorian house.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 33,
+    "prompt": "A raccoon that looks like a turtle, digital art.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 46,
+    "prompt": "A corgi is playing drum kit.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 50,
+    "prompt": "A corgi's head depicted as an explosion of a nebula",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 51,
+    "prompt": "A fantasy landscape",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 54,
+    "prompt": "A Mars rover moving on Mars",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 58,
+    "prompt": "A super cool giant robot in Cyberpunk Beijing",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 63,
+    "prompt": "The bund Shanghai, oil painting",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 65,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 68,
+    "prompt": "A car moving slowly on an empty street, rainy evening",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 71,
+    "prompt": "A confused panda in calculus class",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 74,
+    "prompt": "A cute raccoon playing guitar in a boat on the ocean",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 82,
+    "prompt": "A robot DJ is playing the turntable, in heavy raining futuristic tokyo rooftop cyberpunk night, sci-fi, fantasy",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 83,
+    "prompt": "A shark swimming in clear Caribbean ocean",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 1,
+    "prompt": "Turtle swimming in ocean.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 8,
+    "prompt": "A koala bear playing piano in the forest.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 14,
+    "prompt": "A squirrel eating a burger.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 19,
+    "prompt": "a drone flying over a snowy forest.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 20,
+    "prompt": "a shark is swimming in the ocean.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 32,
+    "prompt": "this is how I do makeup in the morning.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 34,
+    "prompt": "Robot dancing in Times Square.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 43,
+    "prompt": "Ashtray full of butts on table, smoke flowing on black background, close-up",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 48,
+    "prompt": "A raccoon is playing the electronic guitar.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 49,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background by Vincent van Gogh",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 54,
+    "prompt": "A Mars rover moving on Mars",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 59,
+    "prompt": "A tropical beach at sunrise, with palm trees and crystal-clear water in the foreground",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 67,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 68,
+    "prompt": "A car moving slowly on an empty street, rainy evening",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 70,
+    "prompt": "A cat wearing sunglasses at a pool",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 76,
+    "prompt": "A lightning striking atop of eiffel tower, dark clouds in the sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 80,
+    "prompt": "A polar bear is playing guitar",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 82,
+    "prompt": "A robot DJ is playing the turntable, in heavy raining futuristic tokyo rooftop cyberpunk night, sci-fi, fantasy",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 87,
+    "prompt": "An oil painting of a couple in formal evening wear going home get caught in a heavy downpour with umbrellas",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 92,
+    "prompt": "Yellow flowers swing in the wind",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 0,
+    "prompt": "a person",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 10,
+    "prompt": "a fire hydrant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 13,
+    "prompt": "a bench",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 14,
+    "prompt": "a bird",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 19,
+    "prompt": "a cow",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 20,
+    "prompt": "an elephant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 22,
+    "prompt": "a zebra",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 25,
+    "prompt": "an umbrella",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 33,
+    "prompt": "a kite",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 34,
+    "prompt": "a baseball bat",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 37,
+    "prompt": "a surfboard",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 38,
+    "prompt": "a tennis racket",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 47,
+    "prompt": "an apple",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 48,
+    "prompt": "a sandwich",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 49,
+    "prompt": "an orange",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 55,
+    "prompt": "a cake",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 58,
+    "prompt": "a potted plant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 64,
+    "prompt": "a remote",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 69,
+    "prompt": "a toaster",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 71,
+    "prompt": "a refrigerator",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 0,
+    "prompt": "a bird and a cat",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 2,
+    "prompt": "a dog and a horse",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 7,
+    "prompt": "a bear and a zebra",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 8,
+    "prompt": "a zebra and a giraffe",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 10,
+    "prompt": "a chair and a couch",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 14,
+    "prompt": "a laptop and a remote",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 16,
+    "prompt": "a keyboard and a cell phone",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 30,
+    "prompt": "a snowboard and a sports ball",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 39,
+    "prompt": "an airplane and a train",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 41,
+    "prompt": "a boat and an airplane",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 46,
+    "prompt": "a traffic light and a fire hydrant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 60,
+    "prompt": "a bowl and a remote",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 62,
+    "prompt": "an apple and a cell phone",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 63,
+    "prompt": "a sandwich and a book",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 65,
+    "prompt": "broccoli and a backpack",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 67,
+    "prompt": "a hot dog and a handbag",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 69,
+    "prompt": "a donut and a suitcase",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 72,
+    "prompt": "a toaster and a teddy bear",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 76,
+    "prompt": "a car and a train",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 77,
+    "prompt": "a motorcycle and a boat",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 21,
+    "prompt": "A person is canoeing or kayaking",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 25,
+    "prompt": "A person is shooting basketball",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 27,
+    "prompt": "A person is shaking hands",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 33,
+    "prompt": "A person is filling eyebrows",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 39,
+    "prompt": "A person is playing controller",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 47,
+    "prompt": "A person is rock climbing",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 51,
+    "prompt": "A person is pushing cart",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 54,
+    "prompt": "A person is cheerleading",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 56,
+    "prompt": "A person is ironing",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 66,
+    "prompt": "A person is reading book",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 67,
+    "prompt": "A person is baby waking up",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 69,
+    "prompt": "A person is brushing teeth",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 70,
+    "prompt": "A person is crawling baby",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 77,
+    "prompt": "A person is strumming guitar",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 83,
+    "prompt": "A person is using computer",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 85,
+    "prompt": "A person is bending metal",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 88,
+    "prompt": "A person is crying",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 91,
+    "prompt": "A person is running on treadmill",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 93,
+    "prompt": "A person is counting money",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 96,
+    "prompt": "A person is milking cow",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 0,
+    "prompt": "a red bicycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 2,
+    "prompt": "a blue bicycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 4,
+    "prompt": "an orange bicycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 7,
+    "prompt": "a black bicycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 8,
+    "prompt": "a white bicycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 9,
+    "prompt": "a red car",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 15,
+    "prompt": "a pink car",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 28,
+    "prompt": "a white cat",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 29,
+    "prompt": "an orange cat",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 31,
+    "prompt": "a red umbrella",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 42,
+    "prompt": "a blue suitcase",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 43,
+    "prompt": "a yellow suitcase",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 57,
+    "prompt": "a white bowl",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 65,
+    "prompt": "a black chair",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 70,
+    "prompt": "a yellow clock",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 72,
+    "prompt": "a purple clock",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 75,
+    "prompt": "a white clock",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 77,
+    "prompt": "a green vase",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 80,
+    "prompt": "an orange vase",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 81,
+    "prompt": "a purple vase",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 12,
+    "prompt": "a dog on the left of a horse, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 16,
+    "prompt": "an elephant on the left of a bear, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 24,
+    "prompt": "a knife on the left of a spoon, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 27,
+    "prompt": "a potted plant on the left of a remote, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 30,
+    "prompt": "a vase on the right of scissors, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 31,
+    "prompt": "scissors on the left of a teddy bear, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 35,
+    "prompt": "a baseball bat on the left of a baseball glove, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 45,
+    "prompt": "a tv on the right of a dining table, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 52,
+    "prompt": "a toaster on the top of a microwave, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 54,
+    "prompt": "a microwave on the top of an oven, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 55,
+    "prompt": "a microwave on the bottom of an oven, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 59,
+    "prompt": "an apple on the bottom of a sandwich, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 60,
+    "prompt": "a sandwich on the top of an orange, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 62,
+    "prompt": "an orange on the top of a carrot, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 69,
+    "prompt": "a pizza on the bottom of a donut, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 70,
+    "prompt": "a donut on the top of broccoli, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 72,
+    "prompt": "broccoli on the top of a banana, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 73,
+    "prompt": "broccoli on the bottom of a banana, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 75,
+    "prompt": "skis on the bottom of a snowboard, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 77,
+    "prompt": "a snowboard on the bottom of a kite, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 6,
+    "prompt": "bakery shop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 7,
+    "prompt": "ballroom",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 9,
+    "prompt": "barn",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 12,
+    "prompt": "bedroom",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 13,
+    "prompt": "bridge",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 17,
+    "prompt": "campus",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 23,
+    "prompt": "crosswalk",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 24,
+    "prompt": "construction site",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 31,
+    "prompt": "food court",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 35,
+    "prompt": "gas station",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 43,
+    "prompt": "iceberg",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 51,
+    "prompt": "mansion",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 54,
+    "prompt": "indoor movie theater",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 56,
+    "prompt": "music studio",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 57,
+    "prompt": "nursery",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 59,
+    "prompt": "office",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 68,
+    "prompt": "shower",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 70,
+    "prompt": "sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 82,
+    "prompt": "valley",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 83,
+    "prompt": "volcano",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 0,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 1,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 6,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, tilt down",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 7,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, with an intense shaking effect",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 11,
+    "prompt": "The bund Shanghai, zoom in",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 12,
+    "prompt": "The bund Shanghai, zoom out",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 21,
+    "prompt": "a shark is swimming in the ocean, zoom in",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 27,
+    "prompt": "a shark is swimming in the ocean, with an intense shaking effect",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 30,
+    "prompt": "A panda drinking coffee in a cafe in Paris, in super slow motion",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 33,
+    "prompt": "A panda drinking coffee in a cafe in Paris, pan left",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 48,
+    "prompt": "A cute happy Corgi playing in park, sunset, featuring a steady and smooth perspective",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 49,
+    "prompt": "A cute happy Corgi playing in park, sunset, racking focus",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 51,
+    "prompt": "Gwen Stacy reading a book, zoom in",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 52,
+    "prompt": "Gwen Stacy reading a book, zoom out",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 58,
+    "prompt": "Gwen Stacy reading a book, featuring a steady and smooth perspective",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 61,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, zoom in",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 62,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, zoom out",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 69,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, racking focus",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 83,
+    "prompt": "An astronaut flying in space, pan left",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 96,
+    "prompt": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, tilt down",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 6,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, animated style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 7,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, watercolor painting",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 19,
+    "prompt": "a shark is swimming in the ocean, oil painting",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 20,
+    "prompt": "a shark is swimming in the ocean by Hokusai, in the style of Ukiyo",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 24,
+    "prompt": "a shark is swimming in the ocean, animated style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 27,
+    "prompt": "A panda drinking coffee in a cafe in Paris, Van Gogh style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 36,
+    "prompt": "A cute happy Corgi playing in park, sunset, Van Gogh style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 37,
+    "prompt": "A cute happy Corgi playing in park, sunset, oil painting",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 40,
+    "prompt": "A cute happy Corgi playing in park, sunset, pixel art",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 54,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, Van Gogh style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 61,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, watercolor painting",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 62,
+    "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background, surrealism style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 64,
+    "prompt": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, oil painting",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 65,
+    "prompt": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas by Hokusai, in the style of Ukiyo",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 67,
+    "prompt": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, pixel art",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 69,
+    "prompt": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, animated style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 71,
+    "prompt": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, surrealism style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 74,
+    "prompt": "An astronaut flying in space by Hokusai, in the style of Ukiyo",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 84,
+    "prompt": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, black and white",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 89,
+    "prompt": "Snow rocky mountains peaks canyon. snow blanketed rocky mountains surround and shadow deep canyons. the canyons twist and bend through the high elevated mountain peaks, surrealism style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 5,
+    "prompt": "Two pandas discussing an academic paper.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 8,
+    "prompt": "A koala bear playing piano in the forest.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 2,
+    "prompt_index_in_suite": 10,
+    "prompt": "Fireworks.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 3,
+    "prompt_index_in_suite": 15,
+    "prompt": "A cat wearing sunglasses and working as a lifeguard at a pool.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 4,
+    "prompt_index_in_suite": 23,
+    "prompt": "time lapse of sunrise on mars.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 5,
+    "prompt_index_in_suite": 26,
+    "prompt": "A drone view of celebration with Christmas tree and fireworks, starry sky - background.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 6,
+    "prompt_index_in_suite": 30,
+    "prompt": "a fantasy landscape",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 7,
+    "prompt_index_in_suite": 31,
+    "prompt": "A 3D model of a 1800s victorian house.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 8,
+    "prompt_index_in_suite": 33,
+    "prompt": "A raccoon that looks like a turtle, digital art.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 9,
+    "prompt_index_in_suite": 40,
+    "prompt": "Motion colour drop in water, ink swirling in water, colourful ink in water, abstraction fancy dream cloud of ink.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 10,
+    "prompt_index_in_suite": 51,
+    "prompt": "A fantasy landscape",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 11,
+    "prompt_index_in_suite": 53,
+    "prompt": "A jellyfish floating through the ocean, with bioluminescent tentacles",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 12,
+    "prompt_index_in_suite": 66,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Vincent van Gogh",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 13,
+    "prompt_index_in_suite": 72,
+    "prompt": "A cute fluffy panda eating Chinese food in a restaurant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 14,
+    "prompt_index_in_suite": 74,
+    "prompt": "A cute raccoon playing guitar in a boat on the ocean",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 15,
+    "prompt_index_in_suite": 76,
+    "prompt": "A lightning striking atop of eiffel tower, dark clouds in the sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 16,
+    "prompt_index_in_suite": 79,
+    "prompt": "A panda playing on a swing set",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 17,
+    "prompt_index_in_suite": 84,
+    "prompt": "A super robot protecting city",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 18,
+    "prompt_index_in_suite": 85,
+    "prompt": "A teddy bear washing the dishes",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 19,
+    "prompt_index_in_suite": 86,
+    "prompt": "An epic tornado attacking above a glowing city at night, the tornado is made of smoke",
+    "generation_seed": 42
+  }
+]

@@ -51,3 +51,29 @@ From the included example summary:
 ## Notes
 
 This repository intentionally excludes heavy generated videos, model weights, and temporary debug outputs.
+
+## Streaming Decode Benchmarks
+
+This repository now also includes Wan/Open-Sora VAE streaming decode benchmarks and comparison reports:
+
+- Scripts are in `scripts/benchmark_wan_streaming_decode.py`, `scripts/check_streaming_vae_decode.py`, `scripts/compare_wan_full_vs_stream_decode.py`, `scripts/compare_opensora_temporal_overlap.py`, and `scripts/wan_streaming_decode.py`.
+- Benchmark outputs are under `examples/streaming/`.
+
+## VBench Prompt Generation Assets
+
+This repository also includes the fixed-prompt VBench manifests and generation helpers used for Wan and follow-up model runs:
+
+- Manifests: `examples/vbench_generation/wan22_vbench_16x20_seed42.json`, `wan22_vbench_16x4_seed42.json`, `wan22_vbench_16x2_seed42.json`
+- Generation scripts: `scripts/build_vbench_wan22_manifest.py`, `scripts/run_wan22_vbench_batch.py`, `scripts/run_diffusers_video_bench.py`, `scripts/run_diffusers_vbench_batch.py`, `scripts/run_post_wan_vbench_jobs.py`
+- Sample model stats and summaries are in `examples/vbench_generation/`.
+
+## Full 64-Sample Wan Codec Report
+
+The complete 64-sample Wan2.2-TI2V-5B VBench latent codec benchmark is included in lightweight report form:
+
+- `examples/vbench_codec/wan64_codec_report.json`
+- `examples/vbench_codec/wan64_codec_report.csv`
+- `examples/vbench_codec/wan64_codec_report.md`
+- `examples/vbench_codec/wan64_summary.json`
+
+Large binary artifacts such as all generated MP4s, reconstructed MP4s, and compressed latent containers are intentionally not committed to GitHub to keep the repository manageable; the repo contains the scripts and reports needed to reproduce and inspect the experiments.

@@ -1,0 +1,34 @@
+{
+  "family": "hunyuan",
+  "model_id": "hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-720p_t2v",
+  "prompt": "A fast handheld tracking shot following a cyclist racing downhill through a neon-lit city at night, sharp turns, splashing through puddles, dramatic motion blur, dynamic camera movement, flying sparks, wind-blown jacket, cinematic lighting, highly detailed, realistic.",
+  "seed": 20260331,
+  "width": 1280,
+  "height": 720,
+  "num_frames": 17,
+  "fps": 16,
+  "frame_shape": [
+    720,
+    1280,
+    3
+  ],
+  "frame_dtype": "uint8",
+  "raw_video_bytes": 47001600,
+  "raw_video_mib": 44.82421875,
+  "mp4_bytes": 1249767,
+  "mp4_mib": 1.1918706893920898,
+  "latents_shape": [
+    1,
+    32,
+    5,
+    45,
+    80
+  ],
+  "latents_dtype": "torch.float32",
+  "latents_raw_bytes": 2304000,
+  "latents_raw_mib": 2.197265625,
+  "latents_pt_bytes": 1154483,
+  "latents_pt_mib": 1.1010007858276367,
+  "mp4_path": "/workspace/video_bench/results/hunyuanvideo15_community_720p_t2v_17f.mp4",
+  "latents_path": "/workspace/video_bench/results/hunyuanvideo15_community_720p_t2v_17f_latents.pt"
+}

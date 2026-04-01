@@ -1,0 +1,276 @@
+{
+  "family": "wan_t2v_a14b",
+  "latent_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f_latents.pt",
+  "latent_shape": [
+    16,
+    13,
+    90,
+    160
+  ],
+  "latent_dtype": "torch.float32",
+  "native_temporal_tiling": false,
+  "meta": {
+    "latent_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f_latents.pt",
+    "task": "t2v-A14B",
+    "prompt": "A cinematic drone shot gliding around a cliffside lighthouse at blue hour, powerful ocean waves crashing below, a warm rotating beacon sweeping through sea mist, ultra-detailed realistic lighting, atmospheric volumetric fog, natural camera motion, high detail.",
+    "size": "1280*720",
+    "frame_num": 49,
+    "fps": 16,
+    "seed": 20260331
+  },
+  "full_decode": {
+    "success": true,
+    "time_sec": 6.115261686965823,
+    "frames": 49,
+    "output_shape": [
+      3,
+      49,
+      720,
+      1280
+    ]
+  },
+  "stream_decode": {
+    "stream_chunk_latent_frames": 1,
+    "success": true,
+    "chunk_count": 13,
+    "total_stream_frames": 13,
+    "matches_full_frame_count": false,
+    "first_error": null,
+    "chunks": [
+      {
+        "chunk_index": 0,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.15046205930411816,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 1,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14706098102033138,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 2,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14383040741086006,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 3,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.1438250094652176,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 4,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.1439625844359398,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 5,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14416264183819294,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 6,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14394474774599075,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 7,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14384684897959232,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 8,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14415168575942516,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 9,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14393964037299156,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 10,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14411437138915062,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 11,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14406612887978554,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      },
+      {
+        "chunk_index": 12,
+        "latent_shape": [
+          16,
+          1,
+          90,
+          160
+        ],
+        "success": true,
+        "time_sec": 0.14392673037946224,
+        "frames": 1,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ]
+      }
+    ]
+  }
+}

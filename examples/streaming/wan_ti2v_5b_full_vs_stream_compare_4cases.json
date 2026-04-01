@@ -1,0 +1,203 @@
+{
+  "family": "wan_ti2v_5b",
+  "latent_group_size": 1,
+  "cases": [
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/000_subject_consistency_r00_p003_a_person_eating_a_burger.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a person eating a burger",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "full_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 17.597609845921397,
+        "fps_equivalent": 6.87593378074831
+      },
+      "stream_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 18.32177346944809,
+        "fps_equivalent": 6.604164176670443
+      },
+      "time_compare": {
+        "stream_minus_full_sec": 0.7241636235266924,
+        "stream_over_full_ratio": 1.041151248940465,
+        "stream_slower_percent": 4.115124894046507
+      },
+      "quality_compare": {
+        "same_shape": true,
+        "float_exact_equal": false,
+        "float_mse": 1.9393153706914745e-05,
+        "float_mae": 0.0018293090397492051,
+        "float_max_abs": 0.30227553844451904,
+        "uint8_exact_equal": false,
+        "uint8_mse": 0.1603221595287323,
+        "uint8_psnr": 56.080868067238264
+      }
+    },
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/015_motion_smoothness_r03_p064_a_bear_climbing_a_tree.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a bear climbing a tree",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "full_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 17.269203536212444,
+        "fps_equivalent": 7.006692563804147
+      },
+      "stream_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 18.305217845365405,
+        "fps_equivalent": 6.610137121675136
+      },
+      "time_compare": {
+        "stream_minus_full_sec": 1.0360143091529608,
+        "stream_over_full_ratio": 1.059992014511874,
+        "stream_slower_percent": 5.999201451187397
+      },
+      "quality_compare": {
+        "same_shape": true,
+        "float_exact_equal": false,
+        "float_mse": 8.067474118433893e-05,
+        "float_mae": 0.003980925306677818,
+        "float_max_abs": 0.4521690607070923,
+        "uint8_exact_equal": false,
+        "uint8_mse": 0.3474312424659729,
+        "uint8_psnr": 52.72211491430147
+      }
+    },
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/032_multiple_objects_r00_p011_a_couch_and_a_potted_plant.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "a couch and a potted plant",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "full_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 17.275431549176574,
+        "fps_equivalent": 7.004166561950078
+      },
+      "stream_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 18.34883383475244,
+        "fps_equivalent": 6.594424533445153
+      },
+      "time_compare": {
+        "stream_minus_full_sec": 1.0734022855758667,
+        "stream_over_full_ratio": 1.0621346148442254,
+        "stream_slower_percent": 6.213461484422544
+      },
+      "quality_compare": {
+        "same_shape": true,
+        "float_exact_equal": false,
+        "float_mse": 9.0447545517236e-05,
+        "float_mae": 0.0038579523097723722,
+        "float_max_abs": 0.24991464614868164,
+        "uint8_exact_equal": false,
+        "uint8_mse": 0.314941942691803,
+        "uint8_psnr": 53.148498588003704
+      }
+    },
+    {
+      "latent_path": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents/048_scene_r00_p037_golf_course.pt",
+      "meta": {
+        "task": "ti2v-5B",
+        "prompt": "golf course",
+        "size": "1280*704",
+        "frame_num": 121,
+        "fps": 24,
+        "seed": 42
+      },
+      "full_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 17.27417471073568,
+        "fps_equivalent": 7.004676172737795
+      },
+      "stream_decode": {
+        "shape": [
+          3,
+          121,
+          704,
+          1280
+        ],
+        "time_sec": 18.357325360178947,
+        "fps_equivalent": 6.591374158594773
+      },
+      "time_compare": {
+        "stream_minus_full_sec": 1.0831506494432688,
+        "stream_over_full_ratio": 1.062703467319345,
+        "stream_slower_percent": 6.270346731934495
+      },
+      "quality_compare": {
+        "same_shape": true,
+        "float_exact_equal": false,
+        "float_mse": 0.005288506858050823,
+        "float_mae": 0.035989969968795776,
+        "float_max_abs": 0.6378440856933594,
+        "uint8_exact_equal": false,
+        "uint8_mse": 0.33988717198371887,
+        "uint8_psnr": 52.81745587111023
+      }
+    }
+  ],
+  "summary": {
+    "case_count": 4,
+    "mean_full_decode_sec": 17.354104910511523,
+    "mean_stream_decode_sec": 18.33328762743622,
+    "mean_stream_over_full_ratio": 1.0564953364039773,
+    "mean_stream_slower_percent": 5.649533640397736,
+    "mean_uint8_psnr": 53.69223436016342,
+    "mean_uint8_mse": 0.29064562916755676,
+    "all_same_shape": true,
+    "all_float_exact_equal": false,
+    "all_uint8_exact_equal": false,
+    "max_float_max_abs": 0.6378440856933594
+  }
+}

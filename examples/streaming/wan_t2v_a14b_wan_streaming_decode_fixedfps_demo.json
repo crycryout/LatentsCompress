@@ -1,0 +1,68 @@
+{
+  "family": "wan_t2v_a14b",
+  "latent_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f_latents.pt",
+  "latent_shape": [
+    16,
+    13,
+    90,
+    160
+  ],
+  "latent_group_size": 1,
+  "emit_mode": "fixed_fps",
+  "target_fps": 2.0,
+  "full_decode": {
+    "frames": 49,
+    "time_sec": 6.029664788395166,
+    "output_fps_equivalent": 8.126488240989207
+  },
+  "stream_decode": {
+    "success": true,
+    "group_count": 2,
+    "total_frames_emitted": 5,
+    "matches_full_frame_count": false,
+    "groups": [
+      {
+        "group_index": 0,
+        "latent_start": 0,
+        "latent_len": 1,
+        "decoded_frames": 1,
+        "decode_sec": 0.20324338227510452,
+        "decode_fps": 4.920209400207817,
+        "sleep_sec": 0.49999062716960907,
+        "emit_timestamp_sec": 11555549.74341046,
+        "output_shape": [
+          3,
+          1,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      },
+      {
+        "group_index": 1,
+        "latent_start": 1,
+        "latent_len": 1,
+        "decoded_frames": 4,
+        "decode_sec": 0.507481986656785,
+        "decode_fps": 7.882053166756515,
+        "sleep_sec": 1.9999922085553408,
+        "emit_timestamp_sec": 11555552.411341537,
+        "output_shape": [
+          3,
+          4,
+          720,
+          1280
+        ],
+        "saved_group_path": null
+      }
+    ]
+  },
+  "meta": {
+    "task": "t2v-A14B",
+    "prompt": "A cinematic drone shot gliding around a cliffside lighthouse at blue hour, powerful ocean waves crashing below, a warm rotating beacon sweeping through sea mist, ultra-detailed realistic lighting, atmospheric volumetric fog, natural camera motion, high detail.",
+    "size": "1280*720",
+    "frame_num": 49,
+    "fps": 16,
+    "seed": 20260331
+  }
+}

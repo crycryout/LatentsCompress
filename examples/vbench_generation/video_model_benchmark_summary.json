@@ -1,0 +1,109 @@
+[
+  {
+    "model_family": "Wan 2.2",
+    "model_id": "Wan-AI/Wan2.2-T2V-A14B",
+    "video_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f.mp4",
+    "latents_path": "/workspace/outputs/wan22_t2v_a14b_720p16_lighthouse_49f_latents.pt",
+    "width": 1280,
+    "height": 720,
+    "num_frames": 49,
+    "fps": 16,
+    "raw_video_bytes": 135475200,
+    "mp4_bytes": 4889513,
+    "latents_shape": [
+      16,
+      13,
+      90,
+      160
+    ],
+    "latents_dtype": "torch.float32",
+    "latents_raw_bytes": 11980800,
+    "latents_pt_bytes": 11983148
+  },
+  {
+    "model_family": "CogVideoX 1.5",
+    "model_id": "zai-org/CogVideoX1.5-5B",
+    "video_path": "/workspace/video_bench/results/cogvideox15_5b_720p_49f.mp4",
+    "latents_path": "/workspace/video_bench/results/cogvideox15_5b_720p_49f_latents.pt",
+    "width": 1280,
+    "height": 720,
+    "num_frames": 49,
+    "fps": 16,
+    "raw_video_bytes": 541900800,
+    "mp4_bytes": 1770520,
+    "latents_shape": [
+      1,
+      13,
+      16,
+      90,
+      160
+    ],
+    "latents_dtype": "torch.bfloat16",
+    "latents_raw_bytes": 5990400,
+    "latents_pt_bytes": 6453521
+  },
+  {
+    "model_family": "HunyuanVideo 1.5",
+    "model_id": "hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-720p_t2v",
+    "video_path": "/workspace/video_bench/results/hunyuanvideo15_community_720p_t2v_17f.mp4",
+    "latents_path": "/workspace/video_bench/results/hunyuanvideo15_community_720p_t2v_17f_latents.pt",
+    "width": 1280,
+    "height": 720,
+    "num_frames": 17,
+    "fps": 16,
+    "raw_video_bytes": 47001600,
+    "mp4_bytes": 1249767,
+    "latents_shape": [
+      1,
+      32,
+      5,
+      45,
+      80
+    ],
+    "latents_dtype": "torch.float32",
+    "latents_raw_bytes": 2304000,
+    "latents_pt_bytes": 1154483
+  },
+  {
+    "model_family": "LTX-2",
+    "model_id": "Lightricks/LTX-2",
+    "video_path": "/workspace/video_bench/results/ltx2_19b_768x512_17f.mp4",
+    "latents_path": "/workspace/video_bench/results/ltx2_19b_768x512_17f_latents.pt",
+    "width": 768,
+    "height": 512,
+    "num_frames": 17,
+    "fps": 16,
+    "raw_video_bytes": 80216064,
+    "mp4_bytes": 402265,
+    "latents_shape": [
+      1,
+      1152,
+      128
+    ],
+    "latents_dtype": "torch.float32",
+    "latents_raw_bytes": 589824,
+    "latents_pt_bytes": 592124
+  },
+  {
+    "model_family": "Open-Sora 2.0",
+    "model_id": "hpcai-tech/Open-Sora-v2",
+    "video_path": "/workspace/video_bench/opensora_run_t2v/video_256px/prompt_0000.mp4",
+    "latents_path": "/workspace/video_bench/opensora_run_t2v/video_256px/sample_0_latents.pt",
+    "width": 336,
+    "height": 192,
+    "num_frames": 17,
+    "fps": 16,
+    "raw_video_bytes": 3290112,
+    "mp4_bytes": 16443,
+    "latents_shape": [
+      1,
+      16,
+      5,
+      24,
+      42
+    ],
+    "latents_dtype": "torch.bfloat16",
+    "latents_raw_bytes": 161280,
+    "latents_pt_bytes": 163048
+  }
+]

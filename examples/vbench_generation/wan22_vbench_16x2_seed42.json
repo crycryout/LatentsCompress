@@ -1,0 +1,258 @@
+[
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 3,
+    "prompt": "a person eating a burger",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "subject_consistency",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 14,
+    "prompt": "a car accelerating to gain speed",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 13,
+    "prompt": "bridge",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "background_consistency",
+    "prompt_suite": "scene",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 17,
+    "prompt": "campus",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 3,
+    "prompt": "A tranquil tableau of alley",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_flickering",
+    "prompt_suite": "temporal_flickering",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 4,
+    "prompt": "A tranquil tableau of bar",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 11,
+    "prompt": "a car stuck in traffic during rush hour",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "motion_smoothness",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 27,
+    "prompt": "a train speeding down the tracks",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 3,
+    "prompt": "a person eating a burger",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "dynamic_degree",
+    "prompt_suite": "subject_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 25,
+    "prompt": "a bus stuck in traffic during rush hour",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 28,
+    "prompt": "Origami dancers in white paper, 3D render, on white background, studio shot, dancing modern dance.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "aesthetic_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 53,
+    "prompt": "A jellyfish floating through the ocean, with bioluminescent tentacles",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 0,
+    "prompt": "Close up of grapes on a rotating table.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "imaging_quality",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 20,
+    "prompt": "a shark is swimming in the ocean.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 19,
+    "prompt": "a cow",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "object_class",
+    "prompt_suite": "object_class",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 35,
+    "prompt": "a baseball glove",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 11,
+    "prompt": "a couch and a potted plant",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "multiple_objects",
+    "prompt_suite": "multiple_objects",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 13,
+    "prompt": "a tv and a laptop",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 12,
+    "prompt": "A person is skateboarding",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "human_action",
+    "prompt_suite": "human_action",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 44,
+    "prompt": "A person is planting trees",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 5,
+    "prompt": "a purple bicycle",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "color",
+    "prompt_suite": "color",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 33,
+    "prompt": "a blue umbrella",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 10,
+    "prompt": "a bird on the left of a cat, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "spatial_relationship",
+    "prompt_suite": "spatial_relationship",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 15,
+    "prompt": "a cow on the right of an elephant, front view",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 37,
+    "prompt": "golf course",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "scene",
+    "prompt_suite": "scene",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 70,
+    "prompt": "sky",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 24,
+    "prompt": "a shark is swimming in the ocean, pan right",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "temporal_style",
+    "prompt_suite": "temporal_style",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 46,
+    "prompt": "A cute happy Corgi playing in park, sunset, tilt down",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 5,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in cyberpunk style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "appearance_style",
+    "prompt_suite": "appearance_style",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 8,
+    "prompt": "A beautiful coastal beach in spring, waves lapping on sand, surrealism style",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 0,
+    "prompt_index_in_suite": 10,
+    "prompt": "Fireworks.",
+    "generation_seed": 42
+  },
+  {
+    "dimension": "overall_consistency",
+    "prompt_suite": "overall_consistency",
+    "sample_rank": 1,
+    "prompt_index_in_suite": 12,
+    "prompt": "Flying through fantasy landscapes.",
+    "generation_seed": 42
+  }
+]
