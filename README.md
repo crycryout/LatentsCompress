@@ -106,6 +106,15 @@ The repository now also includes `lighttaew2_2` reference decodes for the same 1
 
 These results compare `lighttaew2_2` against the official `Wan2.2_VAE` baseline MP4s generated from the same saved uncompressed latents.
 
+Additional lossless latent-compression follow-up notes are now included for:
+
+- one `SkyReels-V2-DF-14B-720P` 60-second long-video latent
+- the `64` saved `Wan2.2` short-video latents under several `pcodec` and XOR-transform variants
+
+Start with:
+
+- `examples/vbench_codec/skyreels_long_and_wan64_lossless_report.md`
+
 ## Codex Chat Logs
 
 Local Codex conversation artifacts for this project have also been archived under `examples/codex_chat/`:

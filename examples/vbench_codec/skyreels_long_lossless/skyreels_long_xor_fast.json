@@ -1,0 +1,37 @@
+{
+  "baseline": {
+    "zstd_raw": 103807925,
+    "zstd_bshuffle": 92201568,
+    "pcodec_raw": 86467823
+  },
+  "rows": [
+    {
+      "window": 2,
+      "zstd_xor": 105347290,
+      "zstd_xor_bshuffle": 92241841,
+      "pcodec_xor": 94376810,
+      "verified": true
+    },
+    {
+      "window": 4,
+      "zstd_xor": 107011320,
+      "zstd_xor_bshuffle": 92446017,
+      "pcodec_xor": 93270595,
+      "verified": true
+    },
+    {
+      "window": 8,
+      "zstd_xor": 109014278,
+      "zstd_xor_bshuffle": 92894186,
+      "pcodec_xor": 94405276,
+      "verified": true
+    },
+    {
+      "window": 16,
+      "zstd_xor": 110326290,
+      "zstd_xor_bshuffle": 93269237,
+      "pcodec_xor": 95774955,
+      "verified": true
+    }
+  ]
+}

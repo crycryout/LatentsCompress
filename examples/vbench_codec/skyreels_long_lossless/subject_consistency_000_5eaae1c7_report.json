@@ -1,0 +1,73 @@
+{
+  "latent_path": "/workspace/video_bench/skyreels_v2_vbench2_60s_720p/latents/subject_consistency/subject_consistency_000_5eaae1c7.pt",
+  "mp4_path": "/workspace/video_bench/skyreels_v2_vbench2_60s_720p/videos/subject_consistency/subject_consistency_000_5eaae1c7.mp4",
+  "latent_shape": [
+    16,
+    365,
+    90,
+    160
+  ],
+  "latent_dtype": "bfloat16",
+  "zstd_level": 19,
+  "pcodec_level": 8,
+  "sizes": {
+    "latent_pt_bytes": 168193880,
+    "latent_pt_mb": 168.19388,
+    "latent_pt_mib": 160.402184,
+    "latent_payload_bytes": 168192000,
+    "latent_payload_mb": 168.192,
+    "latent_payload_mib": 160.400391,
+    "pt_metadata_overhead_bytes": 1880,
+    "raw_rgb24_bytes": 4028313600,
+    "raw_rgb24_mb": 4028.3136,
+    "raw_rgb24_mib": 3841.699219,
+    "raw_yuv420_bytes": 2014156800,
+    "raw_yuv420_mb": 2014.1568,
+    "raw_yuv420_mib": 1920.849609,
+    "mp4_bytes": 142925494,
+    "mp4_mb": 142.925494,
+    "mp4_mib": 136.304373,
+    "mp4_ratio_vs_raw_rgb24": 28.18471,
+    "mp4_ratio_vs_raw_yuv420": 14.092355
+  },
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "nb_frames": 1457,
+    "fps": 24.0,
+    "duration": 60.708333,
+    "size_bytes": 142925494
+  },
+  "codec_rows": [
+    {
+      "codec": "zstd",
+      "target": "latent_payload",
+      "compressed_bytes": 102685993,
+      "compressed_mb": 102.685993,
+      "compressed_mib": 97.928994,
+      "ratio_vs_payload": 1.637925,
+      "ratio_vs_pt": 1.637944,
+      "verified_lossless": true
+    },
+    {
+      "codec": "openzl",
+      "target": "latent_payload",
+      "compressed_bytes": 105590684,
+      "compressed_mb": 105.590684,
+      "compressed_mib": 100.699123,
+      "ratio_vs_payload": 1.592868,
+      "ratio_vs_pt": 1.592886,
+      "verified_lossless": true
+    },
+    {
+      "codec": "pcodec",
+      "target": "latent_payload",
+      "compressed_bytes": 85940706,
+      "compressed_mb": 85.940706,
+      "compressed_mib": 81.959444,
+      "ratio_vs_payload": 1.95707,
+      "ratio_vs_pt": 1.957092,
+      "verified_lossless": true
+    }
+  ]
+}

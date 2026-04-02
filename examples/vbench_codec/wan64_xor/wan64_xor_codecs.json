@@ -1,0 +1,2822 @@
+{
+  "summary": {
+    "input_dir": "/workspace/video_bench/wan22_ti2v5b_vbench_16x4_seed42/latents",
+    "sample_count": 64,
+    "zstd_level": 19,
+    "pcodec_level": 8,
+    "window_sizes": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "baseline_totals": {
+      "zstd_raw": 1234074569,
+      "zstd_bshuffle": 1079741500,
+      "pcodec_raw": 1079997821
+    },
+    "xor_totals": {
+      "2": {
+        "zstd_xor": 1223829915,
+        "zstd_xor_bshuffle": 1086937965,
+        "pcodec_xor": 1102748856
+      },
+      "4": {
+        "zstd_xor": 1222181883,
+        "zstd_xor_bshuffle": 1090507253,
+        "pcodec_xor": 1099563940
+      },
+      "8": {
+        "zstd_xor": 1226301611,
+        "zstd_xor_bshuffle": 1093110348,
+        "pcodec_xor": 1101477818
+      },
+      "16": {
+        "zstd_xor": 1233617903,
+        "zstd_xor_bshuffle": 1094130478,
+        "pcodec_xor": 1110429226
+      }
+    },
+    "comparisons_vs_baseline": {
+      "zstd_xor": {
+        "2": {
+          "better": 56,
+          "equal": 0,
+          "worse": 8
+        },
+        "4": {
+          "better": 51,
+          "equal": 0,
+          "worse": 13
+        },
+        "8": {
+          "better": 40,
+          "equal": 0,
+          "worse": 24
+        },
+        "16": {
+          "better": 26,
+          "equal": 0,
+          "worse": 38
+        }
+      },
+      "zstd_xor_bshuffle": {
+        "2": {
+          "better": 9,
+          "equal": 0,
+          "worse": 55
+        },
+        "4": {
+          "better": 8,
+          "equal": 0,
+          "worse": 56
+        },
+        "8": {
+          "better": 8,
+          "equal": 0,
+          "worse": 56
+        },
+        "16": {
+          "better": 8,
+          "equal": 0,
+          "worse": 56
+        }
+      },
+      "pcodec_xor": {
+        "2": {
+          "better": 0,
+          "equal": 0,
+          "worse": 64
+        },
+        "4": {
+          "better": 10,
+          "equal": 0,
+          "worse": 54
+        },
+        "8": {
+          "better": 11,
+          "equal": 0,
+          "worse": 53
+        },
+        "16": {
+          "better": 6,
+          "equal": 0,
+          "worse": 58
+        }
+      }
+    },
+    "xor_total_delta_vs_baseline": {
+      "2": {
+        "zstd_xor_vs_zstd_raw": -10244654,
+        "zstd_xor_bshuffle_vs_zstd_bshuffle": 7196465,
+        "pcodec_xor_vs_pcodec_raw": 22751035
+      },
+      "4": {
+        "zstd_xor_vs_zstd_raw": -11892686,
+        "zstd_xor_bshuffle_vs_zstd_bshuffle": 10765753,
+        "pcodec_xor_vs_pcodec_raw": 19566119
+      },
+      "8": {
+        "zstd_xor_vs_zstd_raw": -7772958,
+        "zstd_xor_bshuffle_vs_zstd_bshuffle": 13368848,
+        "pcodec_xor_vs_pcodec_raw": 21479997
+      },
+      "16": {
+        "zstd_xor_vs_zstd_raw": -456666,
+        "zstd_xor_bshuffle_vs_zstd_bshuffle": 14388978,
+        "pcodec_xor_vs_pcodec_raw": 30431405
+      }
+    },
+    "all_verified_lossless": true
+  },
+  "rows": [
+    {
+      "name": "000_subject_consistency_r00_p003_a_person_eating_a_burger",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19299461,
+        "zstd_bshuffle": 16981548,
+        "pcodec_raw": 16951101
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19336964,
+          "zstd_xor_bshuffle": 17227482,
+          "pcodec_xor": 17403236,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19379585,
+          "zstd_xor_bshuffle": 17345181,
+          "pcodec_xor": 17492233,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19472147,
+          "zstd_xor_bshuffle": 17418011,
+          "pcodec_xor": 17591550,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19543670,
+          "zstd_xor_bshuffle": 17441618,
+          "pcodec_xor": 17681703,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19355665,
+        "zstd_bshuffle": 16936424,
+        "pcodec_raw": 16861356
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19306938,
+          "zstd_xor_bshuffle": 17146001,
+          "pcodec_xor": 17326782,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19335328,
+          "zstd_xor_bshuffle": 17241991,
+          "pcodec_xor": 17403978,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19406169,
+          "zstd_xor_bshuffle": 17298564,
+          "pcodec_xor": 17482176,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19485807,
+          "zstd_xor_bshuffle": 17316765,
+          "pcodec_xor": 17591619,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "002_subject_consistency_r02_p031_a_truck_anchored_in_a_tranquil_bay",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19170923,
+        "zstd_bshuffle": 16447669,
+        "pcodec_raw": 16294786
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18726407,
+          "zstd_xor_bshuffle": 16386384,
+          "pcodec_xor": 16600258,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18563997,
+          "zstd_xor_bshuffle": 16346312,
+          "pcodec_xor": 16475361,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18609864,
+          "zstd_xor_bshuffle": 16367699,
+          "pcodec_xor": 16515361,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 18832609,
+          "zstd_xor_bshuffle": 16450201,
+          "pcodec_xor": 16796919,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "003_subject_consistency_r03_p035_a_boat_sailing_smoothly_on_a_calm_lake",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19247752,
+        "zstd_bshuffle": 16699264,
+        "pcodec_raw": 16477521
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19145367,
+          "zstd_xor_bshuffle": 16870217,
+          "pcodec_xor": 17001323,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19133429,
+          "zstd_xor_bshuffle": 16944093,
+          "pcodec_xor": 17103185,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19199277,
+          "zstd_xor_bshuffle": 16984725,
+          "pcodec_xor": 17199632,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19274898,
+          "zstd_xor_bshuffle": 16992486,
+          "pcodec_xor": 17322358,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "004_background_consistency_r00_p013_bridge",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19160680,
+        "zstd_bshuffle": 16665450,
+        "pcodec_raw": 16504829
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18936030,
+          "zstd_xor_bshuffle": 16690034,
+          "pcodec_xor": 16897260,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18860509,
+          "zstd_xor_bshuffle": 16707888,
+          "pcodec_xor": 16853824,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18914433,
+          "zstd_xor_bshuffle": 16740998,
+          "pcodec_xor": 16891421,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19021915,
+          "zstd_xor_bshuffle": 16749470,
+          "pcodec_xor": 17039604,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "005_background_consistency_r01_p017_campus",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19280123,
+        "zstd_bshuffle": 16856150,
+        "pcodec_raw": 16742489
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19089641,
+          "zstd_xor_bshuffle": 16931228,
+          "pcodec_xor": 17127773,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19056469,
+          "zstd_xor_bshuffle": 16986743,
+          "pcodec_xor": 17111409,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19120089,
+          "zstd_xor_bshuffle": 17032693,
+          "pcodec_xor": 17162589,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19226594,
+          "zstd_xor_bshuffle": 17033801,
+          "pcodec_xor": 17302718,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "006_background_consistency_r02_p028_downtown",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19277324,
+        "zstd_bshuffle": 16957621,
+        "pcodec_raw": 16972161
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19165975,
+          "zstd_xor_bshuffle": 17091145,
+          "pcodec_xor": 17361346,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19169675,
+          "zstd_xor_bshuffle": 17168603,
+          "pcodec_xor": 17328765,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19233237,
+          "zstd_xor_bshuffle": 17213319,
+          "pcodec_xor": 17327756,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19311746,
+          "zstd_xor_bshuffle": 17235216,
+          "pcodec_xor": 17404414,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "007_background_consistency_r03_p069_ski_slope",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19285526,
+        "zstd_bshuffle": 16779907,
+        "pcodec_raw": 16583656
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19179367,
+          "zstd_xor_bshuffle": 16956806,
+          "pcodec_xor": 17075731,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19185979,
+          "zstd_xor_bshuffle": 17046947,
+          "pcodec_xor": 17177777,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19275620,
+          "zstd_xor_bshuffle": 17101746,
+          "pcodec_xor": 17299617,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19391208,
+          "zstd_xor_bshuffle": 17124411,
+          "pcodec_xor": 17454243,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "008_temporal_flickering_r00_p003_a_tranquil_tableau_of_alley",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19273607,
+        "zstd_bshuffle": 16855272,
+        "pcodec_raw": 16922921
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18996960,
+          "zstd_xor_bshuffle": 16879318,
+          "pcodec_xor": 17193259,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18946512,
+          "zstd_xor_bshuffle": 16905620,
+          "pcodec_xor": 17053095,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19029302,
+          "zstd_xor_bshuffle": 16918109,
+          "pcodec_xor": 17075506,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19187252,
+          "zstd_xor_bshuffle": 16910623,
+          "pcodec_xor": 17254609,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "009_temporal_flickering_r01_p004_a_tranquil_tableau_of_bar",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19287375,
+        "zstd_bshuffle": 16947108,
+        "pcodec_raw": 16946770
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19085696,
+          "zstd_xor_bshuffle": 17003650,
+          "pcodec_xor": 17274090,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19045330,
+          "zstd_xor_bshuffle": 17045880,
+          "pcodec_xor": 17181238,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19122248,
+          "zstd_xor_bshuffle": 17099252,
+          "pcodec_xor": 17193367,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19221222,
+          "zstd_xor_bshuffle": 17080751,
+          "pcodec_xor": 17306259,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "010_temporal_flickering_r02_p011_a_tranquil_tableau_of_house",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19288544,
+        "zstd_bshuffle": 16716673,
+        "pcodec_raw": 16734806
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18924223,
+          "zstd_xor_bshuffle": 16705869,
+          "pcodec_xor": 17001966,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18788582,
+          "zstd_xor_bshuffle": 16671708,
+          "pcodec_xor": 16819743,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18835870,
+          "zstd_xor_bshuffle": 16681450,
+          "pcodec_xor": 16809464,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19011983,
+          "zstd_xor_bshuffle": 16692097,
+          "pcodec_xor": 17015014,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "011_temporal_flickering_r03_p054_a_tranquil_tableau_of_in_the_heart_of_plaka_the_neoclassical_architecture_of_the",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19261196,
+        "zstd_bshuffle": 16638764,
+        "pcodec_raw": 16792844
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18858890,
+          "zstd_xor_bshuffle": 16607153,
+          "pcodec_xor": 16972543,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18730236,
+          "zstd_xor_bshuffle": 16603120,
+          "pcodec_xor": 16753047,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18813407,
+          "zstd_xor_bshuffle": 16605933,
+          "pcodec_xor": 16762709,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19048949,
+          "zstd_xor_bshuffle": 16653259,
+          "pcodec_xor": 17052473,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "012_motion_smoothness_r00_p011_a_car_stuck_in_traffic_during_rush_hour",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19291569,
+        "zstd_bshuffle": 16918764,
+        "pcodec_raw": 16837130
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19286057,
+          "zstd_xor_bshuffle": 17143714,
+          "pcodec_xor": 17300263,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19317502,
+          "zstd_xor_bshuffle": 17236246,
+          "pcodec_xor": 17380638,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19369699,
+          "zstd_xor_bshuffle": 17282337,
+          "pcodec_xor": 17444571,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19421576,
+          "zstd_xor_bshuffle": 17297386,
+          "pcodec_xor": 17516535,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "013_motion_smoothness_r01_p027_a_train_speeding_down_the_tracks",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19380065,
+        "zstd_bshuffle": 16961947,
+        "pcodec_raw": 16877658
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19351458,
+          "zstd_xor_bshuffle": 17191140,
+          "pcodec_xor": 17343330,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19381049,
+          "zstd_xor_bshuffle": 17305546,
+          "pcodec_xor": 17451750,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19453533,
+          "zstd_xor_bshuffle": 17374952,
+          "pcodec_xor": 17538365,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19511981,
+          "zstd_xor_bshuffle": 17400390,
+          "pcodec_xor": 17627975,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "014_motion_smoothness_r02_p029_a_train_accelerating_to_gain_speed",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19393763,
+        "zstd_bshuffle": 16926096,
+        "pcodec_raw": 16769949
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19365851,
+          "zstd_xor_bshuffle": 17168081,
+          "pcodec_xor": 17259650,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19409833,
+          "zstd_xor_bshuffle": 17288037,
+          "pcodec_xor": 17416548,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19489985,
+          "zstd_xor_bshuffle": 17345951,
+          "pcodec_xor": 17544744,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19533225,
+          "zstd_xor_bshuffle": 17346475,
+          "pcodec_xor": 17624222,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "015_motion_smoothness_r03_p064_a_bear_climbing_a_tree",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19359985,
+        "zstd_bshuffle": 17264080,
+        "pcodec_raw": 17363818
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19432458,
+          "zstd_xor_bshuffle": 17495956,
+          "pcodec_xor": 17708800,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19474471,
+          "zstd_xor_bshuffle": 17621208,
+          "pcodec_xor": 17719951,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19527354,
+          "zstd_xor_bshuffle": 17681091,
+          "pcodec_xor": 17701628,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19571042,
+          "zstd_xor_bshuffle": 17722945,
+          "pcodec_xor": 17737246,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "016_dynamic_degree_r00_p003_a_person_eating_a_burger",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19299461,
+        "zstd_bshuffle": 16981548,
+        "pcodec_raw": 16951101
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19336964,
+          "zstd_xor_bshuffle": 17227482,
+          "pcodec_xor": 17403236,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19379585,
+          "zstd_xor_bshuffle": 17345181,
+          "pcodec_xor": 17492233,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19472147,
+          "zstd_xor_bshuffle": 17418011,
+          "pcodec_xor": 17591550,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19543670,
+          "zstd_xor_bshuffle": 17441618,
+          "pcodec_xor": 17681703,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "017_dynamic_degree_r01_p025_a_bus_stuck_in_traffic_during_rush_hour",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19321505,
+        "zstd_bshuffle": 16981431,
+        "pcodec_raw": 16954508
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19304737,
+          "zstd_xor_bshuffle": 17192964,
+          "pcodec_xor": 17396110,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19329200,
+          "zstd_xor_bshuffle": 17288977,
+          "pcodec_xor": 17444055,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19410130,
+          "zstd_xor_bshuffle": 17350915,
+          "pcodec_xor": 17509448,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19498705,
+          "zstd_xor_bshuffle": 17376026,
+          "pcodec_xor": 17625161,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "018_dynamic_degree_r02_p069_a_giraffe_bending_down_to_drink_water_from_a_river",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19315635,
+        "zstd_bshuffle": 17057484,
+        "pcodec_raw": 17099997
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19291255,
+          "zstd_xor_bshuffle": 17246166,
+          "pcodec_xor": 17505926,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19338274,
+          "zstd_xor_bshuffle": 17349783,
+          "pcodec_xor": 17518063,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19422667,
+          "zstd_xor_bshuffle": 17417788,
+          "pcodec_xor": 17548617,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19484807,
+          "zstd_xor_bshuffle": 17451250,
+          "pcodec_xor": 17611265,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "019_dynamic_degree_r03_p071_a_giraffe_running_to_join_a_herd_of_its_kind",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19241859,
+        "zstd_bshuffle": 16769395,
+        "pcodec_raw": 16657409
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19127644,
+          "zstd_xor_bshuffle": 16924893,
+          "pcodec_xor": 17125190,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19120694,
+          "zstd_xor_bshuffle": 16998343,
+          "pcodec_xor": 17174410,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19205264,
+          "zstd_xor_bshuffle": 17057477,
+          "pcodec_xor": 17262930,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19304766,
+          "zstd_xor_bshuffle": 17064484,
+          "pcodec_xor": 17401986,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "020_aesthetic_quality_r00_p028_origami_dancers_in_white_paper_3d_render_on_white_background_studio_shot_dancing",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19188354,
+        "zstd_bshuffle": 16917761,
+        "pcodec_raw": 16891939
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19169597,
+          "zstd_xor_bshuffle": 17080850,
+          "pcodec_xor": 17316236,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19172660,
+          "zstd_xor_bshuffle": 17159027,
+          "pcodec_xor": 17303445,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19229494,
+          "zstd_xor_bshuffle": 17213934,
+          "pcodec_xor": 17329568,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19321698,
+          "zstd_xor_bshuffle": 17236659,
+          "pcodec_xor": 17432982,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "021_aesthetic_quality_r01_p053_a_jellyfish_floating_through_the_ocean_with_bioluminescent_tentacles",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 18924676,
+        "zstd_bshuffle": 16644830,
+        "pcodec_raw": 16497748
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18896782,
+          "zstd_xor_bshuffle": 16784831,
+          "pcodec_xor": 16985170,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18912110,
+          "zstd_xor_bshuffle": 16836857,
+          "pcodec_xor": 16980354,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18964343,
+          "zstd_xor_bshuffle": 16866743,
+          "pcodec_xor": 16997384,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19059575,
+          "zstd_xor_bshuffle": 16903929,
+          "pcodec_xor": 17144383,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "022_aesthetic_quality_r02_p057_a_steam_train_moving_on_a_mountainside",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19353788,
+        "zstd_bshuffle": 16911121,
+        "pcodec_raw": 16834106
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19262095,
+          "zstd_xor_bshuffle": 17100042,
+          "pcodec_xor": 17287317,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19275569,
+          "zstd_xor_bshuffle": 17198109,
+          "pcodec_xor": 17355168,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19346863,
+          "zstd_xor_bshuffle": 17253189,
+          "pcodec_xor": 17421278,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19450276,
+          "zstd_xor_bshuffle": 17281163,
+          "pcodec_xor": 17551889,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "023_aesthetic_quality_r03_p075_a_happy_fuzzy_panda_playing_guitar_nearby_a_campfire_snow_mountain_in_the_backgr",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19339584,
+        "zstd_bshuffle": 16979084,
+        "pcodec_raw": 17061415
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19099782,
+          "zstd_xor_bshuffle": 17023035,
+          "pcodec_xor": 17316211,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19010853,
+          "zstd_xor_bshuffle": 17024061,
+          "pcodec_xor": 17142998,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19067171,
+          "zstd_xor_bshuffle": 17048078,
+          "pcodec_xor": 17118292,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19222385,
+          "zstd_xor_bshuffle": 17025950,
+          "pcodec_xor": 17293736,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "024_imaging_quality_r00_p000_close_up_of_grapes_on_a_rotating_table",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19370366,
+        "zstd_bshuffle": 17048362,
+        "pcodec_raw": 17019622
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19342427,
+          "zstd_xor_bshuffle": 17253806,
+          "pcodec_xor": 17437137,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19358163,
+          "zstd_xor_bshuffle": 17352095,
+          "pcodec_xor": 17473330,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19426952,
+          "zstd_xor_bshuffle": 17416604,
+          "pcodec_xor": 17527059,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19561532,
+          "zstd_xor_bshuffle": 17440724,
+          "pcodec_xor": 17702993,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "025_imaging_quality_r01_p020_a_shark_is_swimming_in_the_ocean",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19013582,
+        "zstd_bshuffle": 16502465,
+        "pcodec_raw": 16164676
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18885845,
+          "zstd_xor_bshuffle": 16608986,
+          "pcodec_xor": 16707519,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18874117,
+          "zstd_xor_bshuffle": 16656060,
+          "pcodec_xor": 16800405,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18936193,
+          "zstd_xor_bshuffle": 16686194,
+          "pcodec_xor": 16887463,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19043334,
+          "zstd_xor_bshuffle": 16704622,
+          "pcodec_xor": 17019360,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "026_imaging_quality_r02_p035_busy_freeway_at_night",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19156229,
+        "zstd_bshuffle": 16604504,
+        "pcodec_raw": 16276055
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18883920,
+          "zstd_xor_bshuffle": 16633131,
+          "pcodec_xor": 16698379,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18839289,
+          "zstd_xor_bshuffle": 16678962,
+          "pcodec_xor": 16728105,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18929366,
+          "zstd_xor_bshuffle": 16731293,
+          "pcodec_xor": 16838245,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19064598,
+          "zstd_xor_bshuffle": 16758888,
+          "pcodec_xor": 17020212,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "027_imaging_quality_r03_p089_hyper_realistic_spaceship_landing_on_mars",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19285441,
+        "zstd_bshuffle": 16954979,
+        "pcodec_raw": 16960057
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19211299,
+          "zstd_xor_bshuffle": 17107305,
+          "pcodec_xor": 17373788,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19227451,
+          "zstd_xor_bshuffle": 17197047,
+          "pcodec_xor": 17360641,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19311565,
+          "zstd_xor_bshuffle": 17266109,
+          "pcodec_xor": 17410157,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19426416,
+          "zstd_xor_bshuffle": 17286844,
+          "pcodec_xor": 17546160,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "028_object_class_r00_p019_a_cow",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19323630,
+        "zstd_bshuffle": 16936986,
+        "pcodec_raw": 16881551
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19174461,
+          "zstd_xor_bshuffle": 17065215,
+          "pcodec_xor": 17275044,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19163557,
+          "zstd_xor_bshuffle": 17144795,
+          "pcodec_xor": 17275266,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19225943,
+          "zstd_xor_bshuffle": 17185270,
+          "pcodec_xor": 17300569,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19331147,
+          "zstd_xor_bshuffle": 17195895,
+          "pcodec_xor": 17429229,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "029_object_class_r01_p035_a_baseball_glove",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19337274,
+        "zstd_bshuffle": 16989036,
+        "pcodec_raw": 16946996
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19170798,
+          "zstd_xor_bshuffle": 17081774,
+          "pcodec_xor": 17295137,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19154441,
+          "zstd_xor_bshuffle": 17152678,
+          "pcodec_xor": 17252386,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19248988,
+          "zstd_xor_bshuffle": 17213349,
+          "pcodec_xor": 17315721,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19350592,
+          "zstd_xor_bshuffle": 17209598,
+          "pcodec_xor": 17439227,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "030_object_class_r02_p043_a_knife",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19340839,
+        "zstd_bshuffle": 17210130,
+        "pcodec_raw": 17330369
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19222937,
+          "zstd_xor_bshuffle": 17275612,
+          "pcodec_xor": 17590027,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19224905,
+          "zstd_xor_bshuffle": 17346428,
+          "pcodec_xor": 17466448,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19296811,
+          "zstd_xor_bshuffle": 17404875,
+          "pcodec_xor": 17436278,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19388045,
+          "zstd_xor_bshuffle": 17390162,
+          "pcodec_xor": 17519991,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "031_object_class_r03_p054_a_donut",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19304011,
+        "zstd_bshuffle": 17027086,
+        "pcodec_raw": 17074843
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19246222,
+          "zstd_xor_bshuffle": 17201805,
+          "pcodec_xor": 17468217,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19273080,
+          "zstd_xor_bshuffle": 17284475,
+          "pcodec_xor": 17448384,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19336987,
+          "zstd_xor_bshuffle": 17344185,
+          "pcodec_xor": 17457047,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19402954,
+          "zstd_xor_bshuffle": 17372944,
+          "pcodec_xor": 17532986,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "032_multiple_objects_r00_p011_a_couch_and_a_potted_plant",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19332268,
+        "zstd_bshuffle": 16753639,
+        "pcodec_raw": 17186802
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18917943,
+          "zstd_xor_bshuffle": 16799088,
+          "pcodec_xor": 17246304,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18807730,
+          "zstd_xor_bshuffle": 16797150,
+          "pcodec_xor": 16922867,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18888961,
+          "zstd_xor_bshuffle": 16762771,
+          "pcodec_xor": 16895961,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19076749,
+          "zstd_xor_bshuffle": 16751034,
+          "pcodec_xor": 17107305,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "033_multiple_objects_r01_p013_a_tv_and_a_laptop",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19323213,
+        "zstd_bshuffle": 16789990,
+        "pcodec_raw": 17034338
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18987266,
+          "zstd_xor_bshuffle": 16841004,
+          "pcodec_xor": 17219400,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18848213,
+          "zstd_xor_bshuffle": 16811856,
+          "pcodec_xor": 16959305,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18900842,
+          "zstd_xor_bshuffle": 16801554,
+          "pcodec_xor": 16906370,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19080512,
+          "zstd_xor_bshuffle": 16799038,
+          "pcodec_xor": 17099341,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "034_multiple_objects_r02_p027_a_teddy_bear_and_a_frisbee",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19335597,
+        "zstd_bshuffle": 17005650,
+        "pcodec_raw": 16979532
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19135639,
+          "zstd_xor_bshuffle": 17064167,
+          "pcodec_xor": 17306104,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19120058,
+          "zstd_xor_bshuffle": 17138232,
+          "pcodec_xor": 17255566,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19214502,
+          "zstd_xor_bshuffle": 17191217,
+          "pcodec_xor": 17301791,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19302413,
+          "zstd_xor_bshuffle": 17154182,
+          "pcodec_xor": 17394063,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "035_multiple_objects_r03_p043_a_car_and_a_motorcycle",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19322826,
+        "zstd_bshuffle": 17001161,
+        "pcodec_raw": 16969061
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19193482,
+          "zstd_xor_bshuffle": 17127660,
+          "pcodec_xor": 17354205,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19198594,
+          "zstd_xor_bshuffle": 17214544,
+          "pcodec_xor": 17340282,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19262067,
+          "zstd_xor_bshuffle": 17264699,
+          "pcodec_xor": 17348875,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19345972,
+          "zstd_xor_bshuffle": 17256638,
+          "pcodec_xor": 17444260,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "036_human_action_r00_p012_a_person_is_skateboarding",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19346754,
+        "zstd_bshuffle": 16981243,
+        "pcodec_raw": 16946190
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19364130,
+          "zstd_xor_bshuffle": 17227217,
+          "pcodec_xor": 17395674,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19416438,
+          "zstd_xor_bshuffle": 17344068,
+          "pcodec_xor": 17503530,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19496315,
+          "zstd_xor_bshuffle": 17410030,
+          "pcodec_xor": 17606776,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19583289,
+          "zstd_xor_bshuffle": 17442734,
+          "pcodec_xor": 17727992,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "037_human_action_r01_p044_a_person_is_planting_trees",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19358897,
+        "zstd_bshuffle": 17121478,
+        "pcodec_raw": 17161274
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19307741,
+          "zstd_xor_bshuffle": 17289821,
+          "pcodec_xor": 17526209,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19331753,
+          "zstd_xor_bshuffle": 17388547,
+          "pcodec_xor": 17507233,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19389245,
+          "zstd_xor_bshuffle": 17450976,
+          "pcodec_xor": 17513995,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19436980,
+          "zstd_xor_bshuffle": 17479549,
+          "pcodec_xor": 17560706,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "038_human_action_r02_p045_a_person_is_sharpening_knives",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19354374,
+        "zstd_bshuffle": 17133715,
+        "pcodec_raw": 17166684
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19359976,
+          "zstd_xor_bshuffle": 17329495,
+          "pcodec_xor": 17540936,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19387350,
+          "zstd_xor_bshuffle": 17440070,
+          "pcodec_xor": 17561995,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19462078,
+          "zstd_xor_bshuffle": 17514081,
+          "pcodec_xor": 17600835,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19505834,
+          "zstd_xor_bshuffle": 17517915,
+          "pcodec_xor": 17643239,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "039_human_action_r03_p048_a_person_is_hula_hooping",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19328398,
+        "zstd_bshuffle": 17031134,
+        "pcodec_raw": 17028880
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19345542,
+          "zstd_xor_bshuffle": 17275199,
+          "pcodec_xor": 17470754,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19402595,
+          "zstd_xor_bshuffle": 17397783,
+          "pcodec_xor": 17550047,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19482916,
+          "zstd_xor_bshuffle": 17461209,
+          "pcodec_xor": 17622190,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19573134,
+          "zstd_xor_bshuffle": 17495755,
+          "pcodec_xor": 17735363,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "040_color_r00_p005_a_purple_bicycle",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19328029,
+        "zstd_bshuffle": 17052945,
+        "pcodec_raw": 17072219
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19228610,
+          "zstd_xor_bshuffle": 17199789,
+          "pcodec_xor": 17440345,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19260287,
+          "zstd_xor_bshuffle": 17301048,
+          "pcodec_xor": 17432017,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19332861,
+          "zstd_xor_bshuffle": 17365117,
+          "pcodec_xor": 17450700,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19407457,
+          "zstd_xor_bshuffle": 17379341,
+          "pcodec_xor": 17526864,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "041_color_r01_p033_a_blue_umbrella",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19326646,
+        "zstd_bshuffle": 16979179,
+        "pcodec_raw": 16960083
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19162931,
+          "zstd_xor_bshuffle": 17076478,
+          "pcodec_xor": 17304608,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19179815,
+          "zstd_xor_bshuffle": 17167355,
+          "pcodec_xor": 17304595,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19272537,
+          "zstd_xor_bshuffle": 17215599,
+          "pcodec_xor": 17363992,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19397612,
+          "zstd_xor_bshuffle": 17210869,
+          "pcodec_xor": 17509782,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "042_color_r02_p058_a_red_chair",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19373124,
+        "zstd_bshuffle": 16896435,
+        "pcodec_raw": 17078763
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19021757,
+          "zstd_xor_bshuffle": 16905103,
+          "pcodec_xor": 17246476,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18928989,
+          "zstd_xor_bshuffle": 16916315,
+          "pcodec_xor": 17022070,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19014295,
+          "zstd_xor_bshuffle": 16920543,
+          "pcodec_xor": 17032366,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19188748,
+          "zstd_xor_bshuffle": 16889127,
+          "pcodec_xor": 17226076,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "043_color_r03_p077_a_green_vase",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19292637,
+        "zstd_bshuffle": 16626598,
+        "pcodec_raw": 17153672
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18861497,
+          "zstd_xor_bshuffle": 16586108,
+          "pcodec_xor": 17170578,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18892179,
+          "zstd_xor_bshuffle": 16525553,
+          "pcodec_xor": 16719852,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18694888,
+          "zstd_xor_bshuffle": 16508500,
+          "pcodec_xor": 16595024,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 18851775,
+          "zstd_xor_bshuffle": 16543543,
+          "pcodec_xor": 16824075,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "044_spatial_relationship_r00_p010_a_bird_on_the_left_of_a_cat_front_view",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19339216,
+        "zstd_bshuffle": 16991097,
+        "pcodec_raw": 17228513
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19076501,
+          "zstd_xor_bshuffle": 17048105,
+          "pcodec_xor": 17407020,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19007848,
+          "zstd_xor_bshuffle": 17052808,
+          "pcodec_xor": 17181859,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19079229,
+          "zstd_xor_bshuffle": 17074263,
+          "pcodec_xor": 17150246,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19222018,
+          "zstd_xor_bshuffle": 17029108,
+          "pcodec_xor": 17311342,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "045_spatial_relationship_r01_p015_a_cow_on_the_right_of_an_elephant_front_view",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19329271,
+        "zstd_bshuffle": 17072663,
+        "pcodec_raw": 17094131
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19228647,
+          "zstd_xor_bshuffle": 17192052,
+          "pcodec_xor": 17448352,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19231956,
+          "zstd_xor_bshuffle": 17277548,
+          "pcodec_xor": 17407053,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19304696,
+          "zstd_xor_bshuffle": 17335025,
+          "pcodec_xor": 17413972,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19396770,
+          "zstd_xor_bshuffle": 17338399,
+          "pcodec_xor": 17513048,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "046_spatial_relationship_r02_p048_a_train_on_the_right_of_a_boat_front_view",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19353365,
+        "zstd_bshuffle": 16935544,
+        "pcodec_raw": 16831797
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19172539,
+          "zstd_xor_bshuffle": 17030839,
+          "pcodec_xor": 17227978,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19132555,
+          "zstd_xor_bshuffle": 17087996,
+          "pcodec_xor": 17198432,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19199304,
+          "zstd_xor_bshuffle": 17144995,
+          "pcodec_xor": 17233307,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19312968,
+          "zstd_xor_bshuffle": 17157834,
+          "pcodec_xor": 17378414,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "047_spatial_relationship_r03_p068_a_pizza_on_the_top_of_a_donut_front_view",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19307062,
+        "zstd_bshuffle": 16739396,
+        "pcodec_raw": 17082069
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18951762,
+          "zstd_xor_bshuffle": 16771266,
+          "pcodec_xor": 17204522,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18824303,
+          "zstd_xor_bshuffle": 16751043,
+          "pcodec_xor": 16924453,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18896981,
+          "zstd_xor_bshuffle": 16747521,
+          "pcodec_xor": 16902522,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19023459,
+          "zstd_xor_bshuffle": 16732669,
+          "pcodec_xor": 17031270,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "048_scene_r00_p037_golf_course",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19218897,
+        "zstd_bshuffle": 16705466,
+        "pcodec_raw": 16497101
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18922704,
+          "zstd_xor_bshuffle": 16677084,
+          "pcodec_xor": 16863501,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18869857,
+          "zstd_xor_bshuffle": 16709356,
+          "pcodec_xor": 16832293,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18956129,
+          "zstd_xor_bshuffle": 16733744,
+          "pcodec_xor": 16918390,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19090748,
+          "zstd_xor_bshuffle": 16740368,
+          "pcodec_xor": 17108336,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "049_scene_r01_p070_sky",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19132292,
+        "zstd_bshuffle": 16565817,
+        "pcodec_raw": 16325490
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18893091,
+          "zstd_xor_bshuffle": 16604395,
+          "pcodec_xor": 16785213,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18827651,
+          "zstd_xor_bshuffle": 16623502,
+          "pcodec_xor": 16792643,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18876501,
+          "zstd_xor_bshuffle": 16648060,
+          "pcodec_xor": 16845411,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19005502,
+          "zstd_xor_bshuffle": 16692724,
+          "pcodec_xor": 17025786,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "050_scene_r02_p079_train_railway",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19309544,
+        "zstd_bshuffle": 16913195,
+        "pcodec_raw": 16837956
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19202419,
+          "zstd_xor_bshuffle": 17082720,
+          "pcodec_xor": 17267985,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19198695,
+          "zstd_xor_bshuffle": 17166262,
+          "pcodec_xor": 17302262,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19250991,
+          "zstd_xor_bshuffle": 17213138,
+          "pcodec_xor": 17327987,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19352237,
+          "zstd_xor_bshuffle": 17235495,
+          "pcodec_xor": 17442325,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "051_scene_r03_p080_train_station_platform",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19316878,
+        "zstd_bshuffle": 16912613,
+        "pcodec_raw": 16863777
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19044119,
+          "zstd_xor_bshuffle": 16925616,
+          "pcodec_xor": 17173836,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19003003,
+          "zstd_xor_bshuffle": 16980467,
+          "pcodec_xor": 17093281,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19089885,
+          "zstd_xor_bshuffle": 17014046,
+          "pcodec_xor": 17130578,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19221263,
+          "zstd_xor_bshuffle": 17007245,
+          "pcodec_xor": 17292805,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "052_temporal_style_r00_p024_a_shark_is_swimming_in_the_ocean_pan_right",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 18994886,
+        "zstd_bshuffle": 16612237,
+        "pcodec_raw": 16382917
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18946668,
+          "zstd_xor_bshuffle": 16764574,
+          "pcodec_xor": 16901277,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18963776,
+          "zstd_xor_bshuffle": 16822933,
+          "pcodec_xor": 16982031,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19040500,
+          "zstd_xor_bshuffle": 16848658,
+          "pcodec_xor": 17066701,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19091988,
+          "zstd_xor_bshuffle": 16849674,
+          "pcodec_xor": 17181977,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "053_temporal_style_r01_p046_a_cute_happy_corgi_playing_in_park_sunset_tilt_down",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19311427,
+        "zstd_bshuffle": 16930085,
+        "pcodec_raw": 16910206
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19182053,
+          "zstd_xor_bshuffle": 17090906,
+          "pcodec_xor": 17291887,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19179502,
+          "zstd_xor_bshuffle": 17178017,
+          "pcodec_xor": 17300744,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19271267,
+          "zstd_xor_bshuffle": 17234355,
+          "pcodec_xor": 17366524,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19343766,
+          "zstd_xor_bshuffle": 17227259,
+          "pcodec_xor": 17444295,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "054_temporal_style_r02_p073_a_couple_in_formal_evening_wear_going_home_get_caught_in_a_heavy_downpour_with_u",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19287963,
+        "zstd_bshuffle": 17107778,
+        "pcodec_raw": 17181227
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19318080,
+          "zstd_xor_bshuffle": 17318235,
+          "pcodec_xor": 17564786,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19356349,
+          "zstd_xor_bshuffle": 17431183,
+          "pcodec_xor": 17563075,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19430269,
+          "zstd_xor_bshuffle": 17500163,
+          "pcodec_xor": 17582877,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19552075,
+          "zstd_xor_bshuffle": 17541554,
+          "pcodec_xor": 17717994,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "055_temporal_style_r03_p090_snow_rocky_mountains_peaks_canyon_snow_blanketed_rocky_mountains_surround_and_sh",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19287668,
+        "zstd_bshuffle": 16467887,
+        "pcodec_raw": 16904392
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18779200,
+          "zstd_xor_bshuffle": 16385600,
+          "pcodec_xor": 16972824,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18530481,
+          "zstd_xor_bshuffle": 16296474,
+          "pcodec_xor": 16540519,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18559746,
+          "zstd_xor_bshuffle": 16266736,
+          "pcodec_xor": 16414847,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 18753094,
+          "zstd_xor_bshuffle": 16339047,
+          "pcodec_xor": 16699551,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "056_appearance_style_r00_p005_a_beautiful_coastal_beach_in_spring_waves_lapping_on_sand_in_cyberpunk_style",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19276230,
+        "zstd_bshuffle": 16822259,
+        "pcodec_raw": 16753616
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19103640,
+          "zstd_xor_bshuffle": 16926259,
+          "pcodec_xor": 17168993,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19060881,
+          "zstd_xor_bshuffle": 16976514,
+          "pcodec_xor": 17143627,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19129669,
+          "zstd_xor_bshuffle": 17029035,
+          "pcodec_xor": 17184104,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19248606,
+          "zstd_xor_bshuffle": 17059458,
+          "pcodec_xor": 17329622,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "057_appearance_style_r01_p008_a_beautiful_coastal_beach_in_spring_waves_lapping_on_sand_surrealism_style",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19204232,
+        "zstd_bshuffle": 16694869,
+        "pcodec_raw": 16558256
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19025186,
+          "zstd_xor_bshuffle": 16790424,
+          "pcodec_xor": 16999947,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18978936,
+          "zstd_xor_bshuffle": 16835078,
+          "pcodec_xor": 16998308,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19048128,
+          "zstd_xor_bshuffle": 16877627,
+          "pcodec_xor": 17053632,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19158202,
+          "zstd_xor_bshuffle": 16900936,
+          "pcodec_xor": 17207173,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "058_appearance_style_r02_p029_a_panda_drinking_coffee_in_a_cafe_in_paris_by_hokusai_in_the_style_of_ukiyo",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19375589,
+        "zstd_bshuffle": 16628479,
+        "pcodec_raw": 16989461
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18881918,
+          "zstd_xor_bshuffle": 16587599,
+          "pcodec_xor": 17049371,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18671416,
+          "zstd_xor_bshuffle": 16527528,
+          "pcodec_xor": 16703247,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18690869,
+          "zstd_xor_bshuffle": 16515466,
+          "pcodec_xor": 16634407,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 18943302,
+          "zstd_xor_bshuffle": 16548226,
+          "pcodec_xor": 16915278,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "059_appearance_style_r03_p084_snow_rocky_mountains_peaks_canyon_snow_blanketed_rocky_mountains_surround_and_sh",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19288488,
+        "zstd_bshuffle": 16480312,
+        "pcodec_raw": 16944242
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18799397,
+          "zstd_xor_bshuffle": 16426714,
+          "pcodec_xor": 17013921,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18545702,
+          "zstd_xor_bshuffle": 16327741,
+          "pcodec_xor": 16565863,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18537517,
+          "zstd_xor_bshuffle": 16299616,
+          "pcodec_xor": 16436065,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 18824907,
+          "zstd_xor_bshuffle": 16379220,
+          "pcodec_xor": 16742630,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "060_overall_consistency_r00_p010_fireworks",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19235091,
+        "zstd_bshuffle": 17060244,
+        "pcodec_raw": 17059607
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19270134,
+          "zstd_xor_bshuffle": 17289980,
+          "pcodec_xor": 17484589,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19318360,
+          "zstd_xor_bshuffle": 17383619,
+          "pcodec_xor": 17486020,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19341219,
+          "zstd_xor_bshuffle": 17429054,
+          "pcodec_xor": 17462619,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19396130,
+          "zstd_xor_bshuffle": 17457851,
+          "pcodec_xor": 17510741,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "061_overall_consistency_r01_p012_flying_through_fantasy_landscapes",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19339291,
+        "zstd_bshuffle": 16886167,
+        "pcodec_raw": 16799126
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19263479,
+          "zstd_xor_bshuffle": 17078538,
+          "pcodec_xor": 17266281,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19266289,
+          "zstd_xor_bshuffle": 17168882,
+          "pcodec_xor": 17328361,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19347381,
+          "zstd_xor_bshuffle": 17232405,
+          "pcodec_xor": 17410474,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19464925,
+          "zstd_xor_bshuffle": 17261076,
+          "pcodec_xor": 17568001,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "062_overall_consistency_r02_p029_campfire_at_night_in_a_snowy_forest_with_starry_sky_in_the_background",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19233877,
+        "zstd_bshuffle": 16831560,
+        "pcodec_raw": 16894163
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 18930451,
+          "zstd_xor_bshuffle": 16818874,
+          "pcodec_xor": 17102888,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 18849649,
+          "zstd_xor_bshuffle": 16801476,
+          "pcodec_xor": 16905275,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 18903399,
+          "zstd_xor_bshuffle": 16827047,
+          "pcodec_xor": 16891809,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19094071,
+          "zstd_xor_bshuffle": 16832294,
+          "pcodec_xor": 17112201,
+          "verified_lossless": true
+        }
+      }
+    },
+    {
+      "name": "063_overall_consistency_r03_p037_an_astronaut_is_riding_a_horse_in_the_space_in_a_photorealistic_style",
+      "shape": [
+        48,
+        31,
+        44,
+        80
+      ],
+      "dtype": "float32",
+      "time_major_word_dtype": "uint32",
+      "baselines": {
+        "zstd_raw": 19180747,
+        "zstd_bshuffle": 16941726,
+        "pcodec_raw": 16886089
+      },
+      "windows": {
+        "2": {
+          "zstd_xor": 19136366,
+          "zstd_xor_bshuffle": 17104981,
+          "pcodec_xor": 17303838,
+          "verified_lossless": true
+        },
+        "4": {
+          "zstd_xor": 19158239,
+          "zstd_xor_bshuffle": 17188304,
+          "pcodec_xor": 17297002,
+          "verified_lossless": true
+        },
+        "8": {
+          "zstd_xor": 19233306,
+          "zstd_xor_bshuffle": 17252254,
+          "pcodec_xor": 17320409,
+          "verified_lossless": true
+        },
+        "16": {
+          "zstd_xor": 19321220,
+          "zstd_xor_bshuffle": 17291666,
+          "pcodec_xor": 17416197,
+          "verified_lossless": true
+        }
+      }
+    }
+  ]
+}
