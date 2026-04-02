@@ -109,11 +109,13 @@ These results compare `lighttaew2_2` against the official `Wan2.2_VAE` baseline 
 Additional lossless latent-compression follow-up notes are now included for:
 
 - one `SkyReels-V2-DF-14B-720P` 60-second long-video latent
+- two additional `SkyReels-V2-DF-14B-720P` 60-second high-motion latents
 - the `64` saved `Wan2.2` short-video latents under several `pcodec` and XOR-transform variants
 
 Start with:
 
 - `examples/vbench_codec/skyreels_long_and_wan64_lossless_report.md`
+- `examples/vbench_codec/skyreels_dynamic2_60s_lossless_report.md`
 
 ## Codex Chat Logs
 

@@ -1,0 +1,102 @@
+{
+  "latent_path": "/workspace/video_bench/skyreels_v2_dynamic2_60s_720p/latents/wingsuit_rescue_extreme_run.pt",
+  "mp4_path": "/workspace/video_bench/skyreels_v2_dynamic2_60s_720p/videos/wingsuit_rescue_extreme_run.mp4",
+  "latent_shape": [
+    16,
+    365,
+    90,
+    160
+  ],
+  "latent_dtype": "bfloat16",
+  "latent_pt_bytes": 168193845,
+  "latent_payload_bytes": 168192000,
+  "pt_overhead_bytes": 1845,
+  "baseline": {
+    "zstd": {
+      "bytes": 122247295,
+      "verified": true
+    },
+    "openzl": {
+      "bytes": 122849331,
+      "verified": true
+    },
+    "pcodec": {
+      "bytes": 103542248,
+      "verified": true
+    }
+  },
+  "xor_results": [
+    {
+      "window": 2,
+      "zstd_xor": 125710317,
+      "openzl_xor": 129220370,
+      "pcodec_xor": 110576505,
+      "best_method": "pcodec_xor",
+      "best_bytes": 110576505,
+      "delta_vs_best_baseline_bytes": 7034257,
+      "verified_lossless": true
+    },
+    {
+      "window": 4,
+      "zstd_xor": 128824658,
+      "openzl_xor": 131984191,
+      "pcodec_xor": 113718146,
+      "best_method": "pcodec_xor",
+      "best_bytes": 113718146,
+      "delta_vs_best_baseline_bytes": 10175898,
+      "verified_lossless": true
+    },
+    {
+      "window": 8,
+      "zstd_xor": 130502768,
+      "openzl_xor": 133733257,
+      "pcodec_xor": 115934470,
+      "best_method": "pcodec_xor",
+      "best_bytes": 115934470,
+      "delta_vs_best_baseline_bytes": 12392222,
+      "verified_lossless": true
+    },
+    {
+      "window": 16,
+      "zstd_xor": 131102925,
+      "openzl_xor": 134906801,
+      "pcodec_xor": 117269985,
+      "best_method": "pcodec_xor",
+      "best_bytes": 117269985,
+      "delta_vs_best_baseline_bytes": 13727737,
+      "verified_lossless": true
+    },
+    {
+      "window": 32,
+      "zstd_xor": 132526503,
+      "openzl_xor": 134639397,
+      "pcodec_xor": 117207192,
+      "best_method": "pcodec_xor",
+      "best_bytes": 117207192,
+      "delta_vs_best_baseline_bytes": 13664944,
+      "verified_lossless": true
+    },
+    {
+      "window": 64,
+      "zstd_xor": 132293186,
+      "openzl_xor": 134860268,
+      "pcodec_xor": 117493129,
+      "best_method": "pcodec_xor",
+      "best_bytes": 117493129,
+      "delta_vs_best_baseline_bytes": 13950881,
+      "verified_lossless": true
+    }
+  ],
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "nb_frames": 1457,
+    "fps": 24.0,
+    "duration": 60.708333,
+    "size_bytes": 235025186
+  },
+  "raw_rgb24_bytes": 4028313600,
+  "raw_yuv420_bytes": 2014156800,
+  "mp4_ratio_vs_rgb24": 17.139923037865398,
+  "mp4_ratio_vs_yuv420": 8.569961518932699
+}
