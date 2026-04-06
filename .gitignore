@@ -22,4 +22,5 @@ logs/
 results/
 runs/
 outputs/
+.venvs/
 .DS_Store
