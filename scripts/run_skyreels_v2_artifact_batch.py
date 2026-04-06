@@ -102,6 +102,79 @@ def prepare_output_root(args) -> Path:
     return root
 
 
+def write_json(path: Path, payload: dict) -> None:
+    path.write_text(json.dumps(payload, indent=2))
+
+
+def save_incremental_latent_chunk(
+    video_dir: Path,
+    entry: dict,
+    config: dict,
+    chunk_index: int,
+    chunk: torch.Tensor,
+) -> Path:
+    latent_dir = video_dir / "pre_vae_latent_chunks"
+    latent_dir.mkdir(parents=True, exist_ok=True)
+    chunk_path = latent_dir / f"chunk_{chunk_index:03d}_pre_vae.pt"
+    torch.save(
+        {
+            "latents_stage": "pre_vae_decode_async_chunk",
+            "description": "Final denoised latent chunk captured immediately before a VAE decode call.",
+            "chunk_index": chunk_index,
+            "model_id": config["model_id"],
+            "video_id": entry["id"],
+            "seed": entry["seed"],
+            "prompt": entry["prompt"],
+            "resolution": config["resolution"],
+            "width": config["width"],
+            "height": config["height"],
+            "fps": config["fps"],
+            "num_frames": config["num_frames"],
+            "base_num_frames": config["base_num_frames"],
+            "overlap_history": config["overlap_history"],
+            "ar_step": config["ar_step"],
+            "causal_block_size": config["causal_block_size"],
+            "latent_chunk": chunk,
+            "latent_shape": list(chunk.shape),
+            "latent_dtype": str(chunk.dtype),
+            "saved_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        },
+        chunk_path,
+    )
+    return chunk_path
+
+
+def write_video_stub_metadata(video_dir: Path, entry: dict, config: dict) -> None:
+    prompt_path = video_dir / "prompt.txt"
+    generation_config_path = video_dir / "generation_config.json"
+    prompt_path.write_text(entry["prompt"] + "\n")
+    write_json(
+        generation_config_path,
+        {
+            "video_id": entry["id"],
+            "seed": entry["seed"],
+            "prompt": entry["prompt"],
+            "negative_prompt": NEGATIVE_PROMPT,
+            "model_id": config["model_id"],
+            "resolution": config["resolution"],
+            "width": config["width"],
+            "height": config["height"],
+            "fps": config["fps"],
+            "num_frames": config["num_frames"],
+            "duration_seconds": config["num_frames"] / config["fps"],
+            "base_num_frames": config["base_num_frames"],
+            "overlap_history": config["overlap_history"],
+            "ar_step": config["ar_step"],
+            "causal_block_size": config["causal_block_size"],
+            "addnoise_condition": config["addnoise_condition"],
+            "guidance_scale": config["guidance_scale"],
+            "shift": config["shift"],
+            "inference_steps": config["inference_steps"],
+            "created_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        },
+    )
+
+
 def save_video_artifacts(
     video_dir: Path,
     entry: dict,
@@ -115,7 +188,6 @@ def save_video_artifacts(
     metadata_path = video_dir / "metadata.json"
     prompt_path = video_dir / "prompt.txt"
 
-    prompt_path.write_text(entry["prompt"] + "\n")
     imageio.mimwrite(
         mp4_path,
         frames,
@@ -186,20 +258,27 @@ def save_video_artifacts(
             "count": len(latent_chunks),
             "shapes": latent_chunk_shapes,
             "dtypes": latent_chunk_dtypes,
+            "directory": str(video_dir / "pre_vae_latent_chunks") if config["save_latent_chunks"] else None,
         },
         "mp4_bytes": mp4_path.stat().st_size,
         "created_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
-    metadata_path.write_text(json.dumps(metadata, indent=2))
+    write_json(metadata_path, metadata)
     return metadata
 
 
 def run_one_video(args, pipe, entry: dict, video_dir: Path, config: dict) -> dict:
     latent_chunks: list[torch.Tensor] = []
     original_decode = pipe.vae.decode
+    write_video_stub_metadata(video_dir, entry, config)
 
     def capture_decode(z):
-        latent_chunks.append(z.detach().to("cpu", copy=True))
+        chunk_index = len(latent_chunks)
+        chunk = z.detach().to("cpu", copy=True)
+        latent_chunks.append(chunk)
+        if config["save_latent_chunks"]:
+            chunk_path = save_incremental_latent_chunk(video_dir, entry, config, chunk_index, chunk)
+            print(f"Saved pre-VAE chunk {chunk_index:03d} to {chunk_path}")
         return original_decode(z)
 
     pipe.vae.decode = capture_decode
