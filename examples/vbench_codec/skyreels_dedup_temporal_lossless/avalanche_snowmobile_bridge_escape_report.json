@@ -1,0 +1,136 @@
+{
+  "sample": "avalanche_snowmobile_bridge_escape",
+  "latent_path": "/root/SkyReels-V2/result/skyreels_v2_dynamic5_720p24_async/avalanche_snowmobile_bridge_escape/full_video_latents_dedup.pt",
+  "latent_shape_cthw": [
+    16,
+    185,
+    90,
+    160
+  ],
+  "latent_dtype": "bfloat16",
+  "payload_bytes": 85248000,
+  "pt_bytes": 85249824,
+  "baselines": [
+    {
+      "codec": "zstd_raw",
+      "compressed_bytes": 51641287,
+      "compressed_mb": 51.641287,
+      "ratio_vs_payload": 1.650772,
+      "ratio_vs_pt": 1.650808,
+      "verified_lossless": true
+    },
+    {
+      "codec": "zstd_bshuffle_u16",
+      "compressed_bytes": 46610549,
+      "compressed_mb": 46.610549,
+      "ratio_vs_payload": 1.828942,
+      "ratio_vs_pt": 1.828981,
+      "verified_lossless": true
+    },
+    {
+      "codec": "pcodec_raw_u16",
+      "compressed_bytes": 43150175,
+      "compressed_mb": 43.150175,
+      "ratio_vs_payload": 1.975612,
+      "ratio_vs_pt": 1.975654,
+      "verified_lossless": true
+    }
+  ],
+  "candidates": [
+    {
+      "codec": "temporal_split_raw_zstd",
+      "compressed_bytes": 45606995,
+      "compressed_mb": 45.606995,
+      "ratio_vs_payload": 1.869187,
+      "ratio_vs_pt": 1.869227,
+      "verified_lossless": true,
+      "same_hi_fraction": 0.590868,
+      "lo_same_bytes_raw": 25049008,
+      "lo_changed_bytes_raw": 17344592,
+      "part_sizes": {
+        "hi_zstd": 5842103,
+        "seed_lo_zstd": 228800,
+        "lo_same_pcodec": 22423467,
+        "lo_changed": 17112265
+      },
+      "container_overhead_bytes": 360,
+      "low_changed_mode": "raw_zstd"
+    },
+    {
+      "codec": "temporal_split_delta_zstd",
+      "compressed_bytes": 45837994,
+      "compressed_mb": 45.837994,
+      "ratio_vs_payload": 1.859767,
+      "ratio_vs_pt": 1.859807,
+      "verified_lossless": true,
+      "same_hi_fraction": 0.590868,
+      "lo_same_bytes_raw": 25049008,
+      "lo_changed_bytes_raw": 17344592,
+      "part_sizes": {
+        "hi_zstd": 5842103,
+        "seed_lo_zstd": 228800,
+        "lo_same_pcodec": 22423467,
+        "lo_changed": 17343262
+      },
+      "container_overhead_bytes": 362,
+      "low_changed_mode": "delta_zstd"
+    },
+    {
+      "codec": "temporal_split_raw_pcodec",
+      "compressed_bytes": 45607591,
+      "compressed_mb": 45.607591,
+      "ratio_vs_payload": 1.869163,
+      "ratio_vs_pt": 1.869203,
+      "verified_lossless": true,
+      "same_hi_fraction": 0.590868,
+      "lo_same_bytes_raw": 25049008,
+      "lo_changed_bytes_raw": 17344592,
+      "part_sizes": {
+        "hi_zstd": 5842103,
+        "seed_lo_zstd": 228800,
+        "lo_same_pcodec": 22423467,
+        "lo_changed": 17112859
+      },
+      "container_overhead_bytes": 362,
+      "low_changed_mode": "raw_pcodec"
+    },
+    {
+      "codec": "temporal_split_delta_pcodec",
+      "compressed_bytes": 45839942,
+      "compressed_mb": 45.839942,
+      "ratio_vs_payload": 1.859688,
+      "ratio_vs_pt": 1.859728,
+      "verified_lossless": true,
+      "same_hi_fraction": 0.590868,
+      "lo_same_bytes_raw": 25049008,
+      "lo_changed_bytes_raw": 17344592,
+      "part_sizes": {
+        "hi_zstd": 5842103,
+        "seed_lo_zstd": 228800,
+        "lo_same_pcodec": 22423467,
+        "lo_changed": 17345208
+      },
+      "container_overhead_bytes": 364,
+      "low_changed_mode": "delta_pcodec"
+    }
+  ],
+  "best_candidate": {
+    "codec": "temporal_split_raw_zstd",
+    "compressed_bytes": 45606995,
+    "compressed_mb": 45.606995,
+    "ratio_vs_payload": 1.869187,
+    "ratio_vs_pt": 1.869227,
+    "verified_lossless": true,
+    "same_hi_fraction": 0.590868,
+    "lo_same_bytes_raw": 25049008,
+    "lo_changed_bytes_raw": 17344592,
+    "part_sizes": {
+      "hi_zstd": 5842103,
+      "seed_lo_zstd": 228800,
+      "lo_same_pcodec": 22423467,
+      "lo_changed": 17112265
+    },
+    "container_overhead_bytes": 360,
+    "low_changed_mode": "raw_zstd"
+  }
+}

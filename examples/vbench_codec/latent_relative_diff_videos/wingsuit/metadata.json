@@ -1,0 +1,12 @@
+{
+  "name": "wingsuit",
+  "latent_steps": 185,
+  "diff_pairs": 184,
+  "fps": 6,
+  "duration_sec": 30.666666666666668,
+  "relative_vmax_99_5_abs": 3.6379194259643555,
+  "relative_mean_abs": 0.5165959596633911,
+  "mp4": "/root/LatentsCompress/examples/vbench_codec/latent_relative_diff_videos/wingsuit/wingsuit_latent_relative_diff.mp4",
+  "preview": "/root/LatentsCompress/examples/vbench_codec/latent_relative_diff_videos/wingsuit/wingsuit_latent_relative_diff_preview.png",
+  "description": "Per-step latent abs-diff map normalized by its own spatial mean, then minus 1.0"
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "sample": "wingsuit_rescue_glacier_pullup",
+    "search_window": {
+      "dy": [
+        -2,
+        2
+      ],
+      "dx": [
+        -2,
+        2
+      ]
+    },
+    "mean_gain_frac": 0.017697517498163506,
+    "mean_nonzero_shift_frac": 0.27241847826086957,
+    "top_channels": [
+      {
+        "channel": 2,
+        "base_mae": 0.28211522102355957,
+        "best_shift_mae": 0.2743936777114868,
+        "gain_frac": 0.02737017534673214,
+        "nonzero_shift_frac": 0.31521739130434784
+      },
+      {
+        "channel": 3,
+        "base_mae": 0.3285910487174988,
+        "best_shift_mae": 0.3197294771671295,
+        "gain_frac": 0.026968389749526978,
+        "nonzero_shift_frac": 0.33695652173913043
+      },
+      {
+        "channel": 8,
+        "base_mae": 0.2641436457633972,
+        "best_shift_mae": 0.25714370608329773,
+        "gain_frac": 0.026500504463911057,
+        "nonzero_shift_frac": 0.29347826086956524
+      },
+      {
+        "channel": 14,
+        "base_mae": 0.29036349058151245,
+        "best_shift_mae": 0.2828734815120697,
+        "gain_frac": 0.025795284658670425,
+        "nonzero_shift_frac": 0.2826086956521739
+      },
+      {
+        "channel": 7,
+        "base_mae": 0.32485365867614746,
+        "best_shift_mae": 0.31657010316848755,
+        "gain_frac": 0.02549934573471546,
+        "nonzero_shift_frac": 0.32608695652173914
+      },
+      {
+        "channel": 15,
+        "base_mae": 0.3349436819553375,
+        "best_shift_mae": 0.32778918743133545,
+        "gain_frac": 0.02136029116809368,
+        "nonzero_shift_frac": 0.28804347826086957
+      },
+      {
+        "channel": 6,
+        "base_mae": 0.26005080342292786,
+        "best_shift_mae": 0.2549954652786255,
+        "gain_frac": 0.019439809024333954,
+        "nonzero_shift_frac": 0.30978260869565216
+      },
+      {
+        "channel": 9,
+        "base_mae": 0.30689576268196106,
+        "best_shift_mae": 0.30099809169769287,
+        "gain_frac": 0.019217180088162422,
+        "nonzero_shift_frac": 0.25
+      }
+    ]
+  },
+  {
+    "sample": "neon_hoverbike_chain_reaction",
+    "search_window": {
+      "dy": [
+        -2,
+        2
+      ],
+      "dx": [
+        -2,
+        2
+      ]
+    },
+    "mean_gain_frac": 0.009343180514406413,
+    "mean_nonzero_shift_frac": 0.4836956521739131,
+    "top_channels": [
+      {
+        "channel": 3,
+        "base_mae": 0.9542503356933594,
+        "best_shift_mae": 0.9405803680419922,
+        "gain_frac": 0.014325347729027271,
+        "nonzero_shift_frac": 0.6195652173913043
+      },
+      {
+        "channel": 2,
+        "base_mae": 0.8754780888557434,
+        "best_shift_mae": 0.8642694354057312,
+        "gain_frac": 0.012802894227206707,
+        "nonzero_shift_frac": 0.5815217391304348
+      },
+      {
+        "channel": 7,
+        "base_mae": 0.8087047338485718,
+        "best_shift_mae": 0.7989755868911743,
+        "gain_frac": 0.012030530720949173,
+        "nonzero_shift_frac": 0.5054347826086957
+      },
+      {
+        "channel": 0,
+        "base_mae": 0.567186176776886,
+        "best_shift_mae": 0.5604543685913086,
+        "gain_frac": 0.011868780478835106,
+        "nonzero_shift_frac": 0.4076086956521739
+      },
+      {
+        "channel": 15,
+        "base_mae": 0.867948591709137,
+        "best_shift_mae": 0.8579997420310974,
+        "gain_frac": 0.011462487280368805,
+        "nonzero_shift_frac": 0.5597826086956522
+      },
+      {
+        "channel": 10,
+        "base_mae": 0.530372142791748,
+        "best_shift_mae": 0.5243544578552246,
+        "gain_frac": 0.011346155777573586,
+        "nonzero_shift_frac": 0.5271739130434783
+      },
+      {
+        "channel": 14,
+        "base_mae": 0.6362214088439941,
+        "best_shift_mae": 0.6290196776390076,
+        "gain_frac": 0.011319535784423351,
+        "nonzero_shift_frac": 0.5543478260869565
+      },
+      {
+        "channel": 4,
+        "base_mae": 0.8868726491928101,
+        "best_shift_mae": 0.8770192265510559,
+        "gain_frac": 0.011110302060842514,
+        "nonzero_shift_frac": 0.5978260869565217
+      }
+    ]
+  },
+  {
+    "sample": "avalanche_snowmobile_bridge_escape",
+    "search_window": {
+      "dy": [
+        -2,
+        2
+      ],
+      "dx": [
+        -2,
+        2
+      ]
+    },
+    "mean_gain_frac": 0.02438261520001106,
+    "mean_nonzero_shift_frac": 0.6525135869565217,
+    "top_channels": [
+      {
+        "channel": 2,
+        "base_mae": 0.5080240368843079,
+        "best_shift_mae": 0.48113781213760376,
+        "gain_frac": 0.052923135459423065,
+        "nonzero_shift_frac": 0.8695652173913043
+      },
+      {
+        "channel": 3,
+        "base_mae": 0.5527700781822205,
+        "best_shift_mae": 0.5295590758323669,
+        "gain_frac": 0.041990336030721664,
+        "nonzero_shift_frac": 0.8369565217391305
+      },
+      {
+        "channel": 7,
+        "base_mae": 0.5162071585655212,
+        "best_shift_mae": 0.4949541985988617,
+        "gain_frac": 0.04117137938737869,
+        "nonzero_shift_frac": 0.8369565217391305
+      },
+      {
+        "channel": 15,
+        "base_mae": 0.5364677309989929,
+        "best_shift_mae": 0.5164285898208618,
+        "gain_frac": 0.03735386207699776,
+        "nonzero_shift_frac": 0.7445652173913043
+      },
+      {
+        "channel": 9,
+        "base_mae": 0.41903629899024963,
+        "best_shift_mae": 0.4046227037906647,
+        "gain_frac": 0.03439700976014137,
+        "nonzero_shift_frac": 0.9130434782608695
+      },
+      {
+        "channel": 8,
+        "base_mae": 0.37165501713752747,
+        "best_shift_mae": 0.36149081587791443,
+        "gain_frac": 0.027348484843969345,
+        "nonzero_shift_frac": 0.717391304347826
+      },
+      {
+        "channel": 6,
+        "base_mae": 0.40460672974586487,
+        "best_shift_mae": 0.39471468329429626,
+        "gain_frac": 0.024448545649647713,
+        "nonzero_shift_frac": 0.7228260869565217
+      },
+      {
+        "channel": 11,
+        "base_mae": 0.5661015510559082,
+        "best_shift_mae": 0.5535624027252197,
+        "gain_frac": 0.02214999869465828,
+        "nonzero_shift_frac": 0.6195652173913043
+      }
+    ]
+  }
+]

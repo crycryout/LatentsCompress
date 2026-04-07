@@ -1,0 +1,44 @@
+{
+  "config": {
+    "bucket": "video-latents",
+    "prefix": "server_video_assets_2026-04-02/generated/video_bench/wan22_ti2v5b_vbench_16x4_seed42",
+    "wan_root": "/root/Wan2.2",
+    "ckpt_dir": "/root/models/Wan2.2-TI2V-5B",
+    "device": "cpu",
+    "dtype": "float32",
+    "sample_count": 1
+  },
+  "mean_sizes_bytes": {
+    "fp16_frames": 654213120.0,
+    "clamped_fp16_frames": 654213120.0,
+    "rgb_u8_frames": 327106560.0,
+    "yuv420_raw_frames": 163553280.0,
+    "final_mp4": 8192914.0
+  },
+  "mean_storage_reduction_pct": {
+    "from_fp16": {
+      "clamp": 0.0,
+      "quant_u8": 50.0,
+      "yuv420": 75.0,
+      "mp4": 98.74766895533982
+    },
+    "from_previous": {
+      "clamp": 0.0,
+      "quant_u8": 50.0,
+      "yuv420": 50.0,
+      "mp4": 94.99067582135925
+    }
+  },
+  "mean_step_psnr_db": {
+    "clamp": Infinity,
+    "quant_u8": 59.059219971471535,
+    "yuv420": 43.23827704409797,
+    "h264_from_yuv420": 44.19099680873455
+  },
+  "mean_cumulative_psnr_db": {
+    "after_clamp": Infinity,
+    "after_quant_u8": 59.059219971471535,
+    "after_yuv420": 43.243422978823645,
+    "after_mp4": 40.57557737356006
+  }
+}

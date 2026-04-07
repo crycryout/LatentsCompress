@@ -1,0 +1,55 @@
+{
+  "samples": [
+    {
+      "name": "wingsuit",
+      "frame_count": 737,
+      "latent_steps": 185,
+      "frame_diff_pairs": 736,
+      "latent_diff_pairs": 184,
+      "frame_diff_fps": 24,
+      "latent_diff_fps": 6,
+      "frame_diff_duration_sec": 30.666666666666668,
+      "latent_diff_duration_sec": 30.666666666666668,
+      "video_vmax_99_5": 0.5960784554481506,
+      "video_pooled_vmax_99_5": 0.5326184630393982,
+      "latent_vmax_99_5": 1.356414794921875,
+      "frame_heatmap_video": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/wingsuit/wingsuit_frame_diff_t1_heatmap.mp4",
+      "latent_heatmap_video": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/wingsuit/wingsuit_latent_diff_t1_heatmap.mp4",
+      "preview_triptych": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/wingsuit/wingsuit_preview_triptych.png"
+    },
+    {
+      "name": "neon",
+      "frame_count": 737,
+      "latent_steps": 185,
+      "frame_diff_pairs": 736,
+      "latent_diff_pairs": 184,
+      "frame_diff_fps": 24,
+      "latent_diff_fps": 6,
+      "frame_diff_duration_sec": 30.666666666666668,
+      "latent_diff_duration_sec": 30.666666666666668,
+      "video_vmax_99_5": 0.9045751690864563,
+      "video_pooled_vmax_99_5": 0.8753676414489746,
+      "latent_vmax_99_5": 2.069549560546875,
+      "frame_heatmap_video": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/neon/neon_frame_diff_t1_heatmap.mp4",
+      "latent_heatmap_video": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/neon/neon_latent_diff_t1_heatmap.mp4",
+      "preview_triptych": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/neon/neon_preview_triptych.png"
+    },
+    {
+      "name": "avalanche",
+      "frame_count": 737,
+      "latent_steps": 185,
+      "frame_diff_pairs": 736,
+      "latent_diff_pairs": 184,
+      "frame_diff_fps": 24,
+      "latent_diff_fps": 6,
+      "frame_diff_duration_sec": 30.666666666666668,
+      "latent_diff_duration_sec": 30.666666666666668,
+      "video_vmax_99_5": 0.7477124333381653,
+      "video_pooled_vmax_99_5": 0.6683414578437805,
+      "latent_vmax_99_5": 1.4996185302734375,
+      "frame_heatmap_video": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/avalanche/avalanche_frame_diff_t1_heatmap.mp4",
+      "latent_heatmap_video": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/avalanche/avalanche_latent_diff_t1_heatmap.mp4",
+      "preview_triptych": "/root/LatentsCompress/examples/vbench_codec/heatmap_videos/avalanche/avalanche_preview_triptych.png"
+    }
+  ]
+}

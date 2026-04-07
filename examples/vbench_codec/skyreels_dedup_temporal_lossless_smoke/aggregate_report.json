@@ -1,0 +1,146 @@
+{
+  "reports": [
+    {
+      "sample": "wingsuit_rescue_glacier_pullup",
+      "latent_path": "/root/SkyReels-V2/result/skyreels_v2_dynamic5_720p24_async/wingsuit_rescue_glacier_pullup/full_video_latents_dedup.pt",
+      "latent_shape_cthw": [
+        16,
+        185,
+        90,
+        160
+      ],
+      "latent_dtype": "bfloat16",
+      "payload_bytes": 85248000,
+      "pt_bytes": 85249824,
+      "baselines": [
+        {
+          "codec": "zstd_raw",
+          "compressed_bytes": 57941503,
+          "compressed_mb": 57.941503,
+          "ratio_vs_payload": 1.471277,
+          "ratio_vs_pt": 1.471308,
+          "verified_lossless": true
+        },
+        {
+          "codec": "zstd_bshuffle_u16",
+          "compressed_bytes": 49581555,
+          "compressed_mb": 49.581555,
+          "ratio_vs_payload": 1.719349,
+          "ratio_vs_pt": 1.719386,
+          "verified_lossless": true
+        },
+        {
+          "codec": "pcodec_raw_u16",
+          "compressed_bytes": 49110723,
+          "compressed_mb": 49.110723,
+          "ratio_vs_payload": 1.735833,
+          "ratio_vs_pt": 1.73587,
+          "verified_lossless": true
+        }
+      ],
+      "candidates": [
+        {
+          "codec": "temporal_split_raw_zstd",
+          "compressed_bytes": 48220001,
+          "compressed_mb": 48.220001,
+          "ratio_vs_payload": 1.767897,
+          "ratio_vs_pt": 1.767935,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15279256
+          },
+          "container_overhead_bytes": 360,
+          "low_changed_mode": "raw_zstd"
+        },
+        {
+          "codec": "temporal_split_delta_zstd",
+          "compressed_bytes": 48275886,
+          "compressed_mb": 48.275886,
+          "ratio_vs_payload": 1.765851,
+          "ratio_vs_pt": 1.765888,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15335139
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "delta_zstd"
+        },
+        {
+          "codec": "temporal_split_raw_pcodec",
+          "compressed_bytes": 48276069,
+          "compressed_mb": 48.276069,
+          "ratio_vs_payload": 1.765844,
+          "ratio_vs_pt": 1.765882,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15335322
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "raw_pcodec"
+        },
+        {
+          "codec": "temporal_split_delta_pcodec",
+          "compressed_bytes": 48276071,
+          "compressed_mb": 48.276071,
+          "ratio_vs_payload": 1.765844,
+          "ratio_vs_pt": 1.765882,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15335322
+          },
+          "container_overhead_bytes": 364,
+          "low_changed_mode": "delta_pcodec"
+        }
+      ],
+      "best_candidate": {
+        "codec": "temporal_split_raw_zstd",
+        "compressed_bytes": 48220001,
+        "compressed_mb": 48.220001,
+        "ratio_vs_payload": 1.767897,
+        "ratio_vs_pt": 1.767935,
+        "verified_lossless": true,
+        "same_hi_fraction": 0.638276,
+        "lo_same_bytes_raw": 27058822,
+        "lo_changed_bytes_raw": 15334778,
+        "part_sizes": {
+          "hi_zstd": 7351887,
+          "seed_lo_zstd": 230415,
+          "lo_same_pcodec": 25358083,
+          "lo_changed": 15279256
+        },
+        "container_overhead_bytes": 360,
+        "low_changed_mode": "raw_zstd"
+      }
+    }
+  ],
+  "totals": {
+    "payload_bytes": 85248000,
+    "zstd_bshuffle_u16_bytes": 49581555,
+    "pcodec_raw_u16_bytes": 49110723,
+    "best_temporal_bytes": 48220001
+  }
+}

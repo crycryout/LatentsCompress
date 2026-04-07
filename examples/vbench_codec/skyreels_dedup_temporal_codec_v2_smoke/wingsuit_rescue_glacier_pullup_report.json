@@ -1,0 +1,706 @@
+{
+  "sample": "wingsuit_rescue_glacier_pullup",
+  "latent_path": "/root/SkyReels-V2/result/skyreels_v2_dynamic5_720p24_async/wingsuit_rescue_glacier_pullup/full_video_latents_dedup.pt",
+  "latent_shape_cthw": [
+    16,
+    185,
+    90,
+    160
+  ],
+  "latent_dtype": "bfloat16",
+  "payload_bytes": 85248000,
+  "pt_bytes": 85249824,
+  "baselines": [
+    {
+      "codec": "zstd_raw",
+      "compressed_bytes": 57941503,
+      "compressed_mb": 57.941503,
+      "ratio_vs_payload": 1.471277,
+      "ratio_vs_pt": 1.471308
+    },
+    {
+      "codec": "zstd_bshuffle_u16",
+      "compressed_bytes": 49581555,
+      "compressed_mb": 49.581555,
+      "ratio_vs_payload": 1.719349,
+      "ratio_vs_pt": 1.719386
+    },
+    {
+      "codec": "pcodec_raw_global",
+      "compressed_bytes": 49110723,
+      "compressed_mb": 49.110723,
+      "ratio_vs_payload": 1.735833,
+      "ratio_vs_pt": 1.73587
+    },
+    {
+      "codec": "pcodec_raw_per_channel_sum",
+      "compressed_bytes": 48792913,
+      "compressed_mb": 48.792913,
+      "ratio_vs_payload": 1.747139,
+      "ratio_vs_pt": 1.747176
+    }
+  ],
+  "codec_v2": {
+    "compressed_bytes": 47798779,
+    "compressed_mb": 47.798779,
+    "ratio_vs_payload": 1.783477,
+    "ratio_vs_pt": 1.783515,
+    "verified_lossless": true,
+    "container_overhead_bytes": 7222,
+    "chosen_mode_counts": {
+      "temporal_split_raw_zstd": 13,
+      "raw_pcodec": 2,
+      "temporal_split_raw_pcodec": 1
+    },
+    "channels": [
+      {
+        "channel": 0,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.752934,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1994974
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 654626
+          }
+        ],
+        "compressed_bytes": 2680446,
+        "num_parts": 4
+      },
+      {
+        "channel": 1,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.482286,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1277866
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 1371734
+          }
+        ],
+        "compressed_bytes": 3296242,
+        "num_parts": 4
+      },
+      {
+        "channel": 2,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.699636,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1853756
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 795844
+          }
+        ],
+        "compressed_bytes": 2850566,
+        "num_parts": 4
+      },
+      {
+        "channel": 3,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.692665,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1835285
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 814315
+          }
+        ],
+        "compressed_bytes": 2877118,
+        "num_parts": 4
+      },
+      {
+        "channel": 4,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.493733,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1308194
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 1341406
+          }
+        ],
+        "compressed_bytes": 3309622,
+        "num_parts": 4
+      },
+      {
+        "channel": 5,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.591791,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1568010
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 1081590
+          }
+        ],
+        "compressed_bytes": 3096946,
+        "num_parts": 4
+      },
+      {
+        "channel": 6,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.715109,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1894752
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 754848
+          }
+        ],
+        "compressed_bytes": 2853356,
+        "num_parts": 4
+      },
+      {
+        "channel": 7,
+        "mode": "raw_pcodec",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "parts": [
+          {
+            "kind": "pcodec",
+            "dtype": "uint16",
+            "length": 2664000
+          }
+        ],
+        "compressed_bytes": 3201843,
+        "num_parts": 1
+      },
+      {
+        "channel": 8,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.738522,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1956787
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 692813
+          }
+        ],
+        "compressed_bytes": 2773031,
+        "num_parts": 4
+      },
+      {
+        "channel": 9,
+        "mode": "raw_pcodec",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "parts": [
+          {
+            "kind": "pcodec",
+            "dtype": "uint16",
+            "length": 2664000
+          }
+        ],
+        "compressed_bytes": 2992498,
+        "num_parts": 1
+      },
+      {
+        "channel": 10,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.74652,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1977979
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 671621
+          }
+        ],
+        "compressed_bytes": 2774970,
+        "num_parts": 4
+      },
+      {
+        "channel": 11,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.649512,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1720947
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 928653
+          }
+        ],
+        "compressed_bytes": 3073571,
+        "num_parts": 4
+      },
+      {
+        "channel": 12,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.664434,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1760485
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 889115
+          }
+        ],
+        "compressed_bytes": 2967599,
+        "num_parts": 4
+      },
+      {
+        "channel": 13,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.495435,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1312704
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 1336896
+          }
+        ],
+        "compressed_bytes": 3282940,
+        "num_parts": 4
+      },
+      {
+        "channel": 14,
+        "mode": "temporal_split_raw_pcodec",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.715102,
+        "low_changed_mode": "raw_pcodec",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1894735
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 754865
+          }
+        ],
+        "compressed_bytes": 2777332,
+        "num_parts": 4
+      },
+      {
+        "channel": 15,
+        "mode": "temporal_split_raw_zstd",
+        "shape_thw": [
+          185,
+          90,
+          160
+        ],
+        "same_hi_fraction": 0.657729,
+        "low_changed_mode": "raw_zstd",
+        "parts": [
+          {
+            "kind": "zstd",
+            "stream": "hi_raw",
+            "dtype": "uint8",
+            "length": 2664000
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_seed",
+            "dtype": "uint8",
+            "length": 14400
+          },
+          {
+            "kind": "pcodec",
+            "stream": "lo_same_delta",
+            "dtype": "uint8",
+            "length": 1742719
+          },
+          {
+            "kind": "zstd",
+            "stream": "lo_changed_raw",
+            "dtype": "uint8",
+            "length": 906881
+          }
+        ],
+        "compressed_bytes": 2983477,
+        "num_parts": 4
+      }
+    ],
+    "top_savings_vs_raw_pcodec": [
+      {
+        "channel": 6,
+        "mode": "temporal_split_raw_zstd",
+        "raw_pcodec_bytes": 2976767,
+        "chosen_bytes": 2853356,
+        "saved_vs_raw_pcodec_bytes": 123411,
+        "same_hi_fraction": 0.715109
+      },
+      {
+        "channel": 2,
+        "mode": "temporal_split_raw_zstd",
+        "raw_pcodec_bytes": 2953104,
+        "chosen_bytes": 2850566,
+        "saved_vs_raw_pcodec_bytes": 102538,
+        "same_hi_fraction": 0.699636
+      },
+      {
+        "channel": 10,
+        "mode": "temporal_split_raw_zstd",
+        "raw_pcodec_bytes": 2871523,
+        "chosen_bytes": 2774970,
+        "saved_vs_raw_pcodec_bytes": 96553,
+        "same_hi_fraction": 0.74652
+      },
+      {
+        "channel": 12,
+        "mode": "temporal_split_raw_zstd",
+        "raw_pcodec_bytes": 3059984,
+        "chosen_bytes": 2967599,
+        "saved_vs_raw_pcodec_bytes": 92385,
+        "same_hi_fraction": 0.664434
+      },
+      {
+        "channel": 3,
+        "mode": "temporal_split_raw_zstd",
+        "raw_pcodec_bytes": 2967044,
+        "chosen_bytes": 2877118,
+        "saved_vs_raw_pcodec_bytes": 89926,
+        "same_hi_fraction": 0.692665
+      },
+      {
+        "channel": 8,
+        "mode": "temporal_split_raw_zstd",
+        "raw_pcodec_bytes": 2861581,
+        "chosen_bytes": 2773031,
+        "saved_vs_raw_pcodec_bytes": 88550,
+        "same_hi_fraction": 0.738522
+      },
+      {
+        "channel": 15,
+        "mode": "temporal_split_raw_zstd",
+        "raw_pcodec_bytes": 3071544,
+        "chosen_bytes": 2983477,
+        "saved_vs_raw_pcodec_bytes": 88067,
+        "same_hi_fraction": 0.657729
+      },
+      {
+        "channel": 14,
+        "mode": "temporal_split_raw_pcodec",
+        "raw_pcodec_bytes": 2859721,
+        "chosen_bytes": 2777332,
+        "saved_vs_raw_pcodec_bytes": 82389,
+        "same_hi_fraction": 0.715102
+      }
+    ]
+  }
+}

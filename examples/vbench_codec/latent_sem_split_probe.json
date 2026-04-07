@@ -1,0 +1,65 @@
+[
+  {
+    "sample": "wingsuit_rescue_glacier_pullup",
+    "pcodec_global_bytes": 49110723,
+    "streams": {
+      "sign_zstd": 1708349,
+      "exp_u8_zstd": 9424000,
+      "exp_u8_pcodec": 11269392,
+      "exp5_zstd": 11090288,
+      "exp_same_mask_zstd": 4353732,
+      "exp_changed_pcodec": 6581348,
+      "man_u8_zstd": 37302535,
+      "man_u8_pcodec": 37297499,
+      "man_same_pcodec": 18642400,
+      "man_changed_zstd": 17912810
+    },
+    "candidates": {
+      "sign+expmask+expchanged+man_same+man_changed": 49198639,
+      "sign+exp5+mantissa_pcodec": 50096136,
+      "sign+exp_pcodec+mantissa_pcodec": 50275240
+    }
+  },
+  {
+    "sample": "neon_hoverbike_chain_reaction",
+    "pcodec_global_bytes": 44842457,
+    "streams": {
+      "sign_zstd": 1503562,
+      "exp_u8_zstd": 8388038,
+      "exp_u8_pcodec": 9166925,
+      "exp5_zstd": 9723825,
+      "exp_same_mask_zstd": 3696361,
+      "exp_changed_pcodec": 6833659,
+      "man_u8_zstd": 36750101,
+      "man_u8_pcodec": 37131986,
+      "man_same_pcodec": 13486174,
+      "man_changed_zstd": 23352357
+    },
+    "candidates": {
+      "sign+expmask+expchanged+man_same+man_changed": 48872113,
+      "sign+exp5+mantissa_pcodec": 48359373,
+      "sign+exp_pcodec+mantissa_pcodec": 47802473
+    }
+  },
+  {
+    "sample": "avalanche_snowmobile_bridge_escape",
+    "pcodec_global_bytes": 43150175,
+    "streams": {
+      "sign_zstd": 1220247,
+      "exp_u8_zstd": 7513292,
+      "exp_u8_pcodec": 8318915,
+      "exp5_zstd": 8632065,
+      "exp_same_mask_zstd": 3844446,
+      "exp_changed_pcodec": 5655690,
+      "man_u8_zstd": 36485016,
+      "man_u8_pcodec": 37203097,
+      "man_same_pcodec": 17389796,
+      "man_changed_zstd": 19298800
+    },
+    "candidates": {
+      "sign+expmask+expchanged+man_same+man_changed": 47408979,
+      "sign+exp5+mantissa_pcodec": 47055409,
+      "sign+exp_pcodec+mantissa_pcodec": 46742259
+    }
+  }
+]

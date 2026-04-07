@@ -1,0 +1,18 @@
+[
+  {
+    "stem": "000_subject_consistency_r00_p003_a_person_eating_a_burger",
+    "raw_psnr_db": Infinity,
+    "raw_identical": true,
+    "mp4_psnr_db": Infinity,
+    "mp4_identical_bytes": true,
+    "mp4_identical_sha256": true
+  },
+  {
+    "stem": "001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed",
+    "raw_psnr_db": Infinity,
+    "raw_identical": true,
+    "mp4_psnr_db": Infinity,
+    "mp4_identical_bytes": true,
+    "mp4_identical_sha256": true
+  }
+]

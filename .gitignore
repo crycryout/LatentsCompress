@@ -9,6 +9,12 @@ __pycache__/
 *.bin
 *.mp4
 !examples/vbench_codec/video_samples/**/*.mp4
+!examples/channel_sensitivity_wan22/**/*.mp4
+!examples/downstream_loss_aware_wan22/**/*.mp4
+!examples/wan22_same_latent_double_decode/**/*.mp4
+!examples/vbench_codec/heatmap_videos/**/*.mp4
+!examples/vbench_codec/latent_visualization_videos/**/*.mp4
+!examples/vbench_codec/latent_relative_diff_videos/**/*.mp4
 *.mov
 *.avi
 *.mkv
@@ -24,3 +30,11 @@ runs/
 outputs/
 .venvs/
 .DS_Store
+examples/vbench_codec/heatmap_videos/*/frame_diff_frames/
+examples/vbench_codec/heatmap_videos/*/latent_diff_frames/
+examples/vbench_codec/latent_visualization_videos/*/grid_frames/
+examples/vbench_codec/latent_visualization_videos/*/heatmap_frames/
+examples/vbench_codec/latent_visualization_videos/*/pca_frames/
+examples/vbench_codec/latent_relative_diff_videos/*/relative_diff_frames/
+examples/vbench_codec/s3_upload_manifest_*.json
+examples/vbench_codec/s3_upload_summary_*.json

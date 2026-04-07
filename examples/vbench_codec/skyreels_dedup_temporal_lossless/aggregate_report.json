@@ -1,0 +1,418 @@
+{
+  "reports": [
+    {
+      "sample": "wingsuit_rescue_glacier_pullup",
+      "latent_path": "/root/SkyReels-V2/result/skyreels_v2_dynamic5_720p24_async/wingsuit_rescue_glacier_pullup/full_video_latents_dedup.pt",
+      "latent_shape_cthw": [
+        16,
+        185,
+        90,
+        160
+      ],
+      "latent_dtype": "bfloat16",
+      "payload_bytes": 85248000,
+      "pt_bytes": 85249824,
+      "baselines": [
+        {
+          "codec": "zstd_raw",
+          "compressed_bytes": 57941503,
+          "compressed_mb": 57.941503,
+          "ratio_vs_payload": 1.471277,
+          "ratio_vs_pt": 1.471308,
+          "verified_lossless": true
+        },
+        {
+          "codec": "zstd_bshuffle_u16",
+          "compressed_bytes": 49581555,
+          "compressed_mb": 49.581555,
+          "ratio_vs_payload": 1.719349,
+          "ratio_vs_pt": 1.719386,
+          "verified_lossless": true
+        },
+        {
+          "codec": "pcodec_raw_u16",
+          "compressed_bytes": 49110723,
+          "compressed_mb": 49.110723,
+          "ratio_vs_payload": 1.735833,
+          "ratio_vs_pt": 1.73587,
+          "verified_lossless": true
+        }
+      ],
+      "candidates": [
+        {
+          "codec": "temporal_split_raw_zstd",
+          "compressed_bytes": 48220001,
+          "compressed_mb": 48.220001,
+          "ratio_vs_payload": 1.767897,
+          "ratio_vs_pt": 1.767935,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15279256
+          },
+          "container_overhead_bytes": 360,
+          "low_changed_mode": "raw_zstd"
+        },
+        {
+          "codec": "temporal_split_delta_zstd",
+          "compressed_bytes": 48275886,
+          "compressed_mb": 48.275886,
+          "ratio_vs_payload": 1.765851,
+          "ratio_vs_pt": 1.765888,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15335139
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "delta_zstd"
+        },
+        {
+          "codec": "temporal_split_raw_pcodec",
+          "compressed_bytes": 48276069,
+          "compressed_mb": 48.276069,
+          "ratio_vs_payload": 1.765844,
+          "ratio_vs_pt": 1.765882,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15335322
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "raw_pcodec"
+        },
+        {
+          "codec": "temporal_split_delta_pcodec",
+          "compressed_bytes": 48276071,
+          "compressed_mb": 48.276071,
+          "ratio_vs_payload": 1.765844,
+          "ratio_vs_pt": 1.765882,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.638276,
+          "lo_same_bytes_raw": 27058822,
+          "lo_changed_bytes_raw": 15334778,
+          "part_sizes": {
+            "hi_zstd": 7351887,
+            "seed_lo_zstd": 230415,
+            "lo_same_pcodec": 25358083,
+            "lo_changed": 15335322
+          },
+          "container_overhead_bytes": 364,
+          "low_changed_mode": "delta_pcodec"
+        }
+      ],
+      "best_candidate": {
+        "codec": "temporal_split_raw_zstd",
+        "compressed_bytes": 48220001,
+        "compressed_mb": 48.220001,
+        "ratio_vs_payload": 1.767897,
+        "ratio_vs_pt": 1.767935,
+        "verified_lossless": true,
+        "same_hi_fraction": 0.638276,
+        "lo_same_bytes_raw": 27058822,
+        "lo_changed_bytes_raw": 15334778,
+        "part_sizes": {
+          "hi_zstd": 7351887,
+          "seed_lo_zstd": 230415,
+          "lo_same_pcodec": 25358083,
+          "lo_changed": 15279256
+        },
+        "container_overhead_bytes": 360,
+        "low_changed_mode": "raw_zstd"
+      }
+    },
+    {
+      "sample": "neon_hoverbike_chain_reaction",
+      "latent_path": "/root/SkyReels-V2/result/skyreels_v2_dynamic5_720p24_async/neon_hoverbike_chain_reaction/full_video_latents_dedup.pt",
+      "latent_shape_cthw": [
+        16,
+        185,
+        90,
+        160
+      ],
+      "latent_dtype": "bfloat16",
+      "payload_bytes": 85248000,
+      "pt_bytes": 85249824,
+      "baselines": [
+        {
+          "codec": "zstd_raw",
+          "compressed_bytes": 53627527,
+          "compressed_mb": 53.627527,
+          "ratio_vs_payload": 1.589631,
+          "ratio_vs_pt": 1.589665,
+          "verified_lossless": true
+        },
+        {
+          "codec": "zstd_bshuffle_u16",
+          "compressed_bytes": 47898411,
+          "compressed_mb": 47.898411,
+          "ratio_vs_payload": 1.779767,
+          "ratio_vs_pt": 1.779805,
+          "verified_lossless": true
+        },
+        {
+          "codec": "pcodec_raw_u16",
+          "compressed_bytes": 44842457,
+          "compressed_mb": 44.842457,
+          "ratio_vs_payload": 1.901056,
+          "ratio_vs_pt": 1.901096,
+          "verified_lossless": true
+        }
+      ],
+      "candidates": [
+        {
+          "codec": "temporal_split_raw_zstd",
+          "compressed_bytes": 47527089,
+          "compressed_mb": 47.527089,
+          "ratio_vs_payload": 1.793672,
+          "ratio_vs_pt": 1.79371,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.463985,
+          "lo_same_bytes_raw": 19670005,
+          "lo_changed_bytes_raw": 22723595,
+          "part_sizes": {
+            "hi_zstd": 6632918,
+            "seed_lo_zstd": 229069,
+            "lo_same_pcodec": 18183932,
+            "lo_changed": 22480810
+          },
+          "container_overhead_bytes": 360,
+          "low_changed_mode": "raw_zstd"
+        },
+        {
+          "codec": "temporal_split_delta_zstd",
+          "compressed_bytes": 47766423,
+          "compressed_mb": 47.766423,
+          "ratio_vs_payload": 1.784685,
+          "ratio_vs_pt": 1.784723,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.463985,
+          "lo_same_bytes_raw": 19670005,
+          "lo_changed_bytes_raw": 22723595,
+          "part_sizes": {
+            "hi_zstd": 6632918,
+            "seed_lo_zstd": 229069,
+            "lo_same_pcodec": 18183932,
+            "lo_changed": 22720142
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "delta_zstd"
+        },
+        {
+          "codec": "temporal_split_raw_pcodec",
+          "compressed_bytes": 47420984,
+          "compressed_mb": 47.420984,
+          "ratio_vs_payload": 1.797685,
+          "ratio_vs_pt": 1.797724,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.463985,
+          "lo_same_bytes_raw": 19670005,
+          "lo_changed_bytes_raw": 22723595,
+          "part_sizes": {
+            "hi_zstd": 6632918,
+            "seed_lo_zstd": 229069,
+            "lo_same_pcodec": 18183932,
+            "lo_changed": 22374703
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "raw_pcodec"
+        },
+        {
+          "codec": "temporal_split_delta_pcodec",
+          "compressed_bytes": 47770674,
+          "compressed_mb": 47.770674,
+          "ratio_vs_payload": 1.784526,
+          "ratio_vs_pt": 1.784564,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.463985,
+          "lo_same_bytes_raw": 19670005,
+          "lo_changed_bytes_raw": 22723595,
+          "part_sizes": {
+            "hi_zstd": 6632918,
+            "seed_lo_zstd": 229069,
+            "lo_same_pcodec": 18183932,
+            "lo_changed": 22724391
+          },
+          "container_overhead_bytes": 364,
+          "low_changed_mode": "delta_pcodec"
+        }
+      ],
+      "best_candidate": {
+        "codec": "temporal_split_raw_pcodec",
+        "compressed_bytes": 47420984,
+        "compressed_mb": 47.420984,
+        "ratio_vs_payload": 1.797685,
+        "ratio_vs_pt": 1.797724,
+        "verified_lossless": true,
+        "same_hi_fraction": 0.463985,
+        "lo_same_bytes_raw": 19670005,
+        "lo_changed_bytes_raw": 22723595,
+        "part_sizes": {
+          "hi_zstd": 6632918,
+          "seed_lo_zstd": 229069,
+          "lo_same_pcodec": 18183932,
+          "lo_changed": 22374703
+        },
+        "container_overhead_bytes": 362,
+        "low_changed_mode": "raw_pcodec"
+      }
+    },
+    {
+      "sample": "avalanche_snowmobile_bridge_escape",
+      "latent_path": "/root/SkyReels-V2/result/skyreels_v2_dynamic5_720p24_async/avalanche_snowmobile_bridge_escape/full_video_latents_dedup.pt",
+      "latent_shape_cthw": [
+        16,
+        185,
+        90,
+        160
+      ],
+      "latent_dtype": "bfloat16",
+      "payload_bytes": 85248000,
+      "pt_bytes": 85249824,
+      "baselines": [
+        {
+          "codec": "zstd_raw",
+          "compressed_bytes": 51641287,
+          "compressed_mb": 51.641287,
+          "ratio_vs_payload": 1.650772,
+          "ratio_vs_pt": 1.650808,
+          "verified_lossless": true
+        },
+        {
+          "codec": "zstd_bshuffle_u16",
+          "compressed_bytes": 46610549,
+          "compressed_mb": 46.610549,
+          "ratio_vs_payload": 1.828942,
+          "ratio_vs_pt": 1.828981,
+          "verified_lossless": true
+        },
+        {
+          "codec": "pcodec_raw_u16",
+          "compressed_bytes": 43150175,
+          "compressed_mb": 43.150175,
+          "ratio_vs_payload": 1.975612,
+          "ratio_vs_pt": 1.975654,
+          "verified_lossless": true
+        }
+      ],
+      "candidates": [
+        {
+          "codec": "temporal_split_raw_zstd",
+          "compressed_bytes": 45606995,
+          "compressed_mb": 45.606995,
+          "ratio_vs_payload": 1.869187,
+          "ratio_vs_pt": 1.869227,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.590868,
+          "lo_same_bytes_raw": 25049008,
+          "lo_changed_bytes_raw": 17344592,
+          "part_sizes": {
+            "hi_zstd": 5842103,
+            "seed_lo_zstd": 228800,
+            "lo_same_pcodec": 22423467,
+            "lo_changed": 17112265
+          },
+          "container_overhead_bytes": 360,
+          "low_changed_mode": "raw_zstd"
+        },
+        {
+          "codec": "temporal_split_delta_zstd",
+          "compressed_bytes": 45837994,
+          "compressed_mb": 45.837994,
+          "ratio_vs_payload": 1.859767,
+          "ratio_vs_pt": 1.859807,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.590868,
+          "lo_same_bytes_raw": 25049008,
+          "lo_changed_bytes_raw": 17344592,
+          "part_sizes": {
+            "hi_zstd": 5842103,
+            "seed_lo_zstd": 228800,
+            "lo_same_pcodec": 22423467,
+            "lo_changed": 17343262
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "delta_zstd"
+        },
+        {
+          "codec": "temporal_split_raw_pcodec",
+          "compressed_bytes": 45607591,
+          "compressed_mb": 45.607591,
+          "ratio_vs_payload": 1.869163,
+          "ratio_vs_pt": 1.869203,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.590868,
+          "lo_same_bytes_raw": 25049008,
+          "lo_changed_bytes_raw": 17344592,
+          "part_sizes": {
+            "hi_zstd": 5842103,
+            "seed_lo_zstd": 228800,
+            "lo_same_pcodec": 22423467,
+            "lo_changed": 17112859
+          },
+          "container_overhead_bytes": 362,
+          "low_changed_mode": "raw_pcodec"
+        },
+        {
+          "codec": "temporal_split_delta_pcodec",
+          "compressed_bytes": 45839942,
+          "compressed_mb": 45.839942,
+          "ratio_vs_payload": 1.859688,
+          "ratio_vs_pt": 1.859728,
+          "verified_lossless": true,
+          "same_hi_fraction": 0.590868,
+          "lo_same_bytes_raw": 25049008,
+          "lo_changed_bytes_raw": 17344592,
+          "part_sizes": {
+            "hi_zstd": 5842103,
+            "seed_lo_zstd": 228800,
+            "lo_same_pcodec": 22423467,
+            "lo_changed": 17345208
+          },
+          "container_overhead_bytes": 364,
+          "low_changed_mode": "delta_pcodec"
+        }
+      ],
+      "best_candidate": {
+        "codec": "temporal_split_raw_zstd",
+        "compressed_bytes": 45606995,
+        "compressed_mb": 45.606995,
+        "ratio_vs_payload": 1.869187,
+        "ratio_vs_pt": 1.869227,
+        "verified_lossless": true,
+        "same_hi_fraction": 0.590868,
+        "lo_same_bytes_raw": 25049008,
+        "lo_changed_bytes_raw": 17344592,
+        "part_sizes": {
+          "hi_zstd": 5842103,
+          "seed_lo_zstd": 228800,
+          "lo_same_pcodec": 22423467,
+          "lo_changed": 17112265
+        },
+        "container_overhead_bytes": 360,
+        "low_changed_mode": "raw_zstd"
+      }
+    }
+  ],
+  "totals": {
+    "payload_bytes": 255744000,
+    "zstd_bshuffle_u16_bytes": 144090515,
+    "pcodec_raw_u16_bytes": 137103355,
+    "best_temporal_bytes": 141247980
+  }
+}

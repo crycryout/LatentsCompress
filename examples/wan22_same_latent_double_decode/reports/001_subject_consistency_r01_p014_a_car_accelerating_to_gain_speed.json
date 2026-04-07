@@ -1,0 +1,28 @@
+{
+  "stem": "001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed",
+  "prompt": "a car accelerating to gain speed",
+  "fps": 24,
+  "frame_count": 121,
+  "resolution": [
+    1280,
+    704
+  ],
+  "timings_seconds": {
+    "decode_a": 12.49882197380066,
+    "decode_b": 12.485307693481445
+  },
+  "raw_frames_compare": {
+    "psnr_db": Infinity,
+    "identical_bytes": true
+  },
+  "mp4_compare": {
+    "psnr_db": Infinity,
+    "identical_file_bytes": true,
+    "identical_file_sha256": true
+  },
+  "paths": {
+    "latent_path": "/root/tmp/wan22_same_latent_double_decode/001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed.pt",
+    "mp4_a": "/root/LatentsCompress/examples/wan22_same_latent_double_decode/001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed/001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed_decode_a.mp4",
+    "mp4_b": "/root/LatentsCompress/examples/wan22_same_latent_double_decode/001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed/001_subject_consistency_r01_p014_a_car_accelerating_to_gain_speed_decode_b.mp4"
+  }
+}
